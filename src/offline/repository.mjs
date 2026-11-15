@@ -194,7 +194,6 @@ export class LocalRepository extends OfflineEngine {
     if(path==='photos')return this.storePhoto(body.image,body.thumbnail,{date:body.date||today(),meal:body.meal||'lunch'});
     if(path.startsWith('photo-thumbnail/')){const blob=await this.storage.getBlob(this.partition,'thumb-'+path.split('/')[1]);return blob?dataUrl(blob):null;}
     if(path.startsWith('photo-image/'))return this.photo(path.split('/')[1]);
-    if(path==='photo-draft/select'){if(!this.state.photos[body.id])throw new Error('照片不在本机');await this.commit(s=>{s.draft=s.photos[body.id].draft||{photoId:body.id,date:body.date,meal:body.meal,items:[],summary:'已保存在本机'};});return {ok:true};}
     if(path==='photos/current'){const draft=this.state.draft;return draft?{...draft,image:await this.photo(draft.photoId)}:null;}
     if(path==='photo-draft'){await this.commit(s=>{s.draft=body;if(s.photos[body.photoId])s.photos[body.photoId].draft=body;});return body;}
     if(path==='photo-draft/clear'){await this.commit(s=>{s.draft=null;});return {ok:true};}
