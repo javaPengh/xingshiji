@@ -5,6 +5,7 @@ build/
 .cache/
 coverage/
 *.log
+logs/
 *.tsbuildinfo
 *.ipa
 *.apk

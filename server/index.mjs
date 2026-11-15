@@ -1,3 +1,4 @@
+import {startBackgroundControl} from './background-control.mjs';
 import {APP_VERSION} from '../shared/version.mjs';
 import express from 'express';
 import {photoTraceMiddleware} from './photo-trace.mjs';
@@ -236,6 +237,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const tls = process.env.TLS_CERT && process.env.TLS_KEY;
   const server = tls ? https.createServer({ cert: fs.readFileSync(path.resolve(root, process.env.TLS_CERT)), key: fs.readFileSync(path.resolve(root, process.env.TLS_KEY)) }, app) : http.createServer(app);
   server.listen(port, host, () => console.log(`行食记 ${tls ? 'https' : 'http'}://${host === '0.0.0.0' ? '127.0.0.1' : host}:${port}\n日记库 ${store.identity.serverId}\n${process.env.AUTH_MODE==='accounts'?'公网账号模式：请在页面注册或登录。':'连接码可在本机页面的「设置」查看。'}`));
-  const close = () => server.close(() => { stopBackups();closeData(); process.exit(0); });
+  let stopping=false,stopControl=()=>{};
+  const close=()=>{if(stopping)return;stopping=true;console.log('正在停止行食记服务…');
+    const deadline=setTimeout(()=>server.closeAllConnections(),10000);deadline.unref();
+    server.close(()=>{clearTimeout(deadline);stopBackups();try{stopControl();}finally{closeData();}console.log('行食记服务已停止。');process.exit(0);});
+  };
+  server.once('listening',()=>{const address=server.address();stopControl=startBackgroundControl(root,close,`${tls?'https':'http'}://${host==='0.0.0.0'?'127.0.0.1':host}:${address.port}`);});
   process.on('SIGINT', close); process.on('SIGTERM', close);
 }

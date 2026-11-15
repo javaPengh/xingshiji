@@ -20,3 +20,5 @@
 - App图标以 `shared/icon/行食记 App Icon-selection-ios.png` 为源图；用 `scripts/create-icons.ps1` 生成无透明通道的标准PNG，iOS准备脚本从PWA图标复制1024像素版本，不能再生成旧图标。
 
 - 聊天不提供逐条“保留离线”入口；旧 pinned 数据保留兼容。消息列表独立滚动，输入框为固定布局的一部分；禁用整页 scrollIntoView。键盘弹起时导航不挤到键盘上方；输入框贴键盘，关闭键盘后位于底部导航之上。
+
+- Windows 常用启动入口为 START-SERVER.vbs，后台运行且不保留CMD窗口；STOP-SERVER.vbs安全停止，SERVER-STATUS.vbs查看状态。标准输出和错误合并追加到程序根目录 logs/xingshiji.log，logs/忽略提交。仅用带随机令牌的本地控制通道管理自身实例，不按进程名或端口批量杀进程。

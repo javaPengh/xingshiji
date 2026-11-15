@@ -92,7 +92,26 @@ Invoke-RestMethod http://127.0.0.1:4318/api/health
 
 将这个 HTTPS 地址填入服务端 `.env` 的 `PUBLIC_ORIGIN`，重启服务，再用于客户端构建。手机上的 `127.0.0.1` 指向手机自身，不能作为另一台电脑的服务地址。
 
-`npm run server` 在前台运行，关闭进程就会停止服务。长期部署时，根据操作系统将它交给服务管理器或启动任务管理。
+`npm run server` 在前台运行。Windows 需要无 CMD 窗口运行时，在配置完成、网页已构建后双击项目根目录的 `START-SERVER.vbs`。它会提示启动结果，关闭提示框后服务继续后台运行。
+
+| Windows 入口 | 用途 |
+|---|---|
+| `START-SERVER.vbs` | 后台启动；重复点击不会启动第二个实例 |
+| `STOP-SERVER.vbs` | 安全停止此目录启动的后台实例 |
+| `SERVER-STATUS.vbs` | 查看运行状态、PID、地址和日志位置 |
+
+标准输出和错误统一追加到**项目或运行包根目录的 `logs/xingshiji.log`**，不会写到 CMD 窗口；`logs/` 已被 Git 忽略。后台状态保存在忽略的 `.cache/background`，服务运行时不要删除或手动修改该目录。停止操作只管理此目录的带身份校验实例，不会按 `node.exe` 名称批量结束进程。
+
+也可以在 PowerShell 中运行以下命令，命令返回后后台进程继续运行：
+
+```powershell
+node scripts/background-server.mjs start
+node scripts/background-server.mjs status
+node scripts/background-server.mjs stop
+Get-Content ./logs/xingshiji.log -Tail 100 -Wait
+```
+
+独立运行包中将上述 `node` 替换为 `.\node.exe`。双击入口需要 Windows Script Host；如果系统禁用了它，使用上述命令行入口。后台运行不等同于安装 Windows 系统服务，目前不自动配置开机启动或异常重启；注销或重启系统后需要再次启动。
 
 ## 三、客户端：拉取后开发和调试
 
@@ -201,7 +220,7 @@ npm run windows:package
 1. 核对 ZIP 的 SHA-256，解压并进入程序目录。
 2. 复制包内 `.env.example` 为 `.env`，按第二节设置自己的数据目录、模型服务和 HTTPS 地址。
 3. 执行 `node.exe scripts/check-nutrition-runtime.mjs --verify-only` 检查包完整性。
-4. 双击 `START-SERVER.cmd`，首次启动会创建配置的数据目录和数据库。
+4. 双击 `START-SERVER.vbs` 后台启动，首次启动会创建配置的数据目录和数据库；用 `SERVER-STATUS.vbs` 查看状态，用 `STOP-SERVER.vbs` 停止。`START-SERVER.cmd` 保留为前台诊断入口。
 
 也可以在 Actions 手动运行 **Build Xingshiji Windows server** 下载 ZIP。推送源码不会自动构建或部署。
 
@@ -226,7 +245,7 @@ PWA 同域部署时，仍需确保 `VITE_API_BASE_URL` 留空。源码更新不�
 .\node.exe scripts/upgrade-from.mjs "<旧程序绝对路径>" --data-dir "<持久化数据目录绝对路径>"
 ```
 
-升级工具沿用原配置、核对数据库并保存升级前快照；已使用指定数据目录时直接复用，需要迁移时执行校验后的复制。随后运行新目录的 `START-SERVER.cmd` 并核对原账号和记录。已有部署不要先用示例配置覆盖 `.env`，也不要靠“跳过同名文件”完成升级。
+升级工具沿用原配置、核对数据库并保存升级前快照；已使用指定数据目录时直接复用，需要迁移时执行校验后的复制。随后运行新目录的 `START-SERVER.vbs` 并核对原账号和记录。旧后台实例用其原目录的 `STOP-SERVER.vbs` 停止；旧的前台实例仍需先在原窗口停止。已有部署不要先用示例配置覆盖 `.env`，也不要靠“跳过同名文件”完成升级。
 
 更多检查与回退说明见 [运行包升级说明](docs/NUTRITION_UPGRADE.md)。
 

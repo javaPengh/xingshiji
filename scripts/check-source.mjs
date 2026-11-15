@@ -17,7 +17,7 @@ assert.equal(json('PWA/manifest.webmanifest').name,'行食记');
 assert.ok(read('vite.config.ts').includes("publicDir: 'PWA'"));
 assert.ok(read('capacitor.config.ts').includes("appName: '行食记'"));
 assert.ok(read('capacitor.config.ts').includes("appId: 'local.xiaoka.diary'"));
-for(const name of ['PWA/sw.js','PWA/icons/icon-192.png','PWA/icons/icon-512.png','scripts/fixtures/nutrition-acceptance.v1.json','scripts/fixtures/legacy-target-prompt.v043.json'])assert.ok(fs.existsSync(path.join(root,name)),name);
+for(const name of ['START-SERVER.vbs','STOP-SERVER.vbs','SERVER-STATUS.vbs','scripts/server-manager.vbs','PWA/sw.js','PWA/icons/icon-192.png','PWA/icons/icon-512.png','scripts/fixtures/nutrition-acceptance.v1.json','scripts/fixtures/legacy-target-prompt.v043.json'])assert.ok(fs.existsSync(path.join(root,name)),name);
 const files=[];
 function visit(dir){for(const row of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,row.name);if(row.isDirectory())visit(file);else if(row.name.endsWith('.mjs'))files.push(file);}}
 for(const name of ['server','shared','scripts','src'])visit(path.join(root,name));

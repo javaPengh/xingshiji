@@ -11,14 +11,15 @@ if(!fs.existsSync(path.join(root,'dist','index.html')))throw new Error('先构�
 const knowledge=loadNutritionKnowledge();
 if(JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8')).version!==APP_VERSION)throw new Error('版本号不一致');
 fs.mkdirSync(output,{recursive:true});
-for(const folder of ['dist','server','shared'])fs.cpSync(path.join(root,folder),path.join(output,folder),{recursive:true});
+for(const folder of ['dist','server','shared'])fs.cpSync(path.join(root,folder),path.join(output,folder),{recursive:true,filter:source=>folder!=='shared'||path.relative(path.join(root,'shared'),source).split(path.sep)[0]!=='icon'});
 fs.mkdirSync(path.join(output,'knowledge'));
 for(const relative of ['manifest.json',...knowledge.manifest.files.map(f=>f.path),knowledge.manifest.index.path]){const from=inside(path.join(root,'knowledge'),relative),to=inside(path.join(output,'knowledge'),relative);fs.mkdirSync(path.dirname(to),{recursive:true});fs.copyFileSync(from,to);}
 fs.copyFileSync(process.execPath,path.join(output,'node.exe'));
 const nodeLicense=path.join(path.dirname(process.execPath),'LICENSE');if(fs.existsSync(nodeLicense))fs.copyFileSync(nodeLicense,path.join(output,'NODE-LICENSE.txt'));
 fs.mkdirSync(path.join(output,'scripts'));
-for(const name of ['migrate-local-data.mjs','set-public-url.mjs','restore-snapshot.mjs','upgrade-from.mjs','upgrade-data.mjs','prepare-rollback.mjs','runtime-release.mjs','check-ollama.mjs','check-local-service.mjs','check-nutrition-runtime.mjs','check-nutrition-model.mjs','nutrition-acceptance-cases.mjs'])fs.copyFileSync(path.join(root,'scripts',name),path.join(output,'scripts',name));
+for(const name of ['migrate-local-data.mjs','set-public-url.mjs','restore-snapshot.mjs','upgrade-from.mjs','upgrade-data.mjs','prepare-rollback.mjs','runtime-release.mjs','check-ollama.mjs','check-local-service.mjs','check-nutrition-runtime.mjs','check-nutrition-model.mjs','nutrition-acceptance-cases.mjs','background-server.mjs','server-manager.vbs'])fs.copyFileSync(path.join(root,'scripts',name),path.join(output,'scripts',name));
 fs.mkdirSync(path.join(output,'scripts','fixtures'),{recursive:true});for(const file of ['nutrition-acceptance.v1.json','legacy-target-prompt.v043.json'])fs.copyFileSync(path.join(root,'scripts','fixtures',file),path.join(output,'scripts','fixtures',file));
+for(const name of ['START-SERVER.vbs','STOP-SERVER.vbs','SERVER-STATUS.vbs'])fs.copyFileSync(path.join(root,name),path.join(output,name));
 fs.mkdirSync(path.join(output,'docs'));
 fs.copyFileSync(path.join(root,'docs','NUTRITION_UPGRADE.md'),path.join(output,'docs','NUTRITION_UPGRADE.md'));
 fs.copyFileSync(path.join(root,'.env.public.example'),path.join(output,'.env.example'));
