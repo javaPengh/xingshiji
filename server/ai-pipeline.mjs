@@ -3,7 +3,7 @@ import { parseModelJSON } from './model-json.mjs';
 import { generationPolicy, fitConversation, repairConversation } from './ai-policy.mjs';
 import { logEvent } from './logging.mjs';
 
-const categories = { targets: '营养目标', recognize: '照片识别', exercise:'运动消耗估算', chat: '饮食对话',nutritionExplanation:'营养依据解释',nutritionQuestion:'营养知识问答' };
+const categories = { targets: '营养目标', recognize: '照片识别', exercise:'运动消耗估算', chat: '饮食对话',nutritionExplanation:'营养依据解释' };
 const correctionPhases = new Set(['content-json', 'schema-validation', 'business-validation']);
 const emptyRuntime = { ollamaVersion: null, modelDigest: null, metadataAvailable: false };
 

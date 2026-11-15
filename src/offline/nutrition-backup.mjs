@@ -41,7 +41,6 @@ export async function importLocalNutritionBackup(repo,body){
   for(const p of photos)s.photos[p.id]={...body.state.photos[p.id],cached:true,size:p.blob.size,mime:p.blob.type};
   for(const [key,value] of Object.entries(body.state.operationKeys||{})){if(!s.operationKeys[key])s.operationKeys[key]=value;else if(canonicalJSON(s.operationKeys[key])!==canonicalJSON(value))throw new Error('备份提交标识与本机内容冲突');}
   s.meta.unverifiedNutritionExplanations||={};for(const key of Object.keys(body.state.proposals||{}))if(key.startsWith('nutrition-explanation:')&&!s.proposals[key])s.meta.unverifiedNutritionExplanations[key]=true;
-  s.meta.unverifiedNutritionAnswers||={};for(const key of Object.keys(body.state.proposals||{}))if(key.startsWith('nutrition-answer:')&&!s.proposals[key])s.meta.unverifiedNutritionAnswers[key]=true;
   s.proposals={...body.state.proposals,...s.proposals};
   s.meta.nutritionRejectedOperations||=[];for(const op of body.state.meta?.nutritionRejectedOperations||[])if(!s.meta.nutritionRejectedOperations.some(old=>old.operation.opId===op.operation.opId))s.meta.nutritionRejectedOperations.push(structuredClone(op));
   for(const [id,confirmation]of Object.entries(body.state.meta?.ruleConfirmations||{}))if(!s.meta.ruleConfirmations[id])s.meta.ruleConfirmations[id]=structuredClone(confirmation);

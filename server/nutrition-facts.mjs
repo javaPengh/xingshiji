@@ -4,7 +4,6 @@ import {publicCitation} from '../shared/nutrition-retrieval.mjs';
 
 export const EXPLANATION_POLICY='controlled-nutrition-facts-v1';
 const fact=(id,text,kind,evidenceIds=[],policyIds=[])=>({id,text,kind,evidenceIds,policyIds});
-const displayUnit=unit=>({'g/kg_actual/day':'g/kg实际体重/日','g/kg_fat_free/day':'g/kg无脂体重/日','g/day':'g/日','kcal/day':'kcal/日','%energy':'%总能量'}[unit]||unit);
 function bindTopics(facts,selection){
  for(const f of facts)f.topics=[...new Set(f.evidenceIds.flatMap(id=>selection.bundle.retrieval.evidenceTopics[id]||[]))];
  const remainder=facts.find(f=>f.id==='carbohydrate_remainder');if(remainder)remainder.topics=['carbohydrate'];
@@ -26,7 +25,6 @@ export function candidateFacts(candidate,selection){
  const mandatory=[fact('program_target',`候选目标为热量${n.energyKcal} kcal/日、蛋白质${n.proteinG} g/日、脂肪${n.fatG} g/日、碳水${n.carbsG} g/日、纤维至少${n.fiberG} g/日，确认后才生效。`,'program_result'),fact('product_start',`本次在维持估算上${delta===0?'不增减热量':delta>0?'增加'+Number(delta.toFixed(4))+'%':'减少'+Number((-delta).toFixed(4))+'%'}；增减热量和营养选点来自已批准的产品起点，不宣称为文献统一处方。`,'product_strategy',[],['POL-ENERGY-START','POL-POINT-SELECTION']),fact('product_scope','首批只覆盖19岁及以上、18.5≤BMI<24、明确日常抗阻健身且无高训练量、备赛或特殊营养情境。BMI是产品覆盖边界，不用于推断体脂率。未知项目保持未设，不把总糖等项目补成0；后续调整需另行核定。','product_strategy',[],['POL-INITIAL-SCOPE'])];
  return {facts,mandatory,requiredGroups:bindTopics(facts,selection)};
 }
-export function questionFacts(selection){const facts=selection.cards.map(e=>fact('evidence:'+e.id,e.summaryZh+` 原文人群：${e.population.description}；情境：${e.trainingContext}；${e.energyContext}。`+(e.valueOrRange.kind==='range'&&e.claimType==='recommendation'?` 该条来源范围为${e.valueOrRange.lower}–${e.valueOrRange.upper} ${displayUnit(e.unit)}，参照为${e.weightBasis==='actual'?'实际体重':e.weightBasis==='fat_free'?'无脂体重':'来源所述口径'}；不能据此直接新增个人目标。`:''),'general_evidence',[e.id]));return {facts,requiredGroups:bindTopics(facts,selection),mandatory:[fact('answer_scope','以下仅解释当前匹配资料的一般要点，不新增或更改个人目标；具体适用条件和限制随出处一起保留。','scope_notice')]};}
 export function controlledExplanationContract(bank){
  const facts=new Map(bank.facts.map(f=>[f.id,f])),ids=[...facts.keys()],evidenceIds=[...new Set(bank.facts.flatMap(f=>f.evidenceIds))];
  const schema=z.strictObject({answerability:z.enum(['supported','not_covered']),sections:z.array(z.strictObject({factId:z.enum(ids),evidenceIds:z.array(evidenceIds.length?z.enum(evidenceIds):z.string()).max(5)})).max(5)});

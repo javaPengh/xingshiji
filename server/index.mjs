@@ -100,8 +100,6 @@ function createDiaryRouter(store, ai, { publicMode=false,allowedModels=[],limite
   router.post('/api/ai/recognize', aiRoute((body, options) => ai.recognize(body, options)));
   router.post('/api/nutrition/candidates/:id/explanation',aiRoute((body,options,req)=>ai.explainCandidate({...body,candidateId:req.params.id},options)));
   router.get('/api/nutrition/candidates/:id/explanation',(req,res)=>res.json(ai.explanationStatus(req.params.id,String(req.query.question||''))));
-  router.post('/api/nutrition/questions',aiRoute((body,options)=>ai.nutritionQuestion(body,options)));
-  router.get('/api/nutrition/questions/:id',(req,res)=>{const result=store.nutritionAnswerForRequest(z.string().uuid().parse(req.params.id));if(!result)throw Object.assign(new Error('找不到本账号保存的问答。'),{status:404,code:'ANSWER_NOT_FOUND'});res.json({...result,historical:true});});
   router.get('/api/nutrition/evidence/:id',(req,res)=>{try{res.json(ai.nutritionEvidence(req.params.id));}catch(error){if(error.code)throw error;throw Object.assign(new Error('找不到已核查的引用。'),{status:404,code:'EVIDENCE_NOT_FOUND'});}});
   router.post('/api/photos', (req, res) => {
     const value = z.object({ image: z.string().max(8000000) }).parse(req.body);

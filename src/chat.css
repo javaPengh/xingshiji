@@ -2,11 +2,9 @@ html.chat-viewport,body.chat-viewport{overflow:hidden;overscroll-behavior:none}
 .phone-app.chat-active{display:flex;flex-direction:column;height:calc(var(--chat-viewport-height,100dvh) - 60px);min-height:0;padding-bottom:0;overflow:hidden}
 .phone-app.chat-active>.topbar,.phone-app.chat-active>.offline-banner{flex-shrink:0}
 .phone-app.chat-active>main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
-.phone-app.chat-active .sync-strip,.phone-app.chat-active .nutrition-chat-switch{flex-shrink:0}
+.phone-app.chat-active .sync-strip{flex-shrink:0}
 .phone-app.chat-active .bottom-nav{position:static;flex-shrink:0;width:100%}
 .chat-page{display:flex;flex-direction:column;flex:1;min-height:0;padding:0 17px 8px;overflow:hidden}
-.chat-page.knowledge-page{display:block;overflow-y:auto;overscroll-behavior:contain}
-.chat-context{flex-shrink:0}
 .chat-history{display:flex;flex-direction:column;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:12px 2px;overflow-anchor:none;scroll-padding-bottom:12px}
 .chat-history::before{content:"";margin-top:auto}
 .chat-history>*{flex-shrink:0}

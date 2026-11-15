@@ -97,7 +97,7 @@ export function createAi(store, options = {}) {
       const goal = recordingTargetContext(store.getCurrentTarget(body.date));
       const result = await ask(store.getSettings().chatModel, [
         { role: 'system', content: `你是个人饮食记录助手，用中文回答一般饮食与增肌减脂问题，避免诊断、处方、极端节食建议，不编造资料出处。当前日期${body.date}，默认餐次${body.meal}。今日已记录：${summary || '暂无'}。只有用户明确说已吃/已喝或要求记录时才action=record。计划、假设、建议、知识问题用answer。不确定名称/份量时用clarify且needsClarification=true。foods中的营养是用户本次吃的该分量的总量，不是每100克；不确定可填null，微量营养素不要猜。你无法自己保存，不要在reply中声称已记录；程序将另行写入。输出指定JSON。` },
-        { role: 'system', content: `用户资料：${JSON.stringify(profile)}。当日已确认营养目标：${JSON.stringify(goal)}。这些是记录目标，已包含总活动，不把运动消耗加回食物目标；不要在记餐对话中擅自更改目标。营养依据请提示切换有据营养问答，目标调整请进入目标设置。` },
+        { role: 'system', content: `用户资料：${JSON.stringify(profile)}。当日已确认营养目标：${JSON.stringify(goal)}。这些是记录目标，已包含总活动，不把运动消耗加回食物目标；不要在记餐对话中擅自更改目标。目标调整请进入设置中的身体资料与目标。` },
         ...history, { role: 'user', content: body.text },
       ], chatContract, 'chat', callOptions);
       const items = estimateItems(result.foods, 'chat', store);

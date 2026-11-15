@@ -15,7 +15,7 @@ export async function saveConnection(connection:Connection){
 }
 export async function request<T>(connection:Connection,route:string,options:RequestInit & {binary?:boolean}={}):Promise<T>{
   const photoUpload=options.method?.toUpperCase()==='POST'&&['sync/photos','photos'].includes(route.split('?')[0]);
-  const timeoutMs=photoUpload?40000:route.startsWith('ai/')||route.startsWith('nutrition/questions')||route.includes('/explanation')?150000:15000;
+  const timeoutMs=photoUpload?40000:route.startsWith('ai/')||route.includes('/explanation')?150000:15000;
   const deadline=AbortSignal.timeout(timeoutMs);
   const response=await fetch(`${connection.base.replace(/\/$/,'')}/api/${route}`,{
     ...options,headers:{'Content-Type':'application/json',Authorization:`Bearer ${connection.token}`,...options.headers},
