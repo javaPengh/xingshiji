@@ -196,7 +196,6 @@ export class LocalRepository extends OfflineEngine {
     if(path.startsWith('messages/')){
       const [,id,action]=path.split('/');const message=this.get('message',id);if(!message)throw new Error('消息不存在');
       if(action==='confirm'){return this.mutate((s,edit)=>{const message=s.records[keyOf('message',id)]?.data;if(!message?.draft)return {duplicate:true};const entries=message.draft.items.map(item=>({...item,id:uuid(),date:message.draft.date,meal:message.draft.meal,createdAt:now(),updatedAt:now()}));for(const entry of entries)edit('entry',entry.id,entry);edit('message',id,{...message,draft:null,entryIds:entries.map(e=>e.id)});return {entries};});}
-      if(action==='pin'){await this.mutate((s,edit)=>edit('message',id,{...s.records[keyOf('message',id)].data,pinned:!s.records[keyOf('message',id)].data.pinned}));return {ok:true};}
       if(action==='cancel'){await this.mutate((s,edit)=>{s.aiJobs=s.aiJobs.filter(job=>job.messageId!==id);edit('message',id,{...s.records[keyOf('message',id)].data,sendState:'error'});});return {ok:true};}
     }
     if(path==='photos')return this.storePhoto(body.image,body.thumbnail,{date:body.date||today(),meal:body.meal||'lunch'});

@@ -1,0 +1,26 @@
+html.chat-viewport,body.chat-viewport{overflow:hidden;overscroll-behavior:none}
+.phone-app.chat-active{display:flex;flex-direction:column;height:calc(var(--chat-viewport-height,100dvh) - 60px);min-height:0;padding-bottom:0;overflow:hidden}
+.phone-app.chat-active>.topbar,.phone-app.chat-active>.offline-banner{flex-shrink:0}
+.phone-app.chat-active>main{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+.phone-app.chat-active .sync-strip,.phone-app.chat-active .nutrition-chat-switch{flex-shrink:0}
+.phone-app.chat-active .bottom-nav{position:static;flex-shrink:0;width:100%}
+.chat-page{display:flex;flex-direction:column;flex:1;min-height:0;padding:0 17px 8px;overflow:hidden}
+.chat-page.knowledge-page{display:block;overflow-y:auto;overscroll-behavior:contain}
+.chat-context{flex-shrink:0}
+.chat-history{display:flex;flex-direction:column;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:12px 2px;overflow-anchor:none;scroll-padding-bottom:12px}
+.chat-history::before{content:"";margin-top:auto}
+.chat-history>*{flex-shrink:0}
+.chat-history>.text-button{align-self:flex-start;margin-bottom:12px}
+.chat-history .message-group{margin-bottom:12px}
+.chat-history .message-group:last-child{margin-bottom:0}
+.chat-composer{display:flex;align-items:flex-end;flex-shrink:0;gap:6px;border:1px solid #e7dcef;border-radius:14px;padding:4px;background:white;box-shadow:0 3px 12px #6e528609}
+.chat-composer textarea{border:0;background:none;box-shadow:none;resize:none;flex:1;min-width:0;height:32px;min-height:32px;max-height:80px;padding:5px 8px;font-size:16px;line-height:22px;overflow-y:auto}
+.chat-composer button{display:grid;place-items:center;flex-shrink:0;width:32px;height:32px;border-radius:10px;background:var(--dark);color:white}
+body.chat-keyboard-open .phone-app.chat-active .bottom-nav{display:none}
+body.chat-keyboard-open .chat-page{padding-bottom:6px}
+@media(max-width:759px){
+ body.chat-viewport{position:fixed;inset:0;width:100%}
+ .app-shell.chat-active{position:fixed;top:var(--chat-viewport-top,0px);left:0;width:100%;height:var(--chat-viewport-height,100dvh);min-height:0}
+ .phone-app.chat-active{height:100%;min-height:0;padding-bottom:0}
+ .phone-app.chat-active .bottom-nav{padding-bottom:max(12px,env(safe-area-inset-bottom))}
+}

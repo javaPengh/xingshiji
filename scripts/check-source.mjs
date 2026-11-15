@@ -20,7 +20,7 @@ assert.ok(read('capacitor.config.ts').includes("appId: 'local.xiaoka.diary'"));
 for(const name of ['PWA/sw.js','PWA/icons/icon-192.png','PWA/icons/icon-512.png','scripts/fixtures/nutrition-acceptance.v1.json','scripts/fixtures/legacy-target-prompt.v043.json'])assert.ok(fs.existsSync(path.join(root,name)),name);
 const files=[];
 function visit(dir){for(const row of fs.readdirSync(dir,{withFileTypes:true})){const file=path.join(dir,row.name);if(row.isDirectory())visit(file);else if(row.name.endsWith('.mjs'))files.push(file);}}
-for(const name of ['server','shared','scripts','src/offline'])visit(path.join(root,name));
+for(const name of ['server','shared','scripts','src'])visit(path.join(root,name));
 for(const file of files)execFileSync(process.execPath,['--check',file],{stdio:'pipe',windowsHide:true});
 const knowledge=loadNutritionKnowledge();
 console.log(JSON.stringify({passed:true,version:APP_VERSION,modules:files.length,knowledge:knowledge.manifest.version,sourceLayout:'xingshiji',deviceTested:false}));
