@@ -18,7 +18,7 @@ command = Quote(node) & " " & Quote(root & "\scripts\background-server.mjs") & "
 On Error Resume Next
 code = shell.Run(command, 0, True)
 If Err.Number <> 0 Then
-    MsgBox "Unable to start Node.js. Install Node.js 24.22.1+ or use the Windows runtime package.", 16, "Xingshiji"
+    MsgBox "Unable to start Node.js. Install Node.js 24.22.1+ and make node.exe available on PATH.", 16, "Xingshiji"
     WScript.Quit 1
 End If
 On Error GoTo 0

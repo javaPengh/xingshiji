@@ -14,7 +14,7 @@ async function current(){const state=readBackgroundState(paths);if(!state)return
 }
 async function start(){
  const prior=await current();if(prior)return '服务已经在后台运行。PID：'+prior.state.pid+'\n日志：'+paths.log;
- if(!fs.existsSync(path.join(root,'.env')))throw new Error('请先在项目或运行包根目录创建并配置 .env。');
+ if(!fs.existsSync(path.join(root,'.env')))throw new Error('请先在项目根目录创建并配置 .env。');
  if(!fs.existsSync(path.join(root,'dist','index.html')))throw new Error('未找到网页构建产物，请先执行 npm run build。');
  if(fs.existsSync(path.join(root,'RUNTIME-MANIFEST.json')))execFileSync(process.execPath,[path.join(root,'scripts/check-nutrition-runtime.mjs'),'--verify-only'],{cwd:root,stdio:'pipe',windowsHide:true});
  fs.mkdirSync(paths.directory,{recursive:true});
@@ -49,7 +49,7 @@ async function stop(){const value=await current();if(!value)return '后台服务
 let message,code=0;
 try{
  if(process.platform!=='win32')throw new Error('此后台启动入口仅支持 Windows。');
- const [major,minor,patch]=process.versions.node.split('.').map(Number);if(major<24||major===24&&(minor<22||minor===22&&patch<1))throw new Error('需要 Node.js 24.22.1 或以上；独立运行包已包含所需 Node。');
+ const [major,minor,patch]=process.versions.node.split('.').map(Number);if(major<24||major===24&&(minor<22||minor===22&&patch<1))throw new Error(`需要 Node.js 24.22.1 或以上，当前为 ${process.version}。\n当前程序：${process.execPath}\n请升级 Node.js，并重新打开终端；用 where.exe node 检查命中的程序路径。`);
  if(action==='start')message=await start();else if(action==='stop')message=await stop();else if(action==='status'){const value=await current();message=value?'服务正在后台运行。\nPID：'+value.state.pid+'\n地址：'+value.status.address+'\n启动时间：'+value.status.startedAt+'\n日志：'+paths.log:'后台服务未运行。\n日志：'+paths.log;}else throw new Error('用法：node scripts/background-server.mjs start|stop|status');
 }catch(error){code=1;message=error.message;}
 if(resultFlag>=0){const file=path.resolve(process.argv[resultFlag+1]||'');if(path.dirname(file).toLowerCase()!==paths.directory.toLowerCase())throw new Error('结果文件必须位于后台状态目录');fs.mkdirSync(paths.directory,{recursive:true});fs.writeFileSync(file,Buffer.from('\ufeff'+message,'utf16le'));}

@@ -8,6 +8,16 @@
 
 安装 Git、Node.js 和 npm。Node.js 需要 **24.22.1 或以上**，推荐使用与仓库构建流程一致的 24.22.1。
 
+Windows 可从 [Node.js 官方下载页](https://nodejs.org/en/download) 选择符合要求的 Node.js 24 LTS 安装程序。安装或升级后，重新打开终端并检查当前版本和路径：
+
+```powershell
+node --version
+node -p "process.execPath"
+where.exe node
+```
+
+如果启动时提示版本过低，以实际运行的版本和程序路径为准。`where.exe node` 显示多份程序时，需要让符合要求的 Node.js 优先被命中，也可使用其 `node.exe` 绝对路径启动。配置完成后再安装项目依赖。
+
 在自己选择的工作目录执行：
 
 ```powershell
