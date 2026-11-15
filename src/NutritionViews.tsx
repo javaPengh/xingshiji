@@ -1,4 +1,4 @@
-import {coreTargetKeys,metricLabels,metricKindLabels,metricForTarget,metricText} from '../shared/nutrition-ui.mjs';
+import {coreTargetKeys,metricLabels,metricForTarget} from '../shared/nutrition-ui.mjs';
 import './nutrition.css';
 
 export function CoreTargets({target}:{target:any}){

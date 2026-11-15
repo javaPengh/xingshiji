@@ -8,7 +8,7 @@ select:focus{outline:2px solid #c3b6ee}
 .profile-form .field-label{color:#80708e;font-size:12px}.profile-form input,.profile-form select{font-size:16px}
 .form-actions{display:flex;gap:10px;margin-top:20px}.form-actions .primary-button{flex:1}
 .onboarding-page .profile-form{margin-top:3px}.onboarding-page{padding-bottom:30px}
-.profile-settings-page{padding-bottom:0}.profile-summary-values{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:20px 0 14px}
+.profile-summary-values{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:20px 0 14px}
 .profile-summary-values>span{font-size:18px;font-weight:600}.profile-summary-values small{font-size:10px;color:#ac9cbb;margin-left:3px}
 .profile-summary-values>span:last-child{font-size:14px;align-self:center}.profile-summary .full{margin-top:16px}
 .calendar-trigger-row{display:flex;justify-content:space-between;align-items:center;margin:0 0 16px;gap:7px}
