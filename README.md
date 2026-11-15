@@ -2,7 +2,7 @@
 
 当前版本 **0.5.0**。包含 Node.js 服务端、共用 React 前端、iOS App 和 PWA；安卓原生工程尚未实现。
 
-各电脑拉取同一个仓库，根据用途完成下面的服务端或客户端步骤。文档中的 `your-domain.example` 是占位地址，使用前必须替换为自己部署的服务地址。
+服务端和客户端源码统一维护在本 Git 仓库。服务端在拉取的项目目录中安装依赖、构建网页并运行；客户端在同一份源码上开发、构建 PWA 或 iOS App。文档中的 `your-domain.example` 是占位地址，使用前必须替换为自己部署的服务地址。
 
 ## 一、拉取项目与准备环境
 
@@ -22,7 +22,6 @@ npm ci --no-audit --no-fund
 |---|---|
 | 服务端 AI 功能 | 安装并运行 Ollama，准备文字模型和支持图片理解的视觉模型 |
 | 网页与 PWA 开发 | 浏览器；调试时需要可连接的本地或远程服务端 |
-| Windows 运行包构建 | Windows、Python 3，并确保命令行能运行 `python.exe` |
 | iOS 原生编译 | macOS、Xcode 26 或以上；Windows 可以准备工程并使用 GitHub Actions 云构建 |
 
 ## 二、服务端：从源码首次部署
@@ -61,12 +60,12 @@ notepad .env
 DATA_DIR=./data
 ```
 
-这表示将数据保存在当前项目根目录下的 `data` 文件夹。**它是可修改的示例，不要求某个盘符或固定路径。** 正式部署建议将其改为自己选择的、位于源码和运行包目录之外的绝对路径，以便更换代码时继续使用同一份数据。
+这表示将数据保存在当前项目根目录下的 `data` 文件夹。正式部署建议填写自己选择的、位于项目目录之外的绝对路径，并确保该路径纳入数据备份。
 
 - 不必提前手动创建空目录：首次启动时，程序会递归创建目录、服务身份文件和 SQLite 数据库，运行账号需要有创建与写入权限。
 - 也可以先手动创建目录、配置目录权限，再将路径写入 `DATA_DIR`。
-- 使用相对路径时，源码启动相对于项目根目录；运行包启动相对于解压后的程序根目录。
-- 已有服务升级时应沿用原 `DATA_DIR`。修改路径不会自动搬迁旧数据；需要搬迁时使用升级工具。
+- 使用相对路径时，相对于项目根目录。
+- 更新代码时沿用原 `DATA_DIR`。修改路径不会自动搬迁已有数据。
 
 账号、日记、照片、备份和诊断资料都属于持久数据，不提交到 Git。`.env` 也只保存在部署环境。
 
@@ -75,10 +74,11 @@ DATA_DIR=./data
 ```powershell
 npm run check
 npm run build
-npm run server
+node scripts/background-server.mjs start
+node scripts/background-server.mjs status
 ```
 
-保持服务进程运行。在同一台电脑的浏览器打开 `http://127.0.0.1:4318`，注册账号并登录。另开终端检查服务：
+以上为 Windows 后台启动方式，命令返回后服务继续运行，不保留 CMD 窗口。在同一台电脑的浏览器打开 `http://127.0.0.1:4318`，注册账号并登录。检查服务：
 
 ```powershell
 Invoke-RestMethod http://127.0.0.1:4318/api/health
@@ -86,13 +86,9 @@ Invoke-RestMethod http://127.0.0.1:4318/api/health
 
 返回 `ok: true` 和当前版本号表示 HTTP 服务已启动；它不代表模型和手机网络也已验证。可分别检查文字聊天和拍照分析。
 
-### 4. 提供手机与其他电脑访问
+### 4. 后台管理与日志
 
-将自己管理的可信 HTTPS 地址通过反向代理转发到后端，例如转发至本机 `http://127.0.0.1:4318`。域名、证书和代理由部署环境配置，项目不会自动申请公网地址。
-
-将这个 HTTPS 地址填入服务端 `.env` 的 `PUBLIC_ORIGIN`，重启服务，再用于客户端构建。手机上的 `127.0.0.1` 指向手机自身，不能作为另一台电脑的服务地址。
-
-`npm run server` 在前台运行。Windows 需要无 CMD 窗口运行时，在配置完成、网页已构建后双击项目根目录的 `START-SERVER.vbs`。它会提示启动结果，关闭提示框后服务继续后台运行。
+Windows 也可以直接双击项目根目录的以下入口。启动入口会提示结果，关闭提示框后服务继续后台运行。
 
 | Windows 入口 | 用途 |
 |---|---|
@@ -100,18 +96,27 @@ Invoke-RestMethod http://127.0.0.1:4318/api/health
 | `STOP-SERVER.vbs` | 安全停止此目录启动的后台实例 |
 | `SERVER-STATUS.vbs` | 查看运行状态、PID、地址和日志位置 |
 
-标准输出和错误统一追加到**项目或运行包根目录的 `logs/xingshiji.log`**，不会写到 CMD 窗口；`logs/` 已被 Git 忽略。后台状态保存在忽略的 `.cache/background`，服务运行时不要删除或手动修改该目录。停止操作只管理此目录的带身份校验实例，不会按 `node.exe` 名称批量结束进程。
+后台服务的标准输出和错误统一追加到**项目根目录的 `logs/xingshiji.log`**，日志目录自动创建，`logs/` 已被 Git 忽略。后台状态保存在忽略的 `.cache/background`，服务运行时不要删除或手动修改该目录。
 
-也可以在 PowerShell 中运行以下命令，命令返回后后台进程继续运行：
+在 PowerShell 中查看日志：
 
 ```powershell
-node scripts/background-server.mjs start
-node scripts/background-server.mjs status
-node scripts/background-server.mjs stop
 Get-Content ./logs/xingshiji.log -Tail 100 -Wait
 ```
 
-独立运行包中将上述 `node` 替换为 `.\node.exe`。双击入口需要 Windows Script Host；如果系统禁用了它，使用上述命令行入口。后台运行不等同于安装 Windows 系统服务，目前不自动配置开机启动或异常重启；注销或重启系统后需要再次启动。
+按 `Ctrl+C` 结束日志查看，后台服务继续运行。停止服务使用：
+
+```powershell
+node scripts/background-server.mjs stop
+```
+
+双击入口需要 Windows Script Host；如果系统禁用了它，使用上述 Node 命令管理后台服务。目前需要在登录后手动启动，不自动配置开机启动或异常重启；注销或重启系统后需要再次启动。macOS / Linux 或前台调试可使用 `npm run server`，日志输出到当前终端。
+
+### 5. 提供手机与其他电脑访问
+
+将自己管理的可信 HTTPS 地址通过反向代理转发到后端，例如转发至本机 `http://127.0.0.1:4318`。域名、证书和代理由部署环境配置，项目不会自动申请公网地址。
+
+将这个 HTTPS 地址填入服务端 `.env` 的 `PUBLIC_ORIGIN`，重启服务，再用于客户端构建。手机上的 `127.0.0.1` 指向手机自身，不能作为另一台电脑的服务地址。
 
 ## 三、客户端：拉取后开发和调试
 
@@ -204,52 +209,31 @@ bash scripts/package-ios.sh
 
 云构建额度取决于仓库和账号计划。结构检查不等于 Xcode 编译或真机验证；安装后仍需检查登录、同步、拍照和计步。详见 [iOS 个人安装说明](docs/IOS_PERSONAL_INSTALL.md)。
 
-## 四、可选：构建 Windows 独立运行包
+## 四、服务端更新
 
-如果部署电脑直接按第二节从源码运行，可以不打包。需要给另一台 Windows 电脑交付可直接运行的程序时，在装好 Node.js、依赖和 Python 3 的 Windows 构建电脑执行：
+在部署电脑的项目根目录操作。先停止后台服务，并备份 `DATA_DIR` 中的持久数据：
 
 ```powershell
-npm run check
-npm run windows:package
+node scripts/background-server.mjs stop
 ```
 
-生成 `build/windows/xingshiji-server-版本-时间戳/`、同名 ZIP 和 `.zip.sha256`。包内包含 Node、依赖、后端、网页、知识库和升级工具；部署电脑无需再安装 Node.js 或 npm，但 AI 功能仍需可连接的 Ollama。
-
-在全新的部署电脑上：
-
-1. 核对 ZIP 的 SHA-256，解压并进入程序目录。
-2. 复制包内 `.env.example` 为 `.env`，按第二节设置自己的数据目录、模型服务和 HTTPS 地址。
-3. 执行 `node.exe scripts/check-nutrition-runtime.mjs --verify-only` 检查包完整性。
-4. 双击 `START-SERVER.vbs` 后台启动，首次启动会创建配置的数据目录和数据库；用 `SERVER-STATUS.vbs` 查看状态，用 `STOP-SERVER.vbs` 停止。`START-SERVER.cmd` 保留为前台诊断入口。
-
-也可以在 Actions 手动运行 **Build Xingshiji Windows server** 下载 ZIP。推送源码不会自动构建或部署。
-
-## 五、已有部署如何更新
-
-**从源码部署**：先停止服务、备份持久数据，保持原 `.env` 和 `DATA_DIR`，然后在项目根目录执行：
+保留本机 `.env` 配置，拉取仓库、安装依赖、构建并启动：
 
 ```powershell
 git pull --ff-only
 npm ci --no-audit --no-fund
 npm run check
+Remove-Item Env:VITE_API_BASE_URL -ErrorAction SilentlyContinue
 npm run build
-npm run server
+node scripts/background-server.mjs start
+node scripts/background-server.mjs status
 ```
 
-PWA 同域部署时，仍需确保 `VITE_API_BASE_URL` 留空。源码更新不应覆盖部署环境的 `.env` 或删除持久数据。
+这些是 Windows PowerShell 命令。PWA 同域部署时，环境文件中的 `VITE_API_BASE_URL` 也应留空。每条命令成功后再执行下一条；失败时先处理报错。更新后检查 `/api/health`、账号登录和日记数据，运行日志位于 `logs/xingshiji.log`。
 
-**使用 Windows 运行包部署**：新包解压到新的程序目录，停止旧服务，在新目录运行升级工具。以下两个占位参数必须替换为实际绝对路径：
+`.env`、持久数据和运行日志不受 Git 更新管理。更新时不重新复制配置模板，不改变 `DATA_DIR`。向 GitHub 推送代码不会自动更新已运行的服务，也不会自动安装手机 App；iOS 客户端按第三节重新构建、签名安装。
 
-```powershell
-.\node.exe scripts/check-nutrition-runtime.mjs --verify-only
-.\node.exe scripts/upgrade-from.mjs "<旧程序绝对路径>" --data-dir "<持久化数据目录绝对路径>"
-```
-
-升级工具沿用原配置、核对数据库并保存升级前快照；已使用指定数据目录时直接复用，需要迁移时执行校验后的复制。随后运行新目录的 `START-SERVER.vbs` 并核对原账号和记录。旧后台实例用其原目录的 `STOP-SERVER.vbs` 停止；旧的前台实例仍需先在原窗口停止。已有部署不要先用示例配置覆盖 `.env`，也不要靠“跳过同名文件”完成升级。
-
-更多检查与回退说明见 [运行包升级说明](docs/NUTRITION_UPGRADE.md)。
-
-## 六、代码目录与常用命令
+## 五、代码目录与常用命令
 
 ```text
 xingshiji/
@@ -270,12 +254,14 @@ xingshiji/
 | `npm run check` | TypeScript、模块语法、目录和冻结知识库检查 |
 | `npm run knowledge:check` | 单独校验冻结运行知识库 |
 | `npm run dev` | 启动前端开发服务器 |
-| `npm run server` | 按 `.env` 启动后端 |
+| `npm run server` | 按 `.env` 在前台启动后端，便于开发调试 |
+| `node scripts/background-server.mjs start` | Windows 后台启动服务 |
+| `node scripts/background-server.mjs status` | 查看后台服务状态 |
+| `node scripts/background-server.mjs stop` | 停止后台服务 |
 | `npm run build` | 生成 PWA 的 `dist` |
 | `npm run ios:sync` | 生成并同步 iOS 网页及原生配置 |
 | `npm run ios:check` | 检查 iOS 工程结构 |
-| `npm run windows:package` | 生成 Windows 独立运行包 |
 
-`node_modules`、`dist`、`build`、`.cache`、真实配置和数据不提交到 Git。不设 `test` 目录，运行包校验样例在 `scripts/fixtures`。`knowledge` 的只读 SQLite 索引属于运行输入，需要保留；`.gitattributes` 保持知识库原始字节，避免换行转换破坏校验。正常构建不需要原始研究资料；研究级原文校验或重建需设置 `XINGSHIJI_RESEARCH_DIR` 指向相应研究资料。
+`node_modules` 保存安装的依赖，`dist` 保存 PWA 构建产物，`build` 保存客户端构建产物，`.cache` 保存开发缓存和后台状态。它们以及 `logs`、真实配置和数据均不提交到 Git。不设 `test` 目录，校验样例在 `scripts/fixtures`。`knowledge` 的只读 SQLite 索引属于运行输入，需要保留；`.gitattributes` 保持知识库原始字节，避免换行转换破坏校验。正常构建不需要原始研究资料；研究级原文校验或重建需设置 `XINGSHIJI_RESEARCH_DIR` 指向相应研究资料。
 
-显示名称为“行食记”。为兼容已有 App、离线资料和备份，Bundle ID `local.xiaoka.diary`、持久化键与协议中的旧标识继续保留。
+App 显示名称为“行食记”，Bundle ID 为 `local.xiaoka.diary`。Bundle ID、持久化键和备份协议是数据兼容性的一部分，不应随意修改。
