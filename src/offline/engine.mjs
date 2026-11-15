@@ -12,7 +12,8 @@ export class OfflineEngine {
   async load(){const saved=await this.storage.load(this.partition);if(saved){if(![1,2].includes(saved.schema))throw new Error('本机资料需要较新版本，已停止写入，请更新应用。');if(saved.schema===1){await this.storage.save(this.partition+'|pre-nutrition-v2',copy(saved));saved.schema=2;await this.storage.save(this.partition,saved);}this.state=saved;}else{for(const food of this.seed)this.state.records[keyOf('food',food.id)]={type:'food',id:food.id,data:food,deleted:false,version:0};await this.storage.save(this.partition,this.state);}return this;}
   subscribe(fn){this.listeners.add(fn);return()=>{this.listeners.delete(fn);};}
   emit(){for(const fn of this.listeners)fn(this.status());}
-  status(){return {initialized:this.state.initialized,pending:this.state.outbox.length+this.state.aiJobs.length+Object.values(this.state.photos).filter(p=>!p.confirmed).length,conflicts:Object.keys(this.state.conflicts).length,online:this.online,syncing:this.syncing,error:this.error,authRequired:this.authRequired};}
+  status(){return {initialized:this.state.initialized,pending:this.state.outbox.length+this.state.aiJobs.length+Object.values(this.state.photos).filter(p=>!p.confirmed).length,conflicts:Object.keys(this.state.conflicts).length,online:this.online,connectionChecked:!!this.connectionChecked,syncing:this.syncing,error:this.error,authRequired:this.authRequired,completedAt:this.completedAt||0};}
+  hasSyncWork(){return this.state.outbox.some(op=>!op.blockedBy&&!op.waitingForUpgrade&&!op.waitingForRecalculation&&!op.waitingForDependencies)||this.state.aiJobs.length>0||Object.values(this.state.photos).some(photo=>!photo.confirmed);}
   commit(fn){const task=this.gate.then(async()=>{if(this.closed)throw new Error('账号已关闭');const next={...this.state,records:{...this.state.records},outbox:copy(this.state.outbox),conflicts:copy(this.state.conflicts),photos:copy(this.state.photos),aiJobs:copy(this.state.aiJobs),proposals:copy(this.state.proposals),draft:copy(this.state.draft),meta:copy(this.state.meta),preferences:copy(this.state.preferences),history:[...this.state.history],operationKeys:{...this.state.operationKeys}};const result=fn(next);await this.storage.save(this.partition,next);this.state=next;this.emit();return result;});this.gate=task.catch(()=>{});return task;}
   values(type){return Object.values(this.state.records).filter(r=>r.type===type&&!r.deleted).map(r=>copy(r.data));}
   get(type,id){const row=this.state.records[keyOf(type,id)];return row&&!row.deleted?copy(row.data):null;}
@@ -103,7 +104,8 @@ export class OfflineEngine {
     });this.schedule(20);
   }
   async sync(){
-    await this.ready;if(this.closed||this.syncing)return;
+    await this.ready;if(this.closed)return;if(this.syncing){this.resyncRequested=true;return;}
+    clearTimeout(this.timer);this.timer=null;this.resyncRequested=false;
     this.syncing=true;this.error='';this.emit();
     try{
       if(!this.state.initialized)await this.bootstrap();else{const handshake=await this.remote('sync/handshake');if(handshake.epoch!==this.state.epoch)throw new Error('服务器同步标识改变，请先导出本机备份，再重新核对服务器。');const upgraded=!supportsNutrition(this.state.meta.capabilities)&&supportsNutrition(handshake.capabilities)||handshake.capabilities?.exerciseRecords&&!this.state.meta.exerciseBootstrap;await this.commit(s=>{s.meta.capabilities=handshake.capabilities||null;s.meta.activeKnowledgeVersion=handshake.activeKnowledgeVersion||null;});if(upgraded)await this.bootstrap();}
@@ -117,8 +119,17 @@ export class OfflineEngine {
       if(this.state.outbox.some(op=>op.waitingForRecalculation))this.error='有规则目标未通过联网核验，原候选及待处理操作已保留，请重新计算。';
       if(this.refreshLibrary)try{await this.refreshLibrary();}catch{/* Built-in foods remain usable. */}
     }catch(error){this.online=false;this.authRequired=error.status===401;this.error=error.message;this.failures=(this.failures||0)+1;}
-    finally{this.syncing=false;this.emit();if(!this.closed&&!this.authRequired)this.schedule(this.online?(this.state.aiJobs.length&&!this.error?1000:60000):Math.min(300000,2000*2**Math.min(this.failures,7)));}
+    finally{
+      this.connectionChecked=true;this.syncing=false;
+      if(this.online&&!this.error&&!this.status().pending&&!this.status().conflicts)this.completedAt=Date.now();
+      this.emit();
+      // Only retry unfinished work. A quiet, initialized diary has no sync timer.
+      if(!this.closed&&!this.authRequired&&(this.hasSyncWork()||!this.state.initialized)){
+        const job=this.state.aiJobs[0],retryMs=this.error?Math.min(300000,2000*2**Math.min((this.failures||0)+1,7)):1000;
+        this.schedule(job?.nextAttempt>Date.now()&&this.online?Math.max(1000,job.nextAttempt-Date.now()):this.resyncRequested?20:retryMs);
+      }
+    }
   }
-  schedule(ms=20){if(this.closed)return;clearTimeout(this.timer);this.timer=setTimeout(()=>this.sync(),ms);this.timer.unref?.();}
+  schedule(ms=20){if(this.closed)return;if(this.syncing){this.resyncRequested=true;return;}clearTimeout(this.timer);this.timer=setTimeout(()=>{this.timer=null;void this.sync();},ms);this.timer.unref?.();}
   close(){this.closed=true;clearTimeout(this.timer);this.listeners.clear();}
 }

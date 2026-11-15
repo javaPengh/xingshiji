@@ -3,6 +3,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import './styles.css';
+import './page-layout.css';
 import { hydrateConnection } from './api';
 hydrateConnection().then(()=>createRoot(document.getElementById('root')!).render(<React.StrictMode><MotionProvider><App /></MotionProvider></React.StrictMode>)).catch(()=>{document.getElementById('root')!.textContent='本机安全存储暂时无法打开，请检查浏览器存储权限或重新打开应用。原有日记未被删除。';});
 function shellState(message:string){localStorage.setItem('xiaoka.shell.status',message);window.dispatchEvent(new Event('xiaoka-shell'));}

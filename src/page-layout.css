@@ -1,0 +1,11 @@
+/* Each tab owns its main scroller; the app frame never inherits chat scrolling. */
+.phone-app{display:flex;flex-direction:column;height:calc(100dvh - 60px);min-height:0;overflow:hidden;padding-bottom:0}
+.phone-app>.topbar,.phone-app>.offline-banner{flex-shrink:0}
+.phone-app>main{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;overflow-anchor:none;scroll-behavior:auto}
+.phone-app>.bottom-nav{position:static;flex-shrink:0;width:100%}
+.phone-app.chat-active>main{overflow:hidden}
+.chat-history{scroll-behavior:auto!important}
+@media(max-width:759px){
+ .phone-app{height:100dvh;min-height:0;padding-bottom:0}
+ .phone-app>.bottom-nav{padding-bottom:max(12px,env(safe-area-inset-bottom))}
+}
