@@ -98,10 +98,19 @@ Windows 也可以直接双击项目根目录的以下入口。启动入口会提
 
 后台服务的标准输出和错误统一追加到**项目根目录的 `logs/xingshiji.log`**，日志目录自动创建，`logs/` 已被 Git 忽略。后台状态保存在忽略的 `.cache/background`，服务运行时不要删除或手动修改该目录。
 
+应用日志按行保存 JSON，照片节点保留 `[Photo]` 前缀。每条包含 `createdAt`（UTC 时间，末尾 `Z`）、`level`、`requestId`、`accountId`、`event` 和 `data`。`accountId` 是服务端验证的账号 ID；有效会话从接收请求起就带上该 ID，登录或注册成功后也会关联该账号。未登录、会话失效或系统任务的账号 ID 为 `null`，本机连接码模式为 `local`；系统任务的 `requestId` 为 `null`。同一次请求的访问日志、照片节点和 AI 失败诊断使用同一个 `requestId`，并通过响应头 `X-Request-Id` 返回；照片请求的 `X-Photo-Request-Id` 与其相同。日志不记录会话令牌、密码、请求正文或照片内容。
+
 在 PowerShell 中查看日志：
 
 ```powershell
 Get-Content ./logs/xingshiji.log -Tail 100 -Wait
+```
+
+按请求或账号查找时，将下面的占位值替换为实际 ID：
+
+```powershell
+Select-String -Path ./logs/xingshiji.log -SimpleMatch '实际请求ID'
+Select-String -Path ./logs/xingshiji.log -SimpleMatch '实际账号ID'
 ```
 
 按 `Ctrl+C` 结束日志查看，后台服务继续运行。停止服务使用：

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {DatabaseSync,backup} from 'node:sqlite';
 import {createHash,randomUUID} from 'node:crypto';
+import {logEvent} from './logging.mjs';
 const sha=async file=>{const hash=createHash('sha256');for await(const chunk of fs.createReadStream(file))hash.update(chunk);return hash.digest('hex');};
 function filesAt(root){
   const files=[];
@@ -37,5 +38,5 @@ export async function snapshot(directory,{force=false,date=new Date().toISOStrin
   for(const old of (prune?completed:[]).filter(p=>path.basename(p).slice(0,10)<cutoff)){if(path.dirname(path.resolve(old))!==root)throw new Error('Unsafe backup path');fs.rmSync(old,{recursive:true});}
   return final;
 }
-export function dailyBackups(directory){let running=false,stopped=false;const run=async()=>{if(running||stopped)return;running=true;try{await snapshot(directory);}catch(error){console.error('每日备份失败，请检查磁盘空间：',error.message);}finally{running=false;}};const timer=setInterval(run,3600000);timer.unref();run();return ()=>{stopped=true;clearInterval(timer);};}
+export function dailyBackups(directory){let running=false,stopped=false;const run=async()=>{if(running||stopped)return;running=true;try{await snapshot(directory);}catch(error){logEvent('error','daily_backup_failed',{message:error.message,code:error.code||null});}finally{running=false;}};const timer=setInterval(run,3600000);timer.unref();run();return ()=>{stopped=true;clearInterval(timer);};}
 export async function verifySnapshot(directory){const root=path.resolve(directory);const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.json'),'utf8'));if(manifest.format!=='xiaoka-server-snapshot')throw new Error('Invalid snapshot');for(const row of manifest.files){const target=path.resolve(root,row.path);if(!target.startsWith(root+path.sep)||await sha(target)!==row.sha256)throw new Error('备份路径或校验值不正确');}return manifest;}

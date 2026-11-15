@@ -1,6 +1,7 @@
 import { createOllamaRuntime } from './ollama-runtime.mjs';
 import { parseModelJSON } from './model-json.mjs';
 import { generationPolicy, fitConversation, repairConversation } from './ai-policy.mjs';
+import { logEvent } from './logging.mjs';
 
 const categories = { targets: '营养目标', recognize: '照片识别', exercise:'运动消耗估算', chat: '饮食对话',nutritionExplanation:'营养依据解释',nutritionQuestion:'营养知识问答' };
 const correctionPhases = new Set(['content-json', 'schema-validation', 'business-validation']);
@@ -10,7 +11,10 @@ export function createStructuredOutput(store, options = {}) {
   const baseUrl = (options.baseUrl || process.env.OLLAMA_BASE_URL || 'http://127.0.0.1:11434').replace(/\/$/, '');
   const fetcher = options.fetcher || fetch;
   const runtime = createOllamaRuntime({ baseUrl, fetcher: options.metadataFetcher || fetcher });
-  const recordAttempt = value => { try { store.recordAiAttempt?.(value); } catch { console.error('[AI metrics unavailable]'); } };
+  const recordAttempt = value => {
+    logEvent(value.phase === 'success' ? 'info' : 'warn', 'ai_attempt_finished', value);
+    try { store.recordAiAttempt?.(value); } catch { logEvent('error', 'ai_metrics_unavailable'); }
+  };
   async function ask(model, messages, contract, purpose, { signal: callerSignal, onRuntime, onResult, runtimeInfo, deadlineAt, businessKey, photoTrace } = {}) {
     if (!model) throw Object.assign(new Error('请先在设置中连接 Ollama 并选择模型。'), { status: 503 });
     if(deadlineAt&&deadlineAt<=Date.now())throw Object.assign(new Error('解释请求已超过处理时限，本次没有调用模型或修改目标。'),{status:503});
@@ -102,14 +106,14 @@ export function createStructuredOutput(store, options = {}) {
             estimatedPromptTokens: fitted.estimatedPromptTokens, droppedHistoryMessages: fitted.droppedHistoryMessages,
             waitingFor: response ? 'response-body' : 'response-headers' },
         });
-      } catch (error) { console.error('[AI diagnostic unavailable]', String(error.code || 'write-failed')); }
-      if (saved) console.error('[AI response invalid]', JSON.stringify({ id: saved.id, model, purpose, phase, attempt, retry, ...(validationIssues.length?{validationIssues}:{}), file: saved.file }));
+      } catch (error) { logEvent('error', 'ai_diagnostic_unavailable', { code: String(error.code || 'write-failed') }); }
+      if (saved) logEvent('error', 'ai_response_invalid', { id: saved.id, model, purpose, phase, attempt, retry, ...(validationIssues.length?{validationIssues}:{}), file: saved.file });
       photoTrace?.('model_attempt_failed',{attempt,phase,retry,code:failure?.code||failure?.cause?.code||null,diagnosticId:saved?.id||null,durationMs});
       if (retry) {
         conversation = correctedConversation;
         continue;
       }
-      const suffix = saved ? `诊断编号：${saved.id}。请在服务器窗口查看日志文件位置。` : '失败诊断未能保存，请检查服务器数据目录的写入权限和剩余空间。';
+      const suffix = saved ? `诊断编号：${saved.id}。请在服务器 logs/xingshiji.log 中查看诊断文件位置。` : '失败诊断未能保存，请检查服务器数据目录的写入权限和剩余空间。';
       const detail=validationIssues.slice(0,3).map(issue=>(issue.path?issue.path+'：':'')+issue.message).join('；');
       const reason = phase === 'timeout' ? `等待 Ollama ${Math.round(timeoutMs / 1000)} 秒超时` : phase === 'transport' ? '无法连接 Ollama' : phase === 'cancelled' ? '已取消生成' : phase === 'completion' && result?.done_reason === 'length' ? '生成达到长度上限但未完整结束' : `模型返回未通过${phase === 'business-validation'?'业务规则':''}校验${detail?'：'+detail:''}`;
       throw Object.assign(new Error(`${categories[purpose] || 'AI'}${reason}，本次没有写入日记或修改目标。${suffix}`),

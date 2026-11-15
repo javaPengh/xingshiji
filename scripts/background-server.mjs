@@ -3,6 +3,7 @@ import path from 'node:path';
 import {randomBytes} from 'node:crypto';
 import {spawn,execFileSync} from 'node:child_process';
 import {backgroundPaths,controlPipe,controlRequest,readBackgroundState,removeBackgroundState} from '../server/background-control.mjs';
+import {logRecord} from '../server/logging.mjs';
 
 const root=path.resolve(import.meta.dirname,'..'),paths=backgroundPaths(root),action=process.argv[2],resultFlag=process.argv.indexOf('--result');
 const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -26,7 +27,7 @@ async function start(){
   const existing=await current();if(existing)return '服务已经在后台运行。PID：'+existing.state.pid;
   fs.mkdirSync(path.dirname(paths.log),{recursive:true});
   const runId=randomBytes(16).toString('hex'),token=randomBytes(32).toString('hex'),fd=fs.openSync(paths.log,'a');
-  fs.writeSync(fd,'\n['+new Date().toISOString()+'] Starting Xingshiji background server\n');
+  fs.writeSync(fd,JSON.stringify(logRecord('info','background_server_starting'))+'\n');
   let child;
   try{child=spawn(process.execPath,['--env-file='+path.join(root,'.env'),path.join(root,'server/index.mjs')],{cwd:root,detached:true,windowsHide:true,stdio:['ignore',fd,fd],env:{...process.env,XINGSHIJI_BACKGROUND_TOKEN:token,XINGSHIJI_BACKGROUND_RUN:runId}});}
   finally{fs.closeSync(fd);}

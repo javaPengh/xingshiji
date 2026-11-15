@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {randomUUID} from 'node:crypto';
+import {logContext} from './logging.mjs';
 
 const limited=(value,maximum)=>{const text=typeof value==='string'?value:'';return {text:text.slice(0,maximum),truncated:text.length>maximum,originalLength:text.length};};
 // Failure-only logs, scoped to the same account directory as its diary. No prompts,
@@ -10,7 +11,7 @@ export function createAiDiagnostics(directory,{keep=20}={}){
   return {
     write({model,purpose,phase,error,response,rawResponse,httpStatus,context}){
       const id=randomUUID();
-      const record={format:'xiaoka-ai-diagnostic',version:2,id,createdAt:new Date().toISOString(),
+      const record={format:'xiaoka-ai-diagnostic',version:2,id,createdAt:new Date().toISOString(),...logContext(),
         model,purpose,phase,httpStatus:httpStatus||null,
         context:context||null,
         error:{name:error?.name||'Error',message:String(error?.message||error).slice(0,2000),

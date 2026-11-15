@@ -1,4 +1,5 @@
 import {startBackgroundControl} from './background-control.mjs';
+import { logEvent, requestLoggingMiddleware } from './logging.mjs';
 import {APP_VERSION} from '../shared/version.mjs';
 import express from 'express';
 import {photoTraceMiddleware} from './photo-trace.mjs';
@@ -161,6 +162,10 @@ export function createApp({ directory = path.resolve(root, process.env.DATA_DIR 
   const allowedModels=[defaults.chatModel,defaults.visionModel].filter(Boolean);
   const limiter={active:0,maximum:publicMode?1:2,reserve:publicMode?(user)=>accounts.reserveAi(user.id):null};
   const app=express();app.disable('x-powered-by');app.set('trust proxy','loopback');
+  app.use(requestLoggingMiddleware(req => {
+    const token=req.get('authorization')?.replace(/^Bearer\s+/i,'')||'';
+    return publicMode ? accounts.authenticate(token)?.id || null : sameToken(token,store.identity.token) ? 'local' : null;
+  }));
   app.use(photoTraceMiddleware(store));
   if(publicMode)app.use((_req,res,next)=>{res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('X-Frame-Options','DENY');res.setHeader('Referrer-Policy','same-origin');next();});
   app.use((req, res, next) => {
@@ -173,7 +178,7 @@ export function createApp({ directory = path.resolve(root, process.env.DATA_DIR 
     if (origin && origin !== ownOrigin && !proxiedHttpsOrigin && !allowed.includes(origin)) return res.status(403).json({ error: '此页面来源尚未允许连接。请检查 ALLOWED_ORIGINS。' });
     if (origin) { res.setHeader('Access-Control-Allow-Origin', origin); res.setHeader('Vary', 'Origin'); }
     res.setHeader('Access-Control-Allow-Headers', 'Authorization,Content-Type');
-    res.setHeader('Access-Control-Expose-Headers', 'X-Photo-Request-Id');
+    res.setHeader('Access-Control-Expose-Headers', 'X-Request-Id,X-Photo-Request-Id');
     res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
     if (req.method === 'OPTIONS') return res.sendStatus(204);
     next();
@@ -195,6 +200,8 @@ export function createApp({ directory = path.resolve(root, process.env.DATA_DIR 
       // Keep large bodies away from the password hashing work.
       if(JSON.stringify(req.body||{}).length>2000)return res.status(413).json({error:'登录信息过长。'});
       const result=await accounts[action](req.body,req.ip);
+      req.logContext.accountId=result.user.id;
+      logEvent('info','account_'+action+'_succeeded');
       res.json({...result,serverId:context(result.user.id).store.identity.serverId});
     });
   }
@@ -204,6 +211,7 @@ export function createApp({ directory = path.resolve(root, process.env.DATA_DIR 
       const user=accounts.authenticate(token);
       if(!user)return res.status(401).json({error:'请登录账号，或重新登录已过期的会话。'});
       req.accountUser=user;req.sessionToken=token;
+      req.logContext.accountId=user.id;
       accounts.limit('api:'+user.id,180,60000);
     }else if(!sameToken(token,store.identity.token))return res.status(401).json({error:'连接码无效，请在设置中重新连接电脑服务。'});
     if(req.photoTrace){req.photoTrace.account(req.accountUser?.id||'local');req.photoTrace('authenticated');}
@@ -222,6 +230,10 @@ export function createApp({ directory = path.resolve(root, process.env.DATA_DIR 
   }
   app.use((error, _req, res, _next) => {
     _req.photoTrace?.failure(error);
+    logEvent('error', 'http_request_failed', { method: _req.method, route: _req.path,
+      status: error instanceof z.ZodError ? 400 : error.type === 'entity.too.large' ? 413 : error.status || 500,
+      errorType: error.name || 'Error', code: error.code || error.cause?.code || null,
+      diagnosticId: error.diagnosticId || null }, _req.logContext);
     if (error instanceof z.ZodError) return res.status(400).json({ error: '输入格式不正确：' + error.issues.map(issue => `${issue.path.join('.')}: ${issue.message}`).slice(0, 3).join('；') });
     const status = error.type === 'entity.too.large' ? 413 : error.status || 500;
     res.status(status).json({error:status===500?'保存或处理失败，请重试。':error.message,...(error.code?{code:error.code}:{}),...(error.operationId?{operationId:error.operationId}:{}),...(error.diagnosticId?{diagnosticId:error.diagnosticId,diagnosticPhase:error.diagnosticPhase}:{}),...(status!==500&&error.validationIssues?.length?{validationIssues:error.validationIssues}:{})});
@@ -230,17 +242,22 @@ export function createApp({ directory = path.resolve(root, process.env.DATA_DIR 
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  // Observe fatal startup/runtime errors without changing Node's exit behavior.
+  process.on('uncaughtExceptionMonitor', (error, origin) => logEvent('error', 'server_uncaught_exception', {
+    errorType: error.name || 'Error', code: error.code || null, origin }));
   const { app, store, close: closeData } = createApp();
   const stopBackups=dailyBackups(path.resolve(root,process.env.DATA_DIR||'data'));
   const port = Number(process.env.PORT || 4318);
   const host = process.env.HOST || '127.0.0.1';
   const tls = process.env.TLS_CERT && process.env.TLS_KEY;
   const server = tls ? https.createServer({ cert: fs.readFileSync(path.resolve(root, process.env.TLS_CERT)), key: fs.readFileSync(path.resolve(root, process.env.TLS_KEY)) }, app) : http.createServer(app);
-  server.listen(port, host, () => console.log(`行食记 ${tls ? 'https' : 'http'}://${host === '0.0.0.0' ? '127.0.0.1' : host}:${port}\n日记库 ${store.identity.serverId}\n${process.env.AUTH_MODE==='accounts'?'公网账号模式：请在页面注册或登录。':'连接码可在本机页面的「设置」查看。'}`));
+  server.listen(port, host, () => logEvent('info', 'server_started', {
+    version: APP_VERSION, address: `${tls ? 'https' : 'http'}://${host === '0.0.0.0' ? '127.0.0.1' : host}:${server.address().port}`,
+    serverId: store.identity.serverId, authMode: process.env.AUTH_MODE || 'local' }));
   let stopping=false,stopControl=()=>{};
-  const close=()=>{if(stopping)return;stopping=true;console.log('正在停止行食记服务…');
+  const close=()=>{if(stopping)return;stopping=true;logEvent('info','server_stopping');
     const deadline=setTimeout(()=>server.closeAllConnections(),10000);deadline.unref();
-    server.close(()=>{clearTimeout(deadline);stopBackups();try{stopControl();}finally{closeData();}console.log('行食记服务已停止。');process.exit(0);});
+    server.close(()=>{clearTimeout(deadline);stopBackups();try{stopControl();}finally{closeData();}logEvent('info','server_stopped');process.exit(0);});
   };
   server.once('listening',()=>{const address=server.address();stopControl=startBackgroundControl(root,close,`${tls?'https':'http'}://${host==='0.0.0.0'?'127.0.0.1':host}:${address.port}`);});
   process.on('SIGINT', close); process.on('SIGTERM', close);

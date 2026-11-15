@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import net from 'node:net';
 import {createHash,timingSafeEqual} from 'node:crypto';
+import {logEvent} from './logging.mjs';
 
 export function backgroundPaths(root){
  root=fs.realpathSync(root);
@@ -36,7 +37,7 @@ export function startBackgroundControl(root,shutdown,address){
    }catch{socket.destroy();}
   });
  });
- server.once('error',error=>{console.error('后台控制启动失败：',error.message);shutdown();});
+ server.once('error',error=>{logEvent('error','background_control_failed',{message:error.message,code:error.code||null});shutdown();});
  server.listen(pipe,()=>{fs.mkdirSync(paths.directory,{recursive:true});fs.writeFileSync(paths.state,JSON.stringify(state),{mode:0o600});});
  return ()=>{server.close();removeBackgroundState(paths,runId);};
 }
