@@ -12,7 +12,7 @@ export const measurementLabels = { weightKg: ['体重','kg'], bodyFatPct: ['体�
 export type MeasurementKey = keyof typeof measurementLabels;
 export type Measurement = { [key in MeasurementKey]: number | null } & { date: string; updatedAt?: string; measurementConditions?: NutritionField<'morning_fasted'|'consistent_other'|'inconsistent'> };
 export const emptyMeasurement = (date: string): Measurement => ({ date, ...Object.fromEntries(Object.keys(measurementLabels).map(key => [key,null])) }) as Measurement;
-export interface DayData { measurement: Measurement; history: Measurement[]; target: NutritionTarget | null }
+export interface DayData { exercises?: {id:string;date:string;createdAt:string;items:{name:string;details:string;energyKcal:number|null;basis:string}[]}[]; bodyProfile?: any; measurement: Measurement; history: Measurement[]; target: NutritionTarget | null }
 export interface CalendarDay { date: string; entries?: number; body?: boolean; bodyProfile?: boolean; target?: boolean }
 export interface Connection { base: string; token: string; serverId?: string }
 export interface Draft { date: string; meal: Meal; items: Item[] }

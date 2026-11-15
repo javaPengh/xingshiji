@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "caseId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "caseTitle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inputHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "metrics": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "enum": [
+          "energy",
+          "protein",
+          "fat",
+          "carbohydrate",
+          "fiber",
+          "adjustment"
+        ]
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "supports_initial_component",
+              "general_guidance_or_needs_input",
+              "not_automatic"
+            ]
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "ruleIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "gapIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "reasonZh": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "status",
+          "evidenceIds",
+          "ruleIds",
+          "gapIds",
+          "reasonZh"
+        ],
+        "additionalProperties": false
+      },
+      "required": [
+        "energy",
+        "protein",
+        "fat",
+        "carbohydrate",
+        "fiber",
+        "adjustment"
+      ]
+    },
+    "completeAutomaticTarget": {
+      "type": "boolean",
+      "const": false
+    }
+  },
+  "required": [
+    "caseId",
+    "caseTitle",
+    "inputHash",
+    "metrics",
+    "completeAutomaticTarget"
+  ],
+  "additionalProperties": false,
+  "$comment": "Also run scripts/validate-nutrition-knowledge.mjs for source hashes, units, conditions and activation constraints; JSON Schema alone cannot verify scientific applicability."
+}

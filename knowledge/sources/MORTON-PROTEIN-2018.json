@@ -1,0 +1,51 @@
+{
+  "id": "MORTON-PROTEIN-2018",
+  "title": "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults",
+  "authors": [
+    "Robert W Morton",
+    "Kevin T Murphy",
+    "Sean R McKellar",
+    "Brad J Schoenfeld",
+    "Menno Henselmans",
+    "Eric Helms",
+    "Alan A Aragon",
+    "Michaela C Devries",
+    "Laura Banfield",
+    "James W Krieger",
+    "Stuart M Phillips"
+  ],
+  "year": 2018,
+  "doi": "10.1136/bjsports-2017-097608",
+  "version": "2018 journal publication; online 2017-07-11; 2020 correction acquired",
+  "acquisitionStatus": "official_html_saved",
+  "fullTextAcquired": true,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://doi.org/10.1136/bjsports-2017-097608"
+  ],
+  "licence": {
+    "id": "CC-BY-NC-4.0",
+    "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "evidenceArtifact": "raw/MORTON-PROTEIN-2018/2020-correction-20261029T051730Z-a8a4afcb68c1.html"
+  },
+  "missingParts": [],
+  "artifacts": [
+    {
+      "path": "raw/MORTON-PROTEIN-2018/pmc-full-text-20261029T051441Z-e5348fde4793.html",
+      "sha256": "8caa2abddf8a3ae4e1444a9b359ab39d34dcb2adc11f74876e11319565095825",
+      "format": "html",
+      "pages": null,
+      "role": "full_text",
+      "actualUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5867436/"
+    },
+    {
+      "path": "raw/MORTON-PROTEIN-2018/2020-correction-20261029T051730Z-a8a4afcb68c1.html",
+      "sha256": "cd7aeabbd2a960f2648f2564db4ccddb4def8f2f89e6936b38acccecb28e8aa8",
+      "format": "html",
+      "pages": null,
+      "role": "correction",
+      "actualUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7513243/"
+    }
+  ],
+  "originalContentIncluded": false
+}

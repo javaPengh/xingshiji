@@ -1,0 +1,830 @@
+{
+  "format": "xiaoka-nutrition-acceptance",
+  "version": 1,
+  "synthetic": true,
+  "contextDate": "2026-11-11",
+  "expectedValuesFrozenBeforeModelRuns": true,
+  "oracle": "Checked NASEM/Health Canada coefficients and user-approved product points, frozen separately from the runtime calculator. BMI is a product coverage boundary only.",
+  "policyScope": "approved_routine_resistance_only_no_review_adjustment",
+  "profileCases": [
+    {
+      "id": "A01",
+      "label": "male inactive",
+      "patch": {
+        "basics.sexForCalculation": "male",
+        "activity.totalCategory": "inactive"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2553,
+          "proteinG": 126,
+          "fatG": 70.9,
+          "carbsG": 352.7,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2552.67
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A02",
+      "label": "male low_active",
+      "patch": {
+        "basics.sexForCalculation": "male",
+        "activity.totalCategory": "low_active"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2755,
+          "proteinG": 126,
+          "fatG": 76.5,
+          "carbsG": 390.6,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2754.87
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A03",
+      "label": "male active",
+      "patch": {
+        "basics.sexForCalculation": "male",
+        "activity.totalCategory": "active"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2935,
+          "proteinG": 126,
+          "fatG": 81.5,
+          "carbsG": 424.4,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2934.62
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A04",
+      "label": "male very_active",
+      "patch": {
+        "basics.sexForCalculation": "male",
+        "activity.totalCategory": "very_active"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 3227,
+          "proteinG": 126,
+          "fatG": 89.6,
+          "carbsG": 479.1,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 3226.67
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A05",
+      "label": "female inactive",
+      "patch": {
+        "basics.sexForCalculation": "female",
+        "activity.totalCategory": "inactive"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2195,
+          "proteinG": 126,
+          "fatG": 61,
+          "carbsG": 285.5,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2195.3
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A06",
+      "label": "female low_active",
+      "patch": {
+        "basics.sexForCalculation": "female",
+        "activity.totalCategory": "low_active"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2370,
+          "proteinG": 126,
+          "fatG": 65.8,
+          "carbsG": 318.5,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2370.27
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A07",
+      "label": "female active",
+      "patch": {
+        "basics.sexForCalculation": "female",
+        "activity.totalCategory": "active"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2508,
+          "proteinG": 126,
+          "fatG": 69.7,
+          "carbsG": 344.2,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2508.25
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A08",
+      "label": "female very_active",
+      "patch": {
+        "basics.sexForCalculation": "female",
+        "activity.totalCategory": "very_active"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2768,
+          "proteinG": 126,
+          "fatG": 76.9,
+          "carbsG": 393,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2767.98
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A09",
+      "label": "gain balanced",
+      "patch": {
+        "goal.kind": "gain",
+        "goal.recompositionPriority": "balanced"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2975,
+          "proteinG": 126,
+          "fatG": 82.6,
+          "carbsG": 431.9,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2754.87
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A10",
+      "label": "lose balanced",
+      "patch": {
+        "goal.kind": "lose",
+        "goal.recompositionPriority": "balanced"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2342,
+          "proteinG": 140,
+          "fatG": 65.1,
+          "carbsG": 299,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2754.87
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A11",
+      "label": "recompose balanced",
+      "patch": {
+        "goal.kind": "recompose",
+        "goal.recompositionPriority": "balanced"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2755,
+          "proteinG": 140,
+          "fatG": 76.5,
+          "carbsG": 376.6,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2754.87
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A12",
+      "label": "recompose muscle_first",
+      "patch": {
+        "goal.kind": "recompose",
+        "goal.recompositionPriority": "muscle_first"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2893,
+          "proteinG": 140,
+          "fatG": 80.4,
+          "carbsG": 402.4,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2754.87
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A13",
+      "label": "recompose fat_loss_first",
+      "patch": {
+        "goal.kind": "recompose",
+        "goal.recompositionPriority": "fat_loss_first"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2617,
+          "proteinG": 140,
+          "fatG": 72.7,
+          "carbsG": 350.7,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2754.87
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A14",
+      "label": "age 19",
+      "patch": {
+        "basics.ageYears": 19
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2874,
+          "proteinG": 126,
+          "fatG": 79.8,
+          "carbsG": 413,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2874
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A15",
+      "label": "age 75",
+      "patch": {
+        "basics.ageYears": 75
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2268,
+          "proteinG": 126,
+          "fatG": 63,
+          "carbsG": 299.3,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2267.52
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A16",
+      "label": "BMI lower inclusive",
+      "patch": {
+        "basics.heightCm": 200,
+        "basics.weightKg": 74
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 3022,
+          "proteinG": 133.2,
+          "fatG": 83.9,
+          "carbsG": 433.5,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 3022.13
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A17",
+      "label": "BMI unrounded below24",
+      "patch": {
+        "basics.heightCm": 200,
+        "basics.weightKg": 95.99
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 3351,
+          "proteinG": 172.8,
+          "fatG": 93.1,
+          "carbsG": 455.5,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 3350.66
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A18",
+      "label": "18岁",
+      "patch": {
+        "basics.ageYears": 18
+      },
+      "expected": {
+        "resultState": "coverage_gap"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A19",
+      "label": "未成年",
+      "patch": {
+        "basics.ageYears": 17
+      },
+      "expected": {
+        "resultState": "out_of_scope"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A20",
+      "label": "BMI24",
+      "patch": {
+        "basics.heightCm": 200,
+        "basics.weightKg": 96
+      },
+      "expected": {
+        "resultState": "coverage_gap"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A21",
+      "label": "BMI低于18.5",
+      "patch": {
+        "basics.heightCm": 200,
+        "basics.weightKg": 73.99
+      },
+      "expected": {
+        "resultState": "coverage_gap"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A22",
+      "label": "活动未知",
+      "patch": {
+        "activity.totalCategory": {
+          "status": "unknown"
+        }
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A23",
+      "label": "旧活动未确认",
+      "patch": {
+        "activity.totalCategory": {
+          "value": "low_active",
+          "source": "legacy_import"
+        }
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A24",
+      "label": "情境未知",
+      "patch": {
+        "training.calculationContext": {
+          "status": "unknown"
+        }
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A25",
+      "label": "无规律训练",
+      "patch": {
+        "training.kind": "none"
+      },
+      "expected": {
+        "resultState": "coverage_gap"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A26",
+      "label": "耐力训练",
+      "patch": {
+        "training.kind": "endurance"
+      },
+      "expected": {
+        "resultState": "coverage_gap"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A27",
+      "label": "混合训练",
+      "patch": {
+        "training.kind": "mixed"
+      },
+      "expected": {
+        "resultState": "coverage_gap"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A28",
+      "label": "高负荷",
+      "patch": {
+        "training.calculationContext": "high_load_or_competition"
+      },
+      "expected": {
+        "resultState": "coverage_gap"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A29",
+      "label": "特殊营养",
+      "patch": {
+        "training.calculationContext": "special_nutrition_context"
+      },
+      "expected": {
+        "resultState": "coverage_gap"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A30",
+      "label": "竞技",
+      "patch": {
+        "training.competitiveContext": "competitive"
+      },
+      "expected": {
+        "resultState": "coverage_gap"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A31",
+      "label": "经验矛盾",
+      "patch": {
+        "training.resistanceExperienceMonths": 36
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A32",
+      "label": "孕期",
+      "patch": {
+        "eligibility.pregnancyLactation": "pregnant"
+      },
+      "expected": {
+        "resultState": "out_of_scope"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A33",
+      "label": "医嘱饮食",
+      "patch": {
+        "eligibility.medicallyPrescribedDiet": "yes"
+      },
+      "expected": {
+        "resultState": "out_of_scope"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A34",
+      "label": "重组优先未知",
+      "patch": {
+        "goal.kind": "recompose",
+        "goal.recompositionPriority": {
+          "status": "unknown"
+        }
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A35",
+      "label": "未来称重",
+      "patch": {
+        "basics.weightDate": "2026-11-12"
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A36",
+      "label": "磅不得当公斤",
+      "patch": {
+        "basics.weightKg": {
+          "value": 154,
+          "unit": "lb"
+        }
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A37",
+      "label": "性别未知",
+      "patch": {
+        "basics.sexForCalculation": {
+          "status": "unknown"
+        }
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A38",
+      "label": "目标未知",
+      "patch": {
+        "goal.kind": {
+          "status": "unknown"
+        }
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A39",
+      "label": "训练次数矛盾",
+      "patch": {
+        "training.sessionsPerWeek": 0
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A40",
+      "label": "复核自动调参未开放",
+      "patch": {},
+      "expected": {
+        "resultState": "insufficient_review_data"
+      },
+      "purpose": "review"
+    },
+    {
+      "id": "A41",
+      "label": "BIA旧体脂值不自动当作可靠无脂体重",
+      "patch": {
+        "composition.bodyFatPct": 20,
+        "composition.bodyFatMethod": "bia",
+        "composition.bodyFatMeasuredOn": "2026-01-01"
+      },
+      "expected": {
+        "resultState": "ready",
+        "nutrients": {
+          "energyKcal": 2755,
+          "proteinG": 126,
+          "fatG": 76.5,
+          "carbsG": 390.6,
+          "fiberG": 25
+        },
+        "maintenanceEnergyKcal": 2754.87
+      },
+      "purpose": "initial"
+    },
+    {
+      "id": "A42",
+      "label": "体脂小数比例不得冒充百分比",
+      "patch": {
+        "composition.bodyFatPct": {
+          "value": 0.2,
+          "unit": "ratio"
+        }
+      },
+      "expected": {
+        "resultState": "needs_input"
+      },
+      "purpose": "initial"
+    }
+  ],
+  "questionCases": [
+    {
+      "id": "Q01",
+      "question": "蛋白质怎么分",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-P26-RESISTANCE"
+      ]
+    },
+    {
+      "id": "Q02",
+      "question": "protein",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-P26-RESISTANCE"
+      ]
+    },
+    {
+      "id": "Q03",
+      "question": "脂肪比例",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-C23-FAT-AMDR"
+      ]
+    },
+    {
+      "id": "Q04",
+      "question": "fat",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-C23-FAT-AMDR"
+      ]
+    },
+    {
+      "id": "Q05",
+      "question": "膳食纤维至少多少",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-W23-FIBER-MIN"
+      ]
+    },
+    {
+      "id": "Q06",
+      "question": "fibre",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-W23-FIBER-MIN"
+      ]
+    },
+    {
+      "id": "Q07",
+      "question": "碳水来自什么食物",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-W23-CARB-QUALITY"
+      ]
+    },
+    {
+      "id": "Q08",
+      "question": "carbs",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-W23-CARB-QUALITY"
+      ]
+    },
+    {
+      "id": "Q09",
+      "question": "热量估算方法",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-HC-ADULT-EER"
+      ]
+    },
+    {
+      "id": "Q10",
+      "question": "EER",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-HC-ADULT-EER"
+      ]
+    },
+    {
+      "id": "Q11",
+      "question": "活动档位怎么理解",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-HC-PA-DEFINITIONS"
+      ]
+    },
+    {
+      "id": "Q12",
+      "question": "BMI适用范围",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-NHC-BMI-CONTEXT"
+      ]
+    },
+    {
+      "id": "Q13",
+      "question": "参考值RNI和EAR",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-C23-REFERENCE-TYPES"
+      ]
+    },
+    {
+      "id": "Q14",
+      "question": "置信区间是不是推荐范围",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-M18-BREAKPOINT"
+      ]
+    },
+    {
+      "id": "Q15",
+      "question": "更正和利益冲突披露",
+      "expectedState": "supported",
+      "requiredEvidenceIds": [
+        "EV-M18-CORRECTION"
+      ]
+    },
+    {
+      "id": "Q16",
+      "question": "孕期蛋白多少",
+      "expectedState": "coverage_gap",
+      "requiredEvidenceIds": []
+    },
+    {
+      "id": "Q17",
+      "question": "高训练量碳水多少",
+      "expectedState": "coverage_gap",
+      "requiredEvidenceIds": []
+    },
+    {
+      "id": "Q18",
+      "question": "儿童热量",
+      "expectedState": "coverage_gap",
+      "requiredEvidenceIds": []
+    },
+    {
+      "id": "Q19",
+      "question": "精瘦减脂无脂体重蛋白",
+      "expectedState": "coverage_gap",
+      "requiredEvidenceIds": []
+    },
+    {
+      "id": "Q20",
+      "question": "总糖应该多少",
+      "expectedState": "coverage_gap",
+      "requiredEvidenceIds": []
+    },
+    {
+      "id": "Q21",
+      "question": "每天喝多少水",
+      "expectedState": "coverage_gap",
+      "requiredEvidenceIds": []
+    },
+    {
+      "id": "Q22",
+      "question": "用什么补剂",
+      "expectedState": "coverage_gap",
+      "requiredEvidenceIds": []
+    },
+    {
+      "id": "Q23",
+      "question": "体重不掉秤要减多少热量",
+      "expectedState": "insufficient_review_data",
+      "requiredEvidenceIds": []
+    },
+    {
+      "id": "Q24",
+      "question": "量子纠缠如何计算",
+      "expectedState": "coverage_gap",
+      "requiredEvidenceIds": []
+    }
+  ]
+}

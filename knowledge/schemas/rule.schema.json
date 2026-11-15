@@ -1,0 +1,314 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requiredInputs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "eligibility": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "exclusions": {
+      "$ref": "#/$defs/__schema0"
+    },
+    "weightBasis": {
+      "type": "string",
+      "enum": [
+        "actual",
+        "fat_free",
+        "none",
+        "unspecified"
+      ]
+    },
+    "formulaOrParameters": {
+      "type": "object",
+      "properties": {
+        "operation": {
+          "type": "string",
+          "enum": [
+            "constant_minimum",
+            "reference_lookup",
+            "weight_times_selected_factor",
+            "energy_fraction",
+            "energy_adjustment",
+            "remaining_energy",
+            "data_quality_gate",
+            "linear_energy_equation",
+            "initial_target_allocation",
+            "unavailable"
+          ]
+        },
+        "parameters": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/__schema2"
+          }
+        },
+        "outputRole": {
+          "type": "string",
+          "enum": [
+            "partial_metric_only",
+            "context_only",
+            "candidate_component",
+            "safety_gate"
+          ]
+        },
+        "nutrient": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "operation",
+        "parameters",
+        "outputRole",
+        "nutrient",
+        "unit"
+      ],
+      "additionalProperties": false
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "policyIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "conflictIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "conflictPolicy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "enabled",
+        "disabled"
+      ]
+    },
+    "disableReasons": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": [
+        "verified_against_original",
+        "pending",
+        "blocked"
+      ]
+    },
+    "reviewedAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+    },
+    "reviewedBy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewMethod": {
+      "type": "string",
+      "minLength": 1
+    },
+    "professionalReviewPerformed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "version",
+    "requiredInputs",
+    "eligibility",
+    "exclusions",
+    "weightBasis",
+    "formulaOrParameters",
+    "evidenceIds",
+    "policyIds",
+    "conflictIds",
+    "conflictPolicy",
+    "status",
+    "disableReasons",
+    "reviewStatus",
+    "reviewedAt",
+    "reviewedBy",
+    "reviewMethod",
+    "professionalReviewPerformed"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "__schema0": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "type": "string",
+              "enum": [
+                "all",
+                "any"
+              ]
+            },
+            "items": {
+              "minItems": 1,
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/__schema0"
+              }
+            }
+          },
+          "required": [
+            "op",
+            "items"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "type": "string",
+              "enum": [
+                "eq",
+                "in",
+                "gte",
+                "gt",
+                "lte",
+                "lt",
+                "is_status"
+              ]
+            },
+            "field": {
+              "type": "string",
+              "minLength": 1
+            },
+            "value": {
+              "$ref": "#/$defs/__schema1"
+            }
+          },
+          "required": [
+            "op",
+            "field",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "op": {
+              "type": "string",
+              "const": "not"
+            },
+            "item": {
+              "$ref": "#/$defs/__schema0"
+            }
+          },
+          "required": [
+            "op",
+            "item"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "__schema1": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/__schema1"
+          }
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/__schema1"
+          }
+        }
+      ]
+    },
+    "__schema2": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/__schema2"
+          }
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/__schema2"
+          }
+        }
+      ]
+    }
+  },
+  "$comment": "Also run scripts/validate-nutrition-knowledge.mjs for source hashes, units, conditions and activation constraints; JSON Schema alone cannot verify scientific applicability."
+}

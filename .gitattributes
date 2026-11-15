@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.png binary
+*.sqlite binary
+
+# Frozen manifests hash the exact bytes, including original line endings.
+knowledge/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/fixtures/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,0 +1,39 @@
+name: Build Xingshiji Windows server
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24.22.1
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Check source and build runtime
+        run: |
+          npm run check
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          npm run windows:package
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $runtime = Get-ChildItem build/windows -Directory | Sort-Object Name | Select-Object -Last 1
+          & "$($runtime.FullName)/node.exe" "$($runtime.FullName)/scripts/check-nutrition-runtime.mjs" --verify-only
+          exit $LASTEXITCODE
+      - uses: actions/upload-artifact@v6
+        with:
+          name: xingshiji-windows-${{ github.run_number }}
+          path: |
+            build/windows/*.zip
+            build/windows/*.zip.sha256
+          if-no-files-found: error
+          retention-days: 7

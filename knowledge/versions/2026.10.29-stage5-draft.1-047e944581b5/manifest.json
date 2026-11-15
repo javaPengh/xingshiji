@@ -1,0 +1,218 @@
+{
+  "version": "2026.10.29-stage5-draft.1",
+  "stage": "2B",
+  "stageStatus": "partial",
+  "releaseStatus": "development_verified_subset",
+  "active": true,
+  "createdAt": "2026-10-29T16:07:38Z",
+  "activityAccounting": "total_including_training",
+  "sourceCount": 14,
+  "referenceCount": 110,
+  "evidenceCount": 27,
+  "ruleCount": 16,
+  "enabledRuleIds": [
+    "RULE-FIBER-MIN",
+    "RULE-CNS-CONTEXT",
+    "RULE-ENERGY-MAINTENANCE",
+    "RULE-REVIEW-GATE",
+    "RULE-INITIAL-ROUTINE-RESISTANCE"
+  ],
+  "completeAutomaticTargetSupported": false,
+  "professionalReviewPerformed": false,
+  "defaultNumericProductValuesApproved": true,
+  "files": [
+    {
+      "path": "conflicts.json",
+      "sha256": "b7ed7fa71732aefad421ffbd30e112da5f43ed01b3ddd42b7c76c15f5de53dd2",
+      "bytes": 4003
+    },
+    {
+      "path": "coverage.json",
+      "sha256": "f4d76c9c4a2c7896e4c6abfc71a59f27780a5d5f3dbacbbc63d934aaf90c75f9",
+      "bytes": 84045
+    },
+    {
+      "path": "evidence/core-evidence.json",
+      "sha256": "d8dba8069693a463ff95f6afb2eb8e1a553a669dfd9103dfabd2e94cae923a44",
+      "bytes": 71970
+    },
+    {
+      "path": "formulas/nasem-adult-energy.json",
+      "sha256": "ed17bb1339596a0349d996f814aff7dc9972166814e0ada56ccb29d3839b3c5c",
+      "bytes": 14317
+    },
+    {
+      "path": "gaps.json",
+      "sha256": "9f50de71b09dce16e21ac3c8ac8834d6f0d13751c149af797b441108cd19ac5b",
+      "bytes": 1582
+    },
+    {
+      "path": "input-requirements.json",
+      "sha256": "4c0ab18a14e4acb0a87793097338b7e076c783e813e9f2379563021284cf005c",
+      "bytes": 2537
+    },
+    {
+      "path": "policies/product-policies.json",
+      "sha256": "6fbbe94db49bdc55ba8eecee18990432f9a990f26da0f5e27cf345bd6fba91b6",
+      "bytes": 7709
+    },
+    {
+      "path": "reference-tables/cns-adult-core-2023.json",
+      "sha256": "671ea97d28475dca5b18db1d357be9b11f0bf2c455b8278d434278096a708ab8",
+      "bytes": 233401
+    },
+    {
+      "path": "retrieval/terms.json",
+      "sha256": "12cae2415cb14f18873d3e4cfa84330603ed46ebf296ce999315f813b1da192b",
+      "bytes": 3142
+    },
+    {
+      "path": "rules/core-rules.json",
+      "sha256": "b305847abe4c9bacf458e4247b9b37bb5a207fee759a92551b9a5b73b92a0173",
+      "bytes": 55903
+    },
+    {
+      "path": "schema.mjs",
+      "sha256": "5c7b0eab9bc4d63c9cec86f7756529a73a12dbe8eeaab062fdfaaaac5ae22a3d",
+      "bytes": 6697
+    },
+    {
+      "path": "schemas/conflict.schema.json",
+      "sha256": "0333450a0659131b809431bd912273bca568b51ff524e9edecba89af41eb01f0",
+      "bytes": 1721
+    },
+    {
+      "path": "schemas/coverage.schema.json",
+      "sha256": "22153a39ec19621cc6f28c83860ee0d75916b20eda9122c341073adeb201063b",
+      "bytes": 2245
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "sha256": "c69f6b1a46bbd50887352f8ce39e322616012cd8eec8ccc1f02b08afccc8997e",
+      "bytes": 9008
+    },
+    {
+      "path": "schemas/formula.schema.json",
+      "sha256": "e0473a218352b1d91686d644b69b2b666a70e9c97a795c0e5756fee82292def8",
+      "bytes": 5620
+    },
+    {
+      "path": "schemas/policy.schema.json",
+      "sha256": "b9e3b883e51e3470f86baf220721574bf79fce6a346609b0f6b2a5e7a55bc7d9",
+      "bytes": 1966
+    },
+    {
+      "path": "schemas/reference.schema.json",
+      "sha256": "e7ec6089c6b54bcc5149f38aff8431ca07cb3be6fcaeee5ef5b22196b16c7249",
+      "bytes": 7093
+    },
+    {
+      "path": "schemas/retrieval.schema.json",
+      "sha256": "5f6d1b4f4ad78634bf21b6a87118be368fd97b9a7cd6649047c409584ebe5700",
+      "bytes": 2032
+    },
+    {
+      "path": "schemas/rule.schema.json",
+      "sha256": "eff6b9f108f21fca5569c6bf45c672b7a7eb9ae79b9aaf846a42823663eb6e5b",
+      "bytes": 6752
+    },
+    {
+      "path": "schemas/source.schema.json",
+      "sha256": "0e8c59eb58ef5eb665d99b6ea5085f6fb277f9f93488fefffa6ba9b146072482",
+      "bytes": 3924
+    },
+    {
+      "path": "sources/ATHLETE-NUTRITION-2016.json",
+      "sha256": "9e636fd7581a01975f7350b46b53a6d908bcaeaac49d0965fda4b16e3110f354",
+      "bytes": 2939
+    },
+    {
+      "path": "sources/CNS-DG-2022.json",
+      "sha256": "9df7b85fc44f22c405fda0f3f6356d7c1275851637890ddb578eb8fa54dcd6e6",
+      "bytes": 5545
+    },
+    {
+      "path": "sources/CNS-DRI-2023.json",
+      "sha256": "f77bf69bcbab4ebd8bc8eb5b5b5db280f2e175799cec6202a6d5859716e22135",
+      "bytes": 6350
+    },
+    {
+      "path": "sources/HC-EER-2025.json",
+      "sha256": "e12f63707333e075a1662fa12f64f8de4c8ee2f56367e4448ecbc54c8f6d3dcd",
+      "bytes": 1360
+    },
+    {
+      "path": "sources/IOC-REDS-2023.json",
+      "sha256": "c7b196f522d15edc34a527ada297de1915872a2f66298d840067baa76cb17a17",
+      "bytes": 2441
+    },
+    {
+      "path": "sources/IRAKI-OFFSEASON-2019.json",
+      "sha256": "eb8dac0db6b22e3b2d2f0d9fe50f366579db3fe96c8c85c0ef748788682b2628",
+      "bytes": 1138
+    },
+    {
+      "path": "sources/ISSN-BODYCOMP-2017.json",
+      "sha256": "37d0a0264755ff7b63c86c7d9d2b86d6dfd299f4dd83c83aea4002908ff7a188",
+      "bytes": 1452
+    },
+    {
+      "path": "sources/ISSN-FEMALE-2023.json",
+      "sha256": "0393b2e43c2d38a0c2c43d61f2e78db49a7410d600deef34a221b10e6d13f743",
+      "bytes": 1552
+    },
+    {
+      "path": "sources/ISSN-PROTEIN-2017.json",
+      "sha256": "3cdc98d1326d106b09b8d4df6b63b358bf3d34f6edb12f7a70cc994dde09f835",
+      "bytes": 1556
+    },
+    {
+      "path": "sources/ISSN-WEIGHTLOSS-2026.json",
+      "sha256": "6e8329f09e26ae3cf822328e3a9b539d694b19885041336c81210af62e34d0ef",
+      "bytes": 1523
+    },
+    {
+      "path": "sources/MORTON-PROTEIN-2018.json",
+      "sha256": "de7e6093e969fb681bec569130bdd7d7f6abd7d9873b240069940e5ffd252039",
+      "bytes": 1828
+    },
+    {
+      "path": "sources/NASEM-ENERGY-2023.json",
+      "sha256": "bb28032b580093da6b02b16a25207e6fb613cc81a449b984eb4bbd4797cb8ca9",
+      "bytes": 4372
+    },
+    {
+      "path": "sources/NHC-BMI-2013.json",
+      "sha256": "8cdb2ed0aa418e142dc645d685705f07bc188765e0de35840a64ffddbbff7cda",
+      "bytes": 1091
+    },
+    {
+      "path": "sources/WHO-CARB-2023.json",
+      "sha256": "417867b9c16181c418ef87117fc446f8059cf9e78e3141a25dd092b1fa1cfdc0",
+      "bytes": 1477
+    }
+  ],
+  "originalsBundled": false,
+  "blockingGapIds": [
+    "GAP-ENERGY-FORMULA",
+    "GAP-ACTIVITY-MAPPING",
+    "GAP-PRODUCT-POINT",
+    "GAP-WEIGHT-BASIS",
+    "GAP-TRAINING-CARB",
+    "GAP-REVIEW-POLICY",
+    "GAP-REDS"
+  ],
+  "userReportMode": "conversation_only_one_paragraph",
+  "formulaCount": 8,
+  "initialTargetSubsetSupported": true,
+  "scopePolicyId": "POL-INITIAL-SCOPE",
+  "contentHash": "047e944581b594d5c13cfb58ae8ae2635452e9744018e42508215e151a9e02f5",
+  "retrievalVersion": "nutrition-retrieval-v1",
+  "index": {
+    "path": "versions/2026.10.29-stage5-draft.1-047e944581b5/knowledge.sqlite",
+    "sha256": "c37dee45cdac8b1e43f69bd788a1c2cdd535ca6cd7ef3403d61e1fb11b26102e",
+    "readOnly": true,
+    "rebuildable": true,
+    "kind": "structured_conditions_and_fts5"
+  }
+}

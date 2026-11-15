@@ -1,0 +1,46 @@
+{
+  "id": "ISSN-WEIGHTLOSS-2026",
+  "title": "International Society of Sports Nutrition position stand: diets for body weight reduction",
+  "authors": [
+    "Alan A Aragon",
+    "Bill I Campbell",
+    "Brad J Schoenfeld",
+    "Jeffrey R Stout",
+    "Douglas Kalman",
+    "Paul J Arciero",
+    "Shawn M Arent",
+    "Richard B Kreider",
+    "Lem W Taylor",
+    "Laurent Bannock",
+    "Robert EC Wildman",
+    "Chad M Kerksick",
+    "Jose Antonio"
+  ],
+  "year": 2026,
+  "doi": "10.1080/15502783.2026.2740266",
+  "version": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+  "acquisitionStatus": "official_html_saved",
+  "fullTextAcquired": true,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://doi.org/10.1080/15502783.2026.2740266",
+    "https://pubmed.ncbi.nlm.nih.gov/42867412/"
+  ],
+  "licence": {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceArtifact": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html"
+  },
+  "missingParts": [],
+  "artifacts": [
+    {
+      "path": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "sha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "format": "html",
+      "pages": null,
+      "role": "full_text",
+      "actualUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13665703/"
+    }
+  ],
+  "originalContentIncluded": false
+}

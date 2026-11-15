@@ -1,0 +1,49 @@
+{
+  "id": "ISSN-BODYCOMP-2017",
+  "title": "International society of sports nutrition position stand: diets and body composition",
+  "authors": [
+    "Alan A Aragon",
+    "Brad J Schoenfeld",
+    "Robert Wildman",
+    "Susan Kleiner",
+    "Trisha VanDusseldorp",
+    "Lem Taylor",
+    "Conrad P Earnest",
+    "Paul J Arciero",
+    "Colin Wilborn",
+    "Douglas S Kalman",
+    "Jeffrey R Stout",
+    "Darryn S Willoughby",
+    "Bill Campbell",
+    "Shawn M Arent",
+    "Laurent Bannock",
+    "Abbie E Smith-Ryan",
+    "Jose Antonio"
+  ],
+  "year": 2017,
+  "doi": "10.1186/s12970-017-0174-y",
+  "version": "2017",
+  "acquisitionStatus": "official_html_saved",
+  "fullTextAcquired": true,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://doi.org/10.1186/s12970-017-0174-y"
+  ],
+  "licence": {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceArtifact": "raw/ISSN-BODYCOMP-2017/pmc-full-text-20261029T051441Z-ce71c61b558f.html"
+  },
+  "missingParts": [],
+  "artifacts": [
+    {
+      "path": "raw/ISSN-BODYCOMP-2017/pmc-full-text-20261029T051441Z-ce71c61b558f.html",
+      "sha256": "33b79a0b55fa2a3527af7be681c31591138ce4e3457077bfcc3698ee79dccc0e",
+      "format": "html",
+      "pages": null,
+      "role": "full_text",
+      "actualUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5470183/"
+    }
+  ],
+  "originalContentIncluded": false
+}

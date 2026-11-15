@@ -1,15 +1,61 @@
+# Dependencies and generated builds
 node_modules/
 dist/
-data/
-.env*
-.cache/
-*.ipa
-*.xcarchive
-ios/App/App/public/
-ios/App/build/
-ios/App/Pods/
-*.log
 build/
+.cache/
+coverage/
+*.log
+*.tsbuildinfo
+*.ipa
+*.apk
+*.aab
+*.xcarchive
+
+# Runtime data and local configuration
+.env*
+!.env.example
+!.env.public.example
+data/
+backups/
+diagnostics/
+knowledge-originals/
+*.sqlite
+*.db
+!knowledge/**/*.sqlite
+!knowledge/**/*.db
+*.sqlite-wal
+*.sqlite-shm
+
+# Signing and device credentials
 *.p12
+*.p8
+*.key
+*.pem
 *.mobileprovision
-ios/App/App.xcodeproj/xcuserdata/
+*.keystore
+*.jks
+
+# Capacitor / Xcode generated files
+ios/App/App/public/
+ios/App/App/capacitor.config.json
+ios/App/App/config.xml
+ios/App/Pods/
+ios/App/build/
+ios/DerivedData/
+**/xcuserdata/
+**/.build/
+
+# Android local environment and build output
+android/.gradle/
+android/.idea/
+android/local.properties
+android/app/build/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+
+# Editor / operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/

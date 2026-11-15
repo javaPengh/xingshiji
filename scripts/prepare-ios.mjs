@@ -36,7 +36,7 @@ if (!project.includes('PrivacyInfo.xcprivacy')) {
   if (!project.includes(`${buildId} /* PrivacyInfo.xcprivacy in Resources */,`)) throw new Error('iOS 资源结构有变化，请检查隐私清单的资源引用。');
   fs.writeFileSync(projectPath, project);
 }
-const icon = path.join(root, 'public', 'icons', 'icon-1024.png');
+const icon = path.join(root, 'PWA', 'icons', 'icon-1024.png');
 if (fs.existsSync(icon)) fs.copyFileSync(icon, path.join(app, 'Assets.xcassets', 'AppIcon.appiconset', 'AppIcon-512@2x.png'));
 console.log('iOS camera/photo/local-network descriptions, privacy manifest and app icon prepared. macOS compilation remains to be verified.');
 

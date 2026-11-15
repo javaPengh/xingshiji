@@ -1,0 +1,259 @@
+[
+  {
+    "id": "POL-ACTIVITY-A",
+    "version": "1",
+    "type": "user_decision",
+    "status": "approved",
+    "parameters": {
+      "accounting": "total_including_training",
+      "exerciseKcalAddback": false
+    },
+    "evidenceIds": [],
+    "reasonZh": "用户明确选择A；日常活动与训练共同估计总消耗，不额外加回运动kcal。",
+    "authority": "用户2026-10-29：ok，就选A"
+  },
+  {
+    "id": "POL-INITIAL-PRESENTATION",
+    "version": "1",
+    "type": "user_decision",
+    "status": "approved",
+    "parameters": {
+      "mode": "system_proposes_adjustable_start",
+      "showEvidenceRange": true,
+      "showBasis": true,
+      "allowUserEdit": true,
+      "requireUserConfirmationBeforeActivation": true
+    },
+    "evidenceIds": [],
+    "reasonZh": "用户选择方式二：系统按已审定策略给出可调整起始目标，展示适用范围与依据，用户确认后生效；本选择不批准任何具体营养系数或热量调整值。",
+    "authority": "用户2026-10-29：那用方式二吧"
+  },
+  {
+    "id": "POL-ADULT-SCOPE",
+    "version": "1",
+    "type": "required_safety_behavior",
+    "status": "approved",
+    "parameters": {
+      "minimumAgeYears": 18,
+      "allowPregnancyLactation": false,
+      "allowMedicallyPrescribedDiet": false
+    },
+    "evidenceIds": [],
+    "reasonZh": "实施计划限定普通健康成年人；不扩大到疾病或孕哺专用目标。",
+    "authority": "用户授权的实施计划与阶段1输入契约"
+  },
+  {
+    "id": "POL-NO-SILENT-DEFAULT",
+    "version": "1",
+    "type": "required_safety_behavior",
+    "status": "approved",
+    "parameters": {
+      "unknownIsZero": false,
+      "assumeMale": false,
+      "missingTrainingIsNone": false,
+      "negativeCarbsClampToZero": false
+    },
+    "evidenceIds": [],
+    "reasonZh": "未知保留未知；资料不足/不可行时返回原因，不能造数据或改值。",
+    "authority": "用户明确要求及实施计划硬性验收"
+  },
+  {
+    "id": "POL-POINT-SELECTION",
+    "version": "1",
+    "type": "product_strategy",
+    "status": "approved",
+    "parameters": {
+      "proteinFactors": {
+        "maintain": 1.8,
+        "gain": 1.8,
+        "lose": 2,
+        "recompose": 2
+      },
+      "fatEnergyFraction": 0.25,
+      "fiberPointTarget": null,
+      "fiberMinimumG": 25,
+      "restrictedTo": "POL-INITIAL-SCOPE"
+    },
+    "evidenceIds": [],
+    "reasonZh": "用户批准的是限定适用人群的可调整产品起点；纤维保留最低值，不编造点目标。",
+    "authority": "用户2026-10-29确认初始数值，且仅在适用条件核定后启用"
+  },
+  {
+    "id": "POL-ENERGY-START",
+    "version": "1",
+    "type": "product_strategy",
+    "status": "approved",
+    "parameters": {
+      "maintenanceFormulaId": "NASEM-2023-ADULT-EER",
+      "gainAdjustment": 0.08,
+      "loseAdjustment": -0.15,
+      "recomposeAdjustment": {
+        "balanced": 0,
+        "muscle_first": 0.05,
+        "fat_loss_first": -0.05
+      },
+      "maintainAdjustment": 0,
+      "restrictedTo": "POL-INITIAL-SCOPE"
+    },
+    "evidenceIds": [],
+    "reasonZh": "限定首批范围的产品起点，不冒充文献统一的盈余/缺口推荐。",
+    "authority": "用户2026-10-29确认初始数值，且仅在适用条件核定后启用"
+  },
+  {
+    "id": "POL-REVIEW-WINDOW",
+    "version": "1",
+    "type": "product_strategy",
+    "status": "pending_user_confirmation",
+    "parameters": {
+      "windowDays": null,
+      "minimumWeightDays": null,
+      "minimumCompleteDiaryDays": null,
+      "energyStepKcal": null
+    },
+    "evidenceIds": [],
+    "reasonZh": "两周、最低数据量和调整步幅均未获批准；原文多日趋势不等于统一阈值。",
+    "authority": null
+  },
+  {
+    "id": "POL-WEIGHT-BASIS",
+    "version": "1",
+    "type": "product_strategy",
+    "status": "blocked_evidence",
+    "parameters": {
+      "higherAdiposityCutoff": null,
+      "leanDefinition": null,
+      "reliableBodyFatCriteria": null
+    },
+    "evidenceIds": [],
+    "reasonZh": "较高体脂/精瘦的参考体重与可靠体脂条件不能凭单次读数或自创阈值确定。",
+    "authority": null
+  },
+  {
+    "id": "POL-TRAINING-CLASS",
+    "version": "1",
+    "type": "product_strategy",
+    "status": "pending_user_confirmation",
+    "parameters": {
+      "noviceExperienceMonthsMax": null,
+      "advancedExperienceMonthsMin": null,
+      "highVolumeThreshold": null
+    },
+    "evidenceIds": [],
+    "reasonZh": "原文训练经验类别尚未转为本产品月数/负荷阈值。",
+    "authority": null
+  },
+  {
+    "id": "POL-ENERGY-METHOD",
+    "version": "1",
+    "type": "user_decision",
+    "status": "approved",
+    "parameters": {
+      "methodId": "NASEM-2023-ADULT-EER",
+      "minimumAgeYears": 19,
+      "referencePopulation": "US_Canada",
+      "requiresTrendCalibration": true
+    },
+    "evidenceIds": [
+      "EV-HC-ADULT-EER"
+    ],
+    "reasonZh": "用户确认采用NASEM 2023路线，由加拿大卫生部官方实施表核对；不把它冒充中国专著原文。",
+    "authority": "用户2026-10-29：采用该路线，活动档位由用户确认（推荐）"
+  },
+  {
+    "id": "POL-TOTAL-ACTIVITY-CONFIRM",
+    "version": "1",
+    "type": "user_decision",
+    "status": "approved",
+    "parameters": {
+      "categorySource": "user_confirmation",
+      "categories": [
+        "inactive",
+        "low_active",
+        "active",
+        "very_active"
+      ],
+      "inferFromDailyPattern": false,
+      "inferFromTrainingFrequency": false,
+      "exerciseKcalAddback": false
+    },
+    "evidenceIds": [
+      "EV-HC-PA-DEFINITIONS"
+    ],
+    "reasonZh": "展示四档总活动说明，由用户明确确认；不默认最低档、不重复加运动热量。",
+    "authority": "用户2026-10-29：采用该路线，活动档位由用户确认（推荐）"
+  },
+  {
+    "id": "POL-INITIAL-SCOPE",
+    "version": "1",
+    "type": "user_decision",
+    "status": "approved",
+    "parameters": {
+      "minimumAgeYears": 19,
+      "bmiLowerInclusive": 18.5,
+      "bmiUpperExclusive": 24,
+      "trainingKind": "resistance",
+      "calculationContext": "routine_resistance",
+      "userConfirmationRequired": true,
+      "otherScenariosAutomatic": false
+    },
+    "evidenceIds": [
+      "EV-NHC-BMI-CONTEXT",
+      "EV-P26-RESISTANCE"
+    ],
+    "reasonZh": "用户确认首批只开放19+、18.5≤BMI<24、明确日常抗阻健身且非特殊营养情境。BMI是产品覆盖边界，不诊断体脂；范围外与未知继续停用。",
+    "authority": "用户2026-10-29：同意先开放这个范围，其他场景继续停用（推荐）"
+  },
+  {
+    "id": "POL-AUTO-NUMERIC-VALIDATION",
+    "version": "1",
+    "type": "required_safety_behavior",
+    "status": "approved",
+    "parameters": {
+      "energyDecimals": 0,
+      "macroDecimals": 1,
+      "accounting": "4/4/9",
+      "negativeCarbohydrate": "infeasible",
+      "automaticEnergyMinimumKcal": 1000,
+      "targetStorageMaximumEnergyKcal": 10000,
+      "limitsMeaning": "existing_automatic_target_guard_and_storage_limits_not_personal_energy_recommendations"
+    },
+    "evidenceIds": [],
+    "reasonZh": "沿用旧自动目标至少1000kcal门禁和既有目标10000kcal存储上界；这些是程序拦截范围，不是个人营养建议。阶段4只接受舍入误差，不使用20%容差。",
+    "authority": "用户授权实施计划阶段4；既有AI目标与目标存储校验"
+  },
+  {
+    "id": "POL-BODY-PROFILE-PLAN",
+    "version": "3",
+    "type": "user_decision",
+    "status": "approved",
+    "parameters": {
+      "bmiUsage": "body_weight_and_goal_reference_only",
+      "bmiEligibilityGate": false,
+      "proteinWeightBasis": "current_actual_weight",
+      "activityCategorySelection": "model_estimates_from_work_steps_and_optional_training",
+      "parameterSelection": "model_uses_primary_references_and_explains_differences_user_confirms",
+      "publicationDate": "actual_publish_day_in_user_timezone_no_backdating",
+      "sameDayDisplay": "latest_only_no_version_viewer",
+      "weeklyRate": "(targetWeightKg-currentWeightKg)*7/(desiredDate-publishDate)",
+      "zeroEnergyAdjustmentAvailable": true,
+      "automaticReviewAdjustment": false,
+      "supersedesInitialScopeForEndpoint": "ai/body-plan",
+      "proteinFactorSelection": "fixed_lowest_applicable_knowledge_range",
+      "planStorage": "one_current_plan_for_all_dates",
+      "mainNutritionCard": "three_macros_only_fiber_in_more_nutrients",
+      "energyStartValuesAreHardLimits": false,
+      "fatReferenceIsHardLimit": false
+    },
+    "evidenceIds": [
+      "EV-HC-ADULT-EER",
+      "EV-HC-PA-DEFINITIONS",
+      "EV-P26-GENERAL",
+      "EV-P26-RESISTANCE",
+      "EV-C23-FAT-AMDR",
+      "EV-W23-FIBER-MIN",
+      "EV-NHC-BMI-CONTEXT"
+    ],
+    "reasonZh": "科学参考、研究观察、产品固定选择及程序数学校验分开；旧固定盈亏起点不再是ai/body-plan允许名单。",
+    "authority": "用户2026-11-12明确要求权威资料结构化并供AI参考；确认超出常见参考时说明依据、差异与风险，用户确认，不新增统一硬门槛。保留之前确认的蛋白最低系数与普通成人范围。"
+  }
+]

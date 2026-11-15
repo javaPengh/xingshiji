@@ -1,3 +1,5 @@
+import {exerciseRecordSchema,exerciseOutputSchema,exerciseProfileSchema,isExerciseRequest,exerciseReply} from '../../shared/exercise.mjs';
+import {latestSavedBodyProfile} from '../../shared/body-profile.mjs';
 import {saveManualMeasurement} from './steps.mjs';
 import { validateRecord } from '../../shared/records.mjs';
 import {dateInTimezone,prepareBodyProfile,latestBodyProfile,bodyPlanMissing} from '../../shared/body-profile.mjs';
@@ -57,10 +59,21 @@ export class LocalRepository extends OfflineEngine {
   async processAi(){
     const job=this.state.aiJobs[0];if(!job)return false;if(job.nextAttempt>Date.now()){this.error=job.error||'AI 消息等待重试';return false;}
     let result;
-    try{result=await this.remote('ai/chat-draft',{method:'POST',body:JSON.stringify({text:job.text,date:job.date,meal:job.meal,requestId:job.requestId})});}
+    if(isExerciseRequest(job.text)&&!this.state.meta.capabilities?.exerciseRecords)throw new Error('服务器尚未支持运动记录，请更新后端运行包后重试同步。');
+    try{result=await this.remote(isExerciseRequest(job.text)?'ai/exercise-draft':'ai/chat-draft',{method:'POST',body:JSON.stringify({text:job.text,date:job.date,meal:job.meal,requestId:job.requestId})});}
     catch(error){await this.commit(s=>{const row=s.aiJobs.find(j=>j.requestId===job.requestId);if(row){row.error=error.message;row.failures=(row.failures||0)+1;row.nextAttempt=Date.now()+Math.min(3600000,15000*2**Math.min(row.failures,8));}});throw error;}
     await this.commit(s=>{
       if(!s.aiJobs.some(j=>j.requestId===job.requestId))return;
+      if(result.kind==='exercise'){
+        const items=exerciseOutputSchema.parse({items:result.items}).items;
+        const bodyProfile=exerciseProfileSchema.parse(result.bodyProfile);
+        const recorded=!!result.record&&items.length>0;
+        if(recorded){const row=exerciseRecordSchema.parse({id:job.assistantId,date:job.date,createdAt:job.createdAt,updatedAt:now(),items,bodyProfile,sourceText:job.text});this.edit(s,'exercise',row.id,row);}
+        const user=s.records[keyOf('message',job.messageId)];if(user&&!user.deleted)this.edit(s,'message',job.messageId,{...user.data,sendState:'sent'});
+        this.edit(s,'message',job.assistantId,{id:job.assistantId,role:'assistant',text:exerciseReply(items,recorded),createdAt:new Date(Date.parse(job.createdAt)+1).toISOString(),entryIds:[],draft:null,sendState:'sent',date:job.date});
+        s.aiJobs=s.aiJobs.filter(j=>j.requestId!==job.requestId);return;
+      }
+
       const user=s.records[keyOf('message',job.messageId)];if(user&&!user.deleted)this.edit(s,'message',job.messageId,{...user.data,sendState:'sent'});
       const ids=[];
       if(result.record)result.items.forEach((item,index)=>{const id=job.entryIds[index];const entry={...item,id,date:result.date,meal:result.meal,createdAt:job.createdAt,updatedAt:now()};this.edit(s,'entry',id,entry);ids.push(id);});
@@ -82,7 +95,7 @@ export class LocalRepository extends OfflineEngine {
           const profile={heightCm:value.basics.heightCm.value,weightKg:value.basics.weightKg.value,age:value.basics.ageYears.value,sex:value.basics.sexForCalculation.value,goal:value.goal.kind.value,activity:previous?.activity||null,targetWeightKg:value.goal.targetWeightKg.value,weightDate:date,updatedAt:stamp};
           edit('profile','profile',profile);
           const measurement={...(s.records[keyOf('measurement',date)]?.data||measurementSchema.parse({})),date,updatedAt:stamp,weightKg:profile.weightKg};
-          for(const key of ['waistCm','bodyFatPct'])if(value.composition[key].status==='known')measurement[key]=value.composition[key].value;
+
           edit('measurement',date,measurement);
         }
       });return value;
@@ -156,9 +169,9 @@ export class LocalRepository extends OfflineEngine {
         for(const entry of entries)edit('entry',entry.id,entry);s.operationKeys[valid.idempotencyKey]={fingerprint,ids:entries.map(e=>e.id)};return {entries,duplicate:false};});
     }
     if(path.startsWith('entries/')){const id=path.split('/')[1];const previous=this.get('entry',id);if(!previous)throw new Error('记录不存在');if(method==='DELETE'){await this.mutate((s,edit)=>edit('entry',id,null,true));return {ok:true};}const value={...previous,...itemSchema.parse(body),date:dateSchema.parse(body.date),meal:mealSchema.parse(body.meal),updatedAt:now()};await this.mutate((s,edit)=>edit('entry',id,value));return value;}
-    if(path==='day'){const date=dateSchema.parse(params.get('date'));return {measurement:this.measurement(date),history:this.values('measurement').filter(row=>row.date<=date).sort((a,b)=>a.date.localeCompare(b.date)),target:this.target(date)};}
+    if(path==='day'){const date=dateSchema.parse(params.get('date'));return {exercises:this.values('exercise').filter(row=>row.date===date).sort((a,b)=>a.createdAt.localeCompare(b.createdAt)),bodyProfile:latestSavedBodyProfile(this.values('nutritionAssessment')),measurement:this.measurement(date),history:this.values('measurement').filter(row=>row.date<=date).sort((a,b)=>a.date.localeCompare(b.date)),target:this.target(date)};}
     if(path==='measurements')return saveManualMeasurement(this,body);
-    if(path==='calendar'){const month=params.get('month');const values=new Map();for(const type of ['entry','measurement','plan','dayTarget','nutritionAssessment'])for(const row of this.values(type)){const date=row.date||row.startDate||row.contextDate;if(date?.startsWith(month))values.set(date,{...values.get(date),date,entries:(values.get(date)?.entries||0)+(type==='entry'?1:0),body:type==='measurement'||values.get(date)?.body,bodyProfile:type==='nutritionAssessment'||values.get(date)?.bodyProfile,target:['plan','dayTarget'].includes(type)||values.get(date)?.target});}return [...values.values()];}
+    if(path==='calendar'){const month=params.get('month');const values=new Map();for(const type of ['entry','exercise','measurement','plan','dayTarget','nutritionAssessment'])for(const row of this.values(type)){const date=row.date||row.startDate||row.contextDate;if(date?.startsWith(month))values.set(date,{...values.get(date),date,entries:(values.get(date)?.entries||0)+(type==='entry'?1:0),body:type==='measurement'||values.get(date)?.body,bodyProfile:type==='nutritionAssessment'||values.get(date)?.bodyProfile,target:['plan','dayTarget'].includes(type)||values.get(date)?.target});}return [...values.values()];}
     if(path==='ai/targets'){await this.push();const localProfile=JSON.stringify(this.profile(body.date));const result=await this.remote(path,options);await this.commit(s=>{s.proposals[result.id]={...result,localProfile};});return result;}
     if(path==='targets'||path==='targets/accept'){
       if(body.currentOnly){body.date=today();body.scope='future';}
@@ -178,7 +191,7 @@ export class LocalRepository extends OfflineEngine {
     if(path==='messages'&&method==='GET')return this.messages();
     if(path==='ai/chat'){
       const id=uuid(),assistantId=uuid(),stamp=now();
-      await this.mutate((s,edit)=>{if(s.aiJobs.some(j=>j.requestId===body.requestId))return;const message={id,role:'user',text:String(body.text).trim().slice(0,6000),createdAt:stamp,entryIds:[],sendState:'queued',date:dateSchema.parse(body.date),meal:mealSchema.parse(body.meal)};edit('message',id,message);s.aiJobs.push({messageId:id,assistantId,createdAt:stamp,requestId:body.requestId,text:message.text,date:body.date,meal:body.meal,entryIds:Array.from({length:30},uuid)});});return {queued:true};
+      await this.mutate((s,edit)=>{const key='chat:'+body.requestId,digest=JSON.stringify([body.text,body.date,body.meal]);if(s.operationKeys[key]){if(s.operationKeys[key]!==digest)throw new Error('提交标识已用于不同聊天内容');return;}if(s.aiJobs.some(j=>j.requestId===body.requestId))return;s.operationKeys[key]=digest;const message={id,role:'user',text:String(body.text).trim().slice(0,6000),createdAt:stamp,entryIds:[],sendState:'queued',date:dateSchema.parse(body.date),meal:mealSchema.parse(body.meal)};edit('message',id,message);s.aiJobs.push({messageId:id,assistantId,createdAt:stamp,requestId:body.requestId,text:message.text,date:body.date,meal:body.meal,entryIds:Array.from({length:30},uuid)});});return {queued:true};
     }
     if(path.startsWith('messages/')){
       const [,id,action]=path.split('/');const message=this.get('message',id);if(!message)throw new Error('消息不存在');

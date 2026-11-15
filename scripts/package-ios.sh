@@ -60,7 +60,7 @@ fi
 STAGING_DIR="$(mktemp -d "$BUILD_ROOT/.ipa-stage.XXXXXX")"
 mkdir -p "$STAGING_DIR/Payload"
 ditto "$BUILT_APP" "$STAGING_DIR/Payload/App.app"
-IPA_PATH="$BUILD_ROOT/xiaoka-diary-unsigned.ipa"
+IPA_PATH="$BUILD_ROOT/xingshiji-unsigned.ipa"
 ditto -c -k --keepParent "$STAGING_DIR/Payload" "$IPA_PATH"
 shasum -a 256 "$IPA_PATH" > "$IPA_PATH.sha256"
 node --input-type=module - "$BUILD_ROOT/build-info.json" "$ARCHITECTURES" "$XCODE_VERSION" <<'NODE'

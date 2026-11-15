@@ -1,0 +1,57 @@
+{
+  "id": "IOC-REDS-2023",
+  "title": "2023 International Olympic Committee's (IOC) consensus statement on Relative Energy Deficiency in Sport (REDs)",
+  "authors": [
+    "Margo Mountjoy",
+    "Kathryn E. Ackerman",
+    "David M. Bailey",
+    "Louise M. Burke",
+    "Naama Constantini",
+    "Anthony C. Hackney",
+    "Ida Aliisa Heikura",
+    "Anna Melin",
+    "Anne Marte Pensgaard",
+    "Trent Stellingwerff",
+    "Jorunn Kaiander Sundgot-Borgen",
+    "Monica Klungland Torstveit",
+    "Astrid Uhrenholdt Jacobsen",
+    "Evert Verhagen",
+    "Richard Budgett",
+    "Lars Engebretsen",
+    "Uğur Erdener"
+  ],
+  "year": 2023,
+  "doi": "10.1136/bjsports-2023-106994",
+  "version": "2023 publication; 2024 correction identified, not acquired",
+  "acquisitionStatus": "access_blocked",
+  "fullTextAcquired": false,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://doi.org/10.1136/bjsports-2023-106994"
+  ],
+  "licence": {
+    "id": "copyright_reserved_noncommercial_reuse_note",
+    "evidence": "Publisher notice identifies copyrighted article; no original redistribution permission established"
+  },
+  "missingParts": [
+    {
+      "part": "2023 IOC consensus on REDs, corrected full text and 2024 correction DOI 10.1136/bjsports-2023-106994corr1",
+      "url": "https://doi.org/10.1136/bjsports-2023-106994",
+      "reason": "Publisher HTML/PDF returned 403; Norwegian institutional author-manuscript and CASEM official PDF link reset connections; correction PDF also 403",
+      "availableAlternative": "Preserved PubMed metadata/abstract only. Browser search could identify the correction (Figure 6 and supplementary file 5), but no original full-text file acquired",
+      "impact": "No numeric REDs/energy-availability rule or updated clinical figure is considered supported; no diagnostic threshold inferred from abstracts",
+      "legalFileNeeded": "Yes, a legally obtained corrected full text and relevant correction/supplement if this topic is to be activated"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "raw/IOC-REDS-2023/pubmed-identity-20261029T052511Z-a3780f6afa06.html",
+      "sha256": "ddf4b54c3e5b47ff2a336b5d4fafa0c883cc715b0c7c5f85626a92b390dc3d3b",
+      "format": "html",
+      "pages": null,
+      "role": "official_metadata",
+      "actualUrl": "https://pubmed.ncbi.nlm.nih.gov/37752011/"
+    }
+  ],
+  "originalContentIncluded": false
+}

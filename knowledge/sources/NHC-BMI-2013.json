@@ -1,0 +1,32 @@
+{
+  "id": "NHC-BMI-2013",
+  "title": "成人体重判定（WS/T 428—2013）",
+  "authors": [
+    "中华人民共和国国家卫生和计划生育委员会"
+  ],
+  "year": 2013,
+  "doi": null,
+  "version": "WS/T 428—2013; published 2013-04-18, effective 2013-10-01",
+  "acquisitionStatus": "downloaded",
+  "fullTextAcquired": true,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://www.nhc.gov.cn/ewebeditor/uploadfile/2013/08/20130808135715967.pdf"
+  ],
+  "licence": {
+    "id": "official_standard_original_redistribution_not_enabled",
+    "evidence": "Original government PDF is archived for local research, not bundled."
+  },
+  "missingParts": [],
+  "artifacts": [
+    {
+      "path": "raw/NHC-BMI-2013/wst428-2013-20261029.pdf",
+      "sha256": "7bbd7f431aab5ba6d5938885c51e83fdb489a05534219ad3fe3eb2cfadcb9b61",
+      "format": "pdf",
+      "pages": 4,
+      "role": "official_standard",
+      "actualUrl": "https://www.nhc.gov.cn/ewebeditor/uploadfile/2013/08/20130808135715967.pdf"
+    }
+  ],
+  "originalContentIncluded": false
+}

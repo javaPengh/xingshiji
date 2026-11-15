@@ -1,0 +1,36 @@
+{
+  "id": "MURPHY-ENERGY-2022",
+  "title": "Energy deficiency impairs resistance training gains in lean mass but not strength: A meta-analysis and meta-regression",
+  "authors": [
+    "Chaise Murphy",
+    "Karsten Koehler"
+  ],
+  "year": 2022,
+  "doi": "10.1111/sms.14075",
+  "version": "original_author_abstract_only",
+  "acquisitionStatus": "primary_artifact_acquired",
+  "fullTextAcquired": false,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://pubmed.ncbi.nlm.nih.gov/34623696/",
+    "https://doi.org/10.1111/sms.14075"
+  ],
+  "licence": {
+    "id": "local_research_archive_only",
+    "evidence": "Originals are not bundled or redistributed; see the original publisher licence."
+  },
+  "missingParts": [
+    "Only the original abstract or official tool was acquired; not a full clinical research report."
+  ],
+  "artifacts": [
+    {
+      "path": "raw/MURPHY-ENERGY-2022/plan-reference-7fd1b297ea8b.xml",
+      "sha256": "7fd1b297ea8b5e2a82f2e00ab6a09f99aa286e0371010b47bbd2def511093d90",
+      "format": "xml",
+      "pages": null,
+      "role": "original_abstract",
+      "actualUrl": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34623696&retmode=xml"
+    }
+  ],
+  "originalContentIncluded": false
+}

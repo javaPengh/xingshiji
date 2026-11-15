@@ -1,0 +1,32 @@
+{
+  "id": "HC-EER-2025",
+  "title": "Dietary reference intakes tables: Equations to estimate energy requirement",
+  "authors": [
+    "Health Canada"
+  ],
+  "year": 2023,
+  "doi": null,
+  "version": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+  "acquisitionStatus": "official_html_saved",
+  "fullTextAcquired": true,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/dietary-reference-intakes/tables/equations-estimate-energy-requirement.html"
+  ],
+  "licence": {
+    "id": "government_page_original_redistribution_not_enabled",
+    "evidence": "No original page will be bundled; only checked factual coefficients and attributed original summaries."
+  },
+  "missingParts": [],
+  "artifacts": [
+    {
+      "path": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "sha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "format": "html",
+      "pages": null,
+      "role": "official_reference_equations",
+      "actualUrl": "https://www.canada.ca/en/health-canada/services/food-nutrition/healthy-eating/dietary-reference-intakes/tables/equations-estimate-energy-requirement.html"
+    }
+  ],
+  "originalContentIncluded": false
+}

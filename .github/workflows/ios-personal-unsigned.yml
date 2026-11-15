@@ -1,4 +1,4 @@
-name: Build iPhone IPA (unsigned)
+name: Build Xingshiji iOS (unsigned)
 
 # Manual only: uploading code never starts a paid or repeated build by itself.
 on:
@@ -30,17 +30,16 @@ jobs:
         run: npm ci --no-audit --no-fund
       - name: Build client and synchronize native project
         run: |
-          npm run build
-          npx cap sync ios
-          npm run ios:prepare
-          node scripts/check-ios-project.mjs
+          npm run check
+          npm run ios:sync
+          npm run ios:check
       - name: Compile unsigned arm64 application
         run: bash scripts/package-ios.sh
       - name: Downloadable IPA and build log
         if: always()
         uses: actions/upload-artifact@v6
         with:
-          name: xiaoka-diary-unsigned-${{ github.run_number }}
+          name: xingshiji-unsigned-${{ github.run_number }}
           path: |
             build/ios/*.ipa
             build/ios/*.sha256

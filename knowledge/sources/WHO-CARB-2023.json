@@ -1,0 +1,41 @@
+{
+  "id": "WHO-CARB-2023",
+  "title": "Carbohydrate intake for adults and children: WHO guideline",
+  "authors": [
+    "World Health Organization"
+  ],
+  "year": 2023,
+  "doi": null,
+  "version": "2023 WHO guideline, ISBN 9789240073593",
+  "acquisitionStatus": "downloaded",
+  "fullTextAcquired": true,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://www.who.int/publications/b/69157"
+  ],
+  "licence": {
+    "id": "CC-BY-NC-SA-3.0-IGO",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/igo/",
+    "evidenceArtifact": "raw/WHO-CARB-2023/official-current-download-20261029T051959Z-23615a4a0a06.pdf"
+  },
+  "missingParts": [],
+  "artifacts": [
+    {
+      "path": "raw/WHO-CARB-2023/who-guideline-landing-20261029T051624Z-adc7f3412999.html",
+      "sha256": "43a72fe6f95d25de34e3b379366c1e71430bed49fa98df630c67872e001a855a",
+      "format": "html",
+      "pages": null,
+      "role": "official_metadata",
+      "actualUrl": "https://www.who.int/publications/i/item/9789240073593"
+    },
+    {
+      "path": "raw/WHO-CARB-2023/official-current-download-20261029T051959Z-23615a4a0a06.pdf",
+      "sha256": "81548c804ebf031aa06a71f762c4ed72f680d4cb2caba44b011459fe5c841cd0",
+      "format": "pdf",
+      "pages": 100,
+      "role": "full_text",
+      "actualUrl": "https://iris.who.int/server/api/core/bitstreams/6c31b739-c2e8-4515-970d-d9e42346c7f4/content"
+    }
+  ],
+  "originalContentIncluded": false
+}

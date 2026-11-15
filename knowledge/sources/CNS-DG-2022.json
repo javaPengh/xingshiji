@@ -1,0 +1,129 @@
+{
+  "id": "CNS-DG-2022",
+  "title": "中国居民膳食指南（2022）",
+  "authors": [
+    "中国营养学会"
+  ],
+  "year": 2022,
+  "doi": null,
+  "version": "2022版官方公开准则",
+  "acquisitionStatus": "official_html_saved",
+  "fullTextAcquired": false,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://dg.cnsoc.org/newslist_0402_1.htm"
+  ],
+  "licence": {
+    "id": "copyright_reserved_permission_not_established",
+    "evidence": "Official website copyright notice; public access does not establish permission to redistribute original illustrations or book"
+  },
+  "missingParts": [
+    {
+      "part": "中国居民膳食指南（2022）完整专著",
+      "url": "https://en.cnsoc.org/dGuideline/122510201.html",
+      "reason": "Saved official public principles and book information; complete book not publicly provided in the retrieved pages",
+      "availableAlternative": "Eight complete official public principle articles and their combined summary",
+      "impact": "Public dietary guidance can be reviewed; rules depending on unretrieved detailed chapters cannot be claimed supported",
+      "legalFileNeeded": "Only if stage 2B requires details not available in the public principles"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "raw/CNS-DG-2022/guideline-index-http-20261029T051623Z-d0813494f4da.html",
+      "sha256": "e92f1fb4cf4ff69677b025f5556e3344981a9726d9e991280c4472956f75025a",
+      "format": "html",
+      "pages": null,
+      "role": "official_index",
+      "actualUrl": "http://dg.cnsoc.org/newslist_0402_1.htm"
+    },
+    {
+      "path": "raw/CNS-DG-2022/official-public-version-info-20261029T051624Z-b0624ce56166.html",
+      "sha256": "516c47563a4335c8211acb32c7d4daad2f400f2d2f3bd1cd6baa0de66313a1e9",
+      "format": "html",
+      "pages": null,
+      "role": "official_metadata",
+      "actualUrl": "https://en.cnsoc.org/dGuideline/122510201.html"
+    },
+    {
+      "path": "raw/CNS-DG-2022/guideline-principle1-20261029T051624Z-6b238a06a008.html",
+      "sha256": "22653f62aabfa01690a9029bdf3da2ebd08b2b1d460fed2bb8c882573b6ed074",
+      "format": "html",
+      "pages": null,
+      "role": "official_public_guideline",
+      "actualUrl": "https://www.cnsoc.org/activitykit2/6522002010.html"
+    },
+    {
+      "path": "raw/CNS-DG-2022/guideline-1-20261029T051953Z-57c89ab60d66.html",
+      "sha256": "7f84294312a02e4306ec27a8b4491c0145de4d0ca356d8b8b3868d786837d240",
+      "format": "html",
+      "pages": null,
+      "role": "official_public_guideline",
+      "actualUrl": "http://dg.cnsoc.org/article/04/JG8jh6u5RTauhn33_z8Fmw.html"
+    },
+    {
+      "path": "raw/CNS-DG-2022/guideline-2-20261029T051953Z-f5a46d936a58.html",
+      "sha256": "e3756811af1eb81d8f1aa57d621d9e553eee85104d42c36fd5b8f9ff4ebff6b0",
+      "format": "html",
+      "pages": null,
+      "role": "official_public_guideline",
+      "actualUrl": "http://dg.cnsoc.org/article/04/jqRp8FyyRYi2YDh3bSnLKw.html"
+    },
+    {
+      "path": "raw/CNS-DG-2022/guideline-3-20261029T051953Z-ce1a9f1bbd67.html",
+      "sha256": "ee2abd6667c8932334f1836ec4dba9532aab1cc10202b12bbb90f1560935e286",
+      "format": "html",
+      "pages": null,
+      "role": "official_public_guideline",
+      "actualUrl": "http://dg.cnsoc.org/article/04/wDCyy7cWSJCN6pwKHOo5Dw.html"
+    },
+    {
+      "path": "raw/CNS-DG-2022/guideline-4-20261029T051953Z-f121faed010e.html",
+      "sha256": "76ec8d27ae6cdd586690a61ff9c4c9a584f4ccf308277716de1605a4a13a7aee",
+      "format": "html",
+      "pages": null,
+      "role": "official_public_guideline",
+      "actualUrl": "http://dg.cnsoc.org/article/04/ApX3_ozGTmSoqQaFFh5z_Q.html"
+    },
+    {
+      "path": "raw/CNS-DG-2022/guideline-5-20261029T051953Z-cbf9b2e43060.html",
+      "sha256": "2082ec1412582fa8ad8ab385af20de0784ce236eca432e08c989bf4173efdd63",
+      "format": "html",
+      "pages": null,
+      "role": "official_public_guideline",
+      "actualUrl": "http://dg.cnsoc.org/article/04/3tyM8WoTTUmc_oFHMymk3Q.html"
+    },
+    {
+      "path": "raw/CNS-DG-2022/guideline-6-20261029T051953Z-134f960310f6.html",
+      "sha256": "92e1ac5659b3fa2831c5f2d0fc0398279723ca040b672cba8895029a23843aab",
+      "format": "html",
+      "pages": null,
+      "role": "official_public_guideline",
+      "actualUrl": "http://dg.cnsoc.org/article/04/70JvPbFmTlyZbjoO67LeRg.html"
+    },
+    {
+      "path": "raw/CNS-DG-2022/guideline-9-20261029T051954Z-88b75c18993e.html",
+      "sha256": "498ad027fe42fa0b82cf36f9004f1ac3b6548fffc52f136fd59b645119ffb0fa",
+      "format": "html",
+      "pages": null,
+      "role": "official_public_guideline",
+      "actualUrl": "http://dg.cnsoc.org/article/04/J4-AsD_DR3OLQMnHG0-jZA.html"
+    },
+    {
+      "path": "raw/CNS-DG-2022/guideline-7-20261029T051954Z-93bed6ccc629.html",
+      "sha256": "1be41b94bde250043eb3501efbbf4bfc798ae762dd4eb9b12f6204880b67da87",
+      "format": "html",
+      "pages": null,
+      "role": "official_public_guideline",
+      "actualUrl": "http://dg.cnsoc.org/article/04/k9W2iu8FT6K5oWaQKArU9g.html"
+    },
+    {
+      "path": "raw/CNS-DG-2022/guideline-8-20261029T051954Z-9d355a300765.html",
+      "sha256": "885fdc792201282df9db5383e704a7b2dbefd9d1be170e76b27d5c0387084752",
+      "format": "html",
+      "pages": null,
+      "role": "official_public_guideline",
+      "actualUrl": "http://dg.cnsoc.org/article/04/K7tlcs-UQh67DBC5XY1Jqw.html"
+    }
+  ],
+  "originalContentIncluded": false
+}

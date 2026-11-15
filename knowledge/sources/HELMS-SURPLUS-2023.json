@@ -1,0 +1,39 @@
+{
+  "id": "HELMS-SURPLUS-2023",
+  "title": "Effect of Small and Large Energy Surpluses on Strength, Muscle, and Skinfold Thickness in Resistance-Trained Individuals: A Parallel Groups Design",
+  "authors": [
+    "Eric R. Helms",
+    "Alyssa-Joy Spence",
+    "Colby Sousa",
+    "James Kreiger",
+    "Steve Taylor",
+    "Dustin J. Oranchuk",
+    "Brad P. Dieter",
+    "Casey M. Watkins"
+  ],
+  "year": 2023,
+  "doi": "10.1186/s40798-023-00651-y",
+  "version": "publisher_full_text",
+  "acquisitionStatus": "primary_artifact_acquired",
+  "fullTextAcquired": true,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://doi.org/10.1186/s40798-023-00651-y"
+  ],
+  "licence": {
+    "id": "local_research_archive_only",
+    "evidence": "Originals are not bundled or redistributed; see the original publisher licence."
+  },
+  "missingParts": [],
+  "artifacts": [
+    {
+      "path": "raw/HELMS-SURPLUS-2023/plan-reference-b16e8a07d675.pdf",
+      "sha256": "b16e8a07d6757dfad70f1b544ae6b950b962ea24eb9a2064dce88c476f2eb06a",
+      "format": "pdf",
+      "pages": 14,
+      "role": "full_text",
+      "actualUrl": "https://link.springer.com/content/pdf/10.1186/s40798-023-00651-y.pdf?error=cookies_not_supported&code=fb652636-b9ad-4491-9838-e0533c5f2cdc"
+    }
+  ],
+  "originalContentIncluded": false
+}

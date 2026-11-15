@@ -1,13 +1,20 @@
 {
-  "name": "xiaoka-diary",
+  "name": "xingshiji",
   "version": "0.5.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "server": "node --env-file-if-exists=.env server/index.mjs",
     "build": "tsc --noEmit && vite build && node scripts/build-shell.mjs",
+    "ai:check": "node --env-file-if-exists=.env scripts/check-ollama.mjs",
     "ios:add": "cap add ios",
-    "ios:sync": "npm run build && cap sync ios && node scripts/prepare-ios.mjs",
-    "ios:prepare": "node scripts/prepare-ios.mjs"
+    "ios:sync": "node scripts/sync-ios.mjs",
+    "ios:prepare": "node scripts/prepare-ios.mjs",
+    "check": "tsc --noEmit && node scripts/check-source.mjs",
+    "windows:package": "node scripts/package-windows.mjs",
+    "ios:check": "node scripts/check-ios-project.mjs",
+    "knowledge:check": "node scripts/check-knowledge.mjs"
   },
   "dependencies": {
     "@capacitor/camera": "8.2.6",

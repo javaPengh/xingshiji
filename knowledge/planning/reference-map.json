@@ -1,0 +1,85 @@
+{
+  "version": "evidence-guided-body-plan-v1",
+  "topics": {
+    "core": [
+      "EV-HC-ADULT-EER",
+      "EV-HC-PA-DEFINITIONS",
+      "EV-PLAN-ENERGY-NO-UL",
+      "EV-PLAN-EER-UNCERTAINTY",
+      "EV-PLAN-AMDR-MEANING",
+      "EV-PLAN-ENERGY-ACCOUNTING"
+    ],
+    "fat": [
+      "EV-C23-FAT-AMDR",
+      "EV-WF23-CONDITIONAL",
+      "EV-PLAN-FAT-INDIVIDUAL",
+      "EV-I19-FAT"
+    ],
+    "protein_context": [
+      "EV-PLAN-PROTEIN-WEIGHT-CONTEXT"
+    ],
+    "fiber": [
+      "EV-W23-FIBER-MIN",
+      "EV-W23-CARB-QUALITY"
+    ],
+    "training_carbohydrate": [
+      "EV-A16-CARB-TRAINING"
+    ],
+    "low_energy": [
+      "EV-PLAN-LOW-ENERGY-CONTEXT",
+      "EV-NIDDK-EXISTING-TOOL-FLOOR"
+    ]
+  },
+  "energyGoalTopics": {
+    "lose": [
+      "EV-PLAN-DEFICIT-INDIVIDUAL",
+      "EV-PLAN-DEFICIT-RATE",
+      "EV-MK22-DEFICIT-LEAN-MASS"
+    ],
+    "gain": [
+      "EV-I19-SURPLUS",
+      "EV-I19-GAIN-RATE",
+      "EV-HS23-SURPLUS-TRIAL"
+    ],
+    "maintain": [
+      "EV-PLAN-ENERGY-NO-UL"
+    ],
+    "recompose": [
+      "EV-PLAN-DEFICIT-INDIVIDUAL",
+      "EV-MK22-DEFICIT-LEAN-MASS",
+      "EV-HS23-SURPLUS-TRIAL"
+    ]
+  },
+  "fatGoalTopics": {
+    "lose": [
+      "EV-C23-FAT-AMDR",
+      "EV-WF23-CONDITIONAL",
+      "EV-PLAN-FAT-INDIVIDUAL"
+    ],
+    "gain": [
+      "EV-C23-FAT-AMDR",
+      "EV-WF23-CONDITIONAL",
+      "EV-I19-FAT"
+    ],
+    "maintain": [
+      "EV-C23-FAT-AMDR",
+      "EV-WF23-CONDITIONAL"
+    ],
+    "recompose": [
+      "EV-C23-FAT-AMDR",
+      "EV-WF23-CONDITIONAL",
+      "EV-I19-FAT",
+      "EV-PLAN-FAT-INDIVIDUAL"
+    ]
+  },
+  "referenceUse": "参考范围与研究条件供模型分析；超出常见参考须说明依据、差异与风险，由用户确认，不新增统一营养硬门槛",
+  "uniformEnergyUpper": null,
+  "uniformAdjustmentRange": null,
+  "fatReferenceIsHardLimit": false,
+  "proteinSelection": "按用户确认：当前体重乘本次适用蛋白参考范围最低系数；注明体重参照局限",
+  "fiberSelection": "沿用WHO普通成人至少25g/日天然食物纤维最低建议，不作上限",
+  "existingAutomaticEnergyMinimumKcal": 1000,
+  "existingStorageEnergyMaximumKcal": 10000,
+  "technicalLimitsMeaning": "保留既有自动工具下界与目标存储上界，分别说明来源和技术性质，不把1000/10000说成每个人医学最低/最高值",
+  "scopeStatement": "当前仍为19岁及以上普通成人日常健身；不自动扩大未成年人、孕哺、疾病专用或高负荷备赛方案；BMI仅作参考"
+}

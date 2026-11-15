@@ -1,0 +1,36 @@
+{
+  "id": "IRAKI-OFFSEASON-2019",
+  "title": "Nutrition Recommendations for Bodybuilders in the Off-Season: A Narrative Review",
+  "authors": [
+    "Juma Iraki",
+    "Peter Fitschen",
+    "Sergio Espinar",
+    "Eric Helms"
+  ],
+  "year": 2019,
+  "doi": "10.3390/sports7070154",
+  "version": "2019",
+  "acquisitionStatus": "official_html_saved",
+  "fullTextAcquired": true,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6680710/"
+  ],
+  "licence": {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceArtifact": "raw/IRAKI-OFFSEASON-2019/pmc-full-text-20261029T051443Z-219382c5e959.html"
+  },
+  "missingParts": [],
+  "artifacts": [
+    {
+      "path": "raw/IRAKI-OFFSEASON-2019/pmc-full-text-20261029T051443Z-219382c5e959.html",
+      "sha256": "d58d4dce8408e38dc8b308225129a94a9f7b7cb29ec31a38335b64090fed1195",
+      "format": "html",
+      "pages": null,
+      "role": "full_text",
+      "actualUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6680710/"
+    }
+  ],
+  "originalContentIncluded": false
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "derived.bodyCompositionClass",
+    "origin": "由启用规则/明确资料推导，不能由客户端自行宣称已审核",
+    "persistence": "nutritionInput.inputs.derived及正式目标calculation；带原始资料引用、方法/规则/策略版本和日期",
+    "missingBehavior": "保持unknown，不激活依赖它的规则"
+  },
+  {
+    "path": "derived.bodybuildingOffseason",
+    "origin": "由启用规则/明确资料推导，不能由客户端自行宣称已审核",
+    "persistence": "nutritionInput.inputs.derived及正式目标calculation；带原始资料引用、方法/规则/策略版本和日期",
+    "missingBehavior": "保持unknown，不激活依赖它的规则"
+  },
+  {
+    "path": "derived.energyContext",
+    "origin": "由启用规则/明确资料推导，不能由客户端自行宣称已审核",
+    "persistence": "nutritionInput.inputs.derived及正式目标calculation；带原始资料引用、方法/规则/策略版本和日期",
+    "missingBehavior": "保持unknown，不激活依赖它的规则"
+  },
+  {
+    "path": "derived.fatFreeMassReliable",
+    "origin": "由启用规则/明确资料推导，不能由客户端自行宣称已审核",
+    "persistence": "nutritionInput.inputs.derived及正式目标calculation；带原始资料引用、方法/规则/策略版本和日期",
+    "missingBehavior": "保持unknown，不激活依赖它的规则"
+  },
+  {
+    "path": "derived.referenceWeightApplicable",
+    "origin": "由启用规则/明确资料推导，不能由客户端自行宣称已审核",
+    "persistence": "nutritionInput.inputs.derived及正式目标calculation；带原始资料引用、方法/规则/策略版本和日期",
+    "missingBehavior": "保持unknown，不激活依赖它的规则"
+  },
+  {
+    "path": "derived.referenceWeightKg",
+    "origin": "由启用规则/明确资料推导，不能由客户端自行宣称已审核",
+    "persistence": "nutritionInput.inputs.derived及正式目标calculation；带原始资料引用、方法/规则/策略版本和日期",
+    "missingBehavior": "保持unknown，不激活依赖它的规则"
+  },
+  {
+    "path": "derived.trainingExperienceClass",
+    "origin": "由启用规则/明确资料推导，不能由客户端自行宣称已审核",
+    "persistence": "nutritionInput.inputs.derived及正式目标calculation；带原始资料引用、方法/规则/策略版本和日期",
+    "missingBehavior": "保持unknown，不激活依赖它的规则"
+  }
+]

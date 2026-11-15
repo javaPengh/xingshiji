@@ -1,0 +1,146 @@
+{
+  "id": "CNS-DRI-2023",
+  "title": "中国居民膳食营养素参考摄入量（2023版）",
+  "authors": [
+    "中国营养学会"
+  ],
+  "year": 2023,
+  "doi": null,
+  "version": "2023版",
+  "acquisitionStatus": "public_tables_only",
+  "fullTextAcquired": false,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://www.cnsoc.org/drpostand/",
+    "https://www.cnsoc.org/bookpublica/612410201.html"
+  ],
+  "licence": {
+    "id": "copyright_reserved_permission_not_established",
+    "evidence": "Official pages state 中国营养学会版权所有; no open redistribution licence established"
+  },
+  "missingParts": [
+    {
+      "part": "中国居民膳食营养素参考摄入量（2023版）完整专著，ISBN 9787117350693",
+      "url": "https://www.cnsoc.org/bookpublica/612410201.html",
+      "reason": "Official site provides public tables and book/purchase information, not the complete monograph",
+      "availableAlternative": "11 public tables covering adult sex/age groups and other constituents, with footnotes; both index pages preserved",
+      "impact": "Rules needing explanatory chapters, derivation methods or conditions outside public tables stay disabled",
+      "legalFileNeeded": "Only if stage 2B needs content beyond the acquired public tables"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "raw/CNS-DRI-2023/dri-book-info-20261029T051439Z-e680fa95dc4b.html",
+      "sha256": "d69614fb1edbe68992ef4bb0a0acf554a341f3d7efe13646350f12babc218433",
+      "format": "html",
+      "pages": null,
+      "role": "official_metadata",
+      "actualUrl": "https://www.cnsoc.org/bookpublica/612410201.html"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/dri-index-20261029T051439Z-60e5480d1bda.html",
+      "sha256": "95393bf5a81feae30c43eb574c452bcef6bbe2c494c775d05cad98811d4c804a",
+      "format": "html",
+      "pages": null,
+      "role": "official_index",
+      "actualUrl": "https://www.cnsoc.org/drpostand/"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/dri-index-page2-20261029T051624Z-f0260cd9f055.html",
+      "sha256": "efe9320f48f2684ffd91a5a03cd60fba07ae5a0d1efd9c25fe24b371765db60f",
+      "format": "html",
+      "pages": null,
+      "role": "official_index",
+      "actualUrl": "https://www.cnsoc.org/drpostand/page2.html"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "sha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@0dde980a-f7cb-4407-b784-e1fb17d757ab.jpg"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "sha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@d8670add-1ae0-4f81-9de4-43ad7ec07d8b.jpg"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "sha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@6f91a3f6-ece6-4777-865d-5cb3ff30095a.jpg"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "sha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@d82d5763-e449-4419-9ba7-29d47684485a.jpg"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "sha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@e59cdffa-a0e4-4c31-9fec-ffed593d19e9.jpg"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-19-20261029T051953Z-bcde45608891.jpg",
+      "sha256": "58a90b71ecb78d48f0e5d6755af3c205fbb0ea6825b039906135920e6c47e874",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@58d6492a-6932-4144-8262-ac5b9417936a.jpg"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "sha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@5174270c-8a5d-4894-b8c6-8391b8676c1f.jpg"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "sha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@bf26ee4e-b027-4619-aebb-12ea8d72b39e.jpg"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "sha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@d7865f3d-928f-4330-b239-fc5990bb075c.jpg"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "sha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@b08ba167-2e52-46d7-997c-72f69a95dc2a.jpg"
+    },
+    {
+      "path": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "sha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "format": "jpg",
+      "pages": 1,
+      "role": "public_reference_table",
+      "actualUrl": "https://www.cnsoc.org/www/@10a68e3b-961d-4f2c-b57b-e5f23ab7bd4f.jpg"
+    }
+  ],
+  "originalContentIncluded": false
+}

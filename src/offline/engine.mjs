@@ -42,7 +42,7 @@ export class OfflineEngine {
     let count=0;
     while(!this.closed&&count++<200){
       await this.gate;
-      const blocked=op=>(requiresNutrition(op)||op.nutritionContractRequired)&&!supportsNutrition(this.state.meta.capabilities);
+      const blocked=op=>op.type==='exercise'&&!this.state.meta.capabilities?.exerciseRecords||(requiresNutrition(op)||op.nutritionContractRequired)&&!supportsNutrition(this.state.meta.capabilities);
       const dependent=op=>{const refs=[];if(nutritionRecordTypes.includes(op.type)){function visit(v){if(!v||typeof v!=='object')return;if(v.type&&v.id&&v.contentHash)refs.push(v);for(const child of Object.values(v))visit(child);}visit(op.data);if(op.type==='nutritionReview')refs.push({type:'nutritionAssessment',id:op.data?.assessmentRef?.value?.id});}return refs.some(ref=>ref?.id&&(this.state.outbox.some(other=>other.opId!==op.opId&&other.type===ref.type&&other.id===ref.id)||this.state.conflicts[keyOf(ref.type,ref.id)]));};
       const selected=this.state.outbox.filter(op=>!op.blockedBy&&!op.waitingForRecalculation&&!blocked(op)&&!dependent(op)).slice(0,50);
       await this.commit(s=>{for(const op of s.outbox){op.waitingForUpgrade=blocked(op);op.waitingForDependencies=dependent(op);}});
@@ -69,17 +69,17 @@ export class OfflineEngine {
   async bootstrap(){
     let offset=0,boundary=null;
     do{
-      const result=await this.remote(`sync/bootstrap?offset=${encodeURIComponent(offset)}&allChat=${this.state.preferences.allChat}&contract=${INPUT_CONTRACT}`);
+      const result=await this.remote(`sync/bootstrap?offset=${encodeURIComponent(offset)}&allChat=${this.state.preferences.allChat}&contract=${INPUT_CONTRACT}&exercise=1`);
       if(this.state.epoch&&this.state.epoch!==result.epoch)throw new Error('服务器同步标识改变，请先导出本机备份，再重新核对服务器。');
       boundary??=result.cursor;
       await this.commit(s=>{for(const row of result.records)this.merge(s,row);s.epoch=result.epoch;s.meta={...s.meta,settings:result.settings,serverId:result.serverId,user:result.user,activeKnowledgeVersion:result.activeKnowledgeVersion||null,capabilities:result.capabilities||null};});
       offset=result.next;
     }while(offset!==null&&!this.closed);
     await this.downloadHistories();
-    await this.commit(s=>{s.initialized=true;s.cursor=boundary||0;});
+    await this.commit(s=>{s.initialized=true;s.meta.exerciseBootstrap=!!s.meta.capabilities?.exerciseRecords;s.cursor=boundary||0;});
   }
   async downloadHistories(){
-    let cursor=0;do{const page=await this.remote('sync/histories?cursor='+cursor+'&contract='+INPUT_CONTRACT);await this.commit(s=>{for(const row of page.rows){if(row.data?.source==='rule_kb'&&row.data.confirmation?.serverValidation==='verified'){s.meta.unverifiedRuleContents||={};s.meta.unverifiedRuleContents[row.data.id+':'+row.data.contentHash]=false;}const key=keyOf(row.type,row.id);if(!s.history.some(old=>old.key===key&&old.version===row.version))s.history.push({key,data:row.data,deleted:row.deleted,version:row.version,at:row.changedAt});}});cursor=page.next;}while(cursor!==null&&!this.closed);
+    let cursor=0;do{const page=await this.remote('sync/histories?cursor='+cursor+'&contract='+INPUT_CONTRACT+'&exercise=1');await this.commit(s=>{for(const row of page.rows){if(row.data?.source==='rule_kb'&&row.data.confirmation?.serverValidation==='verified'){s.meta.unverifiedRuleContents||={};s.meta.unverifiedRuleContents[row.data.id+':'+row.data.contentHash]=false;}const key=keyOf(row.type,row.id);if(!s.history.some(old=>old.key===key&&old.version===row.version))s.history.push({key,data:row.data,deleted:row.deleted,version:row.version,at:row.changedAt});}});cursor=page.next;}while(cursor!==null&&!this.closed);
   }
   async recheckServer(){
     // A restored/changed server must explicitly reconcile every local row, including deletes.
@@ -91,7 +91,7 @@ export class OfflineEngine {
   }
   async pull(){
     let more=true;
-    while(more&&!this.closed){const response=await this.remote('sync/pull?cursor='+this.state.cursor+'&contract='+INPUT_CONTRACT);
+    while(more&&!this.closed){const response=await this.remote('sync/pull?cursor='+this.state.cursor+'&contract='+INPUT_CONTRACT+'&exercise=1');
       if(this.state.epoch&&response.epoch!==this.state.epoch){throw new Error('服务器同步标识改变，请先导出本机备份，再检查服务器恢复状态。');}
       await this.commit(s=>{for(const row of response.records){const old=s.records[keyOf(row.type,row.id)];const recent=row.type!=='message'||row.deleted||row.data?.pinned||s.preferences.allChat||Date.parse(row.data?.createdAt)>=Date.now()-s.preferences.chatDays*86400000;if(recent||old)this.merge(s,row);}s.epoch=response.epoch;s.cursor=response.cursor;if(response.settings)s.meta.settings=response.settings;});more=response.more;
     }
@@ -106,14 +106,14 @@ export class OfflineEngine {
     await this.ready;if(this.closed||this.syncing)return;
     this.syncing=true;this.error='';this.emit();
     try{
-      if(!this.state.initialized)await this.bootstrap();else{const handshake=await this.remote('sync/handshake');if(handshake.epoch!==this.state.epoch)throw new Error('服务器同步标识改变，请先导出本机备份，再重新核对服务器。');const upgraded=!supportsNutrition(this.state.meta.capabilities)&&supportsNutrition(handshake.capabilities);await this.commit(s=>{s.meta.capabilities=handshake.capabilities||null;s.meta.activeKnowledgeVersion=handshake.activeKnowledgeVersion||null;});if(upgraded)await this.bootstrap();}
+      if(!this.state.initialized)await this.bootstrap();else{const handshake=await this.remote('sync/handshake');if(handshake.epoch!==this.state.epoch)throw new Error('服务器同步标识改变，请先导出本机备份，再重新核对服务器。');const upgraded=!supportsNutrition(this.state.meta.capabilities)&&supportsNutrition(handshake.capabilities)||handshake.capabilities?.exerciseRecords&&!this.state.meta.exerciseBootstrap;await this.commit(s=>{s.meta.capabilities=handshake.capabilities||null;s.meta.activeKnowledgeVersion=handshake.activeKnowledgeVersion||null;});if(upgraded)await this.bootstrap();}
       await this.push();await this.pull();this.online=true;this.authRequired=false;this.failures=0;
       try{for(let i=0;i<5&&this.state.aiJobs.length;i++)if(!await this.processAi?.())break;}catch(error){if(error.status===401)throw error;this.error=error.message;}
       await this.push();
       try{await this.uploadPhotos?.();}catch(error){if(error.status===401)throw error;this.error=error.message;}
       await this.pull();await this.prune?.();
       await this.downloadNutritionHistories();
-      if(this.state.outbox.some(op=>op.waitingForUpgrade))this.error='营养资料已保存在本机，等待服务器升级后同步；其他日记可继续同步。';
+      if(this.state.outbox.some(op=>op.waitingForUpgrade))this.error='部分资料已保存在本机，等待服务器升级后同步；其他日记可继续同步。';
       if(this.state.outbox.some(op=>op.waitingForRecalculation))this.error='有规则目标未通过联网核验，原候选及待处理操作已保留，请重新计算。';
       if(this.refreshLibrary)try{await this.refreshLibrary();}catch{/* Built-in foods remain usable. */}
     }catch(error){this.online=false;this.authRequired=error.status===401;this.error=error.message;this.failures=(this.failures||0)+1;}

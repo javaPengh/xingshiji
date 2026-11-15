@@ -1,0 +1,2775 @@
+[
+  {
+    "caseId": "I01",
+    "caseTitle": "普通成人维持，无规律训练",
+    "inputHash": "8ab5f049407fcc3e7c15e1395e12774d880bcb53b2b916a76d37d3f5aebba16e",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-REFERENCE-TYPES"
+        ],
+        "ruleIds": [
+          "RULE-CNS-CONTEXT"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I02",
+    "caseTitle": "普通女性减脂，无规律训练",
+    "inputHash": "334ab31b82fce5c9f175a1d5d1ced530489a22df32160a89ff60d774710b9132",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-GENERAL",
+          "EV-F23-ATHLETE-PROTEIN"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-GENERAL"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I03",
+    "caseTitle": "抗阻经验3个月的增肌用户",
+    "inputHash": "4a4114ed318ac34bdfe1c14de55f39405cafe38ae127500ffc336daaa0331470",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I04",
+    "caseTitle": "抗阻经验96个月的增肌用户",
+    "inputHash": "fab68726fe2ff1598f3d7b2a48e83f4266e2033debd452e73709215283149db6",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I05",
+    "caseTitle": "身体重组，增肌优先",
+    "inputHash": "2551685b95dbafbbcf94f0504b46e5e4ab52519244f6ea5b2805c925c41a95e2",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I06",
+    "caseTitle": "女性身体重组，减脂优先",
+    "inputHash": "b06fdee5fce5653d364e6d25bb8e7800c2c892e0569026e1b37cc4cd7f8cf9a0",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE",
+          "EV-F23-ATHLETE-PROTEIN"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I07",
+    "caseTitle": "混合训练身体重组，均衡优先",
+    "inputHash": "c0169fbc07b82061414cfd9a4cd366fd1b261426655038f34786cff2d200e1d1",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I08",
+    "caseTitle": "性别不便填写",
+    "inputHash": "2d904276c2e6550d1ec577766fb47ed00127640fbd3e6911b588414890312eed",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "纤维一般建议已有，适用筛查信息尚需补充。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I09",
+    "caseTitle": "旧资料缺少训练字段",
+    "inputHash": "f1f9c9f0ef1018c489680fdfd2da927df6c950d1db3642a13df3a9234a38c962",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-REFERENCE-TYPES"
+        ],
+        "ruleIds": [
+          "RULE-CNS-CONTEXT"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I10",
+    "caseTitle": "用户不知道如何描述训练",
+    "inputHash": "9493ada3d4c00639963515893c16d474e8b8a1068f32fb525788d934629557ac",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-REFERENCE-TYPES"
+        ],
+        "ruleIds": [
+          "RULE-CNS-CONTEXT"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I11",
+    "caseTitle": "日常活动未知",
+    "inputHash": "0d840acf3c42e79e9ddcaa44ee8abc01af878dbfd04ae6aba4cdfe2e63acf7d0",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I12",
+    "caseTitle": "体重存在但测量日期缺失",
+    "inputHash": "bab7a6f9f7b017a23342a4ec9299e010b8b62da7426bb23a827a7b1fa0d9fb7d",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I13",
+    "caseTitle": "17岁用户",
+    "inputHash": "9ee65724335d622c8ea8a1455de7332a16871a3bd4b2a62b2fc6f2d4e1b2e67c",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "protein": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "fat": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "carbohydrate": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "fiber": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "adjustment": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I14",
+    "caseTitle": "孕期用户",
+    "inputHash": "3793127e052aff0f5903fbc4287107deffd85bf2ba59964fdf9f9a4fa9fa1ec0",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "protein": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "fat": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "carbohydrate": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "fiber": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "adjustment": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I15",
+    "caseTitle": "哺乳期用户",
+    "inputHash": "457dfa0aefc6c9c93a4d8cd1336fca04c5d838f4f979c83ff12354c5a5962b3f",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "protein": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "fat": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "carbohydrate": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "fiber": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "adjustment": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I16",
+    "caseTitle": "有医生要求的特殊饮食",
+    "inputHash": "1b1da41bcffe632ac48f7d090de336d4051ce14c26bfcd8be453dd4f75d0a37d",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "protein": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "fat": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "carbohydrate": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "fiber": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      },
+      "adjustment": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [],
+        "gapIds": [
+          "GAP-SCOPE"
+        ],
+        "reasonZh": "本项目普通成人路径不适用；保留记账和手动目标。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I17",
+    "caseTitle": "特殊饮食适用边界不便回答",
+    "inputHash": "8fa613e59240b75353b50da0545432a4904637aba951079c03b71f4b4575e9cf",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "纤维一般建议已有，适用筛查信息尚需补充。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I18",
+    "caseTitle": "18岁女性刚开始抗阻训练",
+    "inputHash": "58c2822de9eb19ed81c50f74a47b8ec99c76df8a8e581adb6a0e0dabcd7411d6",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE",
+          "EV-F23-ATHLETE-PROTEIN"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I19",
+    "caseTitle": "65岁有抗阻经验的维持用户",
+    "inputHash": "e079da553a87d0d3881d4722b5f3a4335bc9101f22df8117adc6bd10b7ff96de",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I20",
+    "caseTitle": "160kg用户减脂，没有体脂测量",
+    "inputHash": "c1524520047472182c6e8d4d6ffba1f572f51134e2338a8847aeac6a12e42740",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I21",
+    "caseTitle": "单次家用BIA体脂，身体重组",
+    "inputHash": "f78fc4fc0cf745aa5b33f816280f858ef37bd89e28b33e18e4d8bc41a655b47a",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I22",
+    "caseTitle": "有DXA报告、有经验抗阻训练者减脂",
+    "inputHash": "27e5bfe55332bc740b201214b725a2daa8aa1b53e4614857d282a16bbe4f592f",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE",
+          "EV-P26-LEAN-CUT-BW",
+          "EV-P26-LEAN-CUT-FFM"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I23",
+    "caseTitle": "高耐力训练量用户",
+    "inputHash": "44097a6b6234720dfcdc87827815f0664b72324ad64cfcb889b1791fcd3fbf4f",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P17-EXERCISE"
+        ],
+        "ruleIds": [
+          "RULE-CNS-CONTEXT"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "I24",
+    "caseTitle": "混合训练每周8次，含同日多次训练",
+    "inputHash": "d749073cf810d5ef943e2eb36a4e81f732c7290f85047dd8ba71b1c56eb3a567",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "R01",
+    "caseTitle": "体重不变，腰围下降，训练表现改善",
+    "inputHash": "bf470dd94fbf093593f1ada296fe7c266f2b11469a4e62e106bddad66221e8b5",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "R02",
+    "caseTitle": "日记多数漏记",
+    "inputHash": "9b09ec2ab90dedf6cf70df230dfa1e9f08d58c4ca47667764134d2424771180c",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "R03",
+    "caseTitle": "只有一次称重，且测量条件未知",
+    "inputHash": "e3a6ceb9d8339a0280ddd2d672c4fad1378bdc90e5489d1328c1436fa2485740",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "R04",
+    "caseTitle": "训练频率增加，运动记录有400kcal",
+    "inputHash": "4ae9ae849ae6f8ec1fec9753f6dacde555559b8a28cd6180f28696ab73ac6590",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "R05",
+    "caseTitle": "窗口中途手动改过目标",
+    "inputHash": "27e35822b4451d9dfafbf368e3de4e4a2768c2a1b53e2b38f1de6c2c37455f53",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "R06",
+    "caseTitle": "执行不足且疲劳较高",
+    "inputHash": "0e95801df640548f0a3b81e9e82f393f9ad5d597274565227116cb4814f6e72c",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "R07",
+    "caseTitle": "能量已知但纤维资料缺失",
+    "inputHash": "c02a10c6608f2640e35b0ca8b158fbef415b08f6e2650bfe953d895d89fc4274",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  },
+  {
+    "caseId": "R08",
+    "caseTitle": "旧手动目标无知识版本，用户想改变优先级",
+    "inputHash": "6af63fb2ff479cbf3e885cd7301ec9a8fdc31953a6dd806a2f7c235f8c9f3471",
+    "metrics": {
+      "energy": {
+        "status": "not_automatic",
+        "evidenceIds": [],
+        "ruleIds": [
+          "RULE-ENERGY-MAINTENANCE"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-ACTIVITY-MAPPING"
+        ],
+        "reasonZh": "分组表不能冒充个人公式；公式及活动映射缺必要原文。"
+      },
+      "protein": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-P26-RESISTANCE"
+        ],
+        "ruleIds": [
+          "RULE-PROTEIN-RESISTANCE"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-WEIGHT-BASIS"
+        ],
+        "reasonZh": "有分人群参考，但选点/参考体重或训练资料未满足启用条件。"
+      },
+      "fat": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-C23-FAT-AMDR",
+          "EV-I19-FAT"
+        ],
+        "ruleIds": [
+          "RULE-FAT-GENERAL-CN",
+          "RULE-FAT-BODYBUILDING"
+        ],
+        "gapIds": [
+          "GAP-PRODUCT-POINT",
+          "GAP-ENERGY-FORMULA"
+        ],
+        "reasonZh": "人群参考已分开，个人热量及脂肪选点未定。"
+      },
+      "carbohydrate": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-W23-CARB-QUALITY",
+          "EV-I19-CARB-LOAD"
+        ],
+        "ruleIds": [
+          "RULE-CARB-REMAINDER"
+        ],
+        "gapIds": [
+          "GAP-ENERGY-FORMULA",
+          "GAP-TRAINING-CARB"
+        ],
+        "reasonZh": "可解释来源质量及分配顺序，不能在热量/训练需求未定时给精确克数。"
+      },
+      "fiber": {
+        "status": "supports_initial_component",
+        "evidenceIds": [
+          "EV-W23-FIBER-MIN",
+          "EV-C23-FIBER-AI"
+        ],
+        "ruleIds": [
+          "RULE-FIBER-MIN"
+        ],
+        "gapIds": [],
+        "reasonZh": "仅支持一般成人纤维最低值这一项，仍需适用筛查，不等于完整目标。"
+      },
+      "adjustment": {
+        "status": "general_guidance_or_needs_input",
+        "evidenceIds": [
+          "EV-I19-TREND"
+        ],
+        "ruleIds": [
+          "RULE-REVIEW-GATE"
+        ],
+        "gapIds": [
+          "GAP-REVIEW-POLICY"
+        ],
+        "reasonZh": "有数据质量门禁；复核窗口、最低样本量与调整步幅未确定，不自动改热量。"
+      }
+    },
+    "completeAutomaticTarget": false
+  }
+]

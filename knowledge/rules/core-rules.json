@@ -1,0 +1,1975 @@
+[
+  {
+    "id": "RULE-FIBER-MIN",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "gte",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "any",
+          "items": [
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "no"
+            },
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            },
+            {
+              "op": "is_status",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "no"
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "none",
+    "formulaOrParameters": {
+      "operation": "constant_minimum",
+      "parameters": {
+        "value": 25,
+        "semantic": "minimum",
+        "fiberSource": "naturally_occurring_in_foods"
+      },
+      "outputRole": "partial_metric_only",
+      "nutrient": "fiber",
+      "unit": "g/day"
+    },
+    "evidenceIds": [
+      "EV-W23-FIBER-MIN"
+    ],
+    "policyIds": [
+      "POL-ADULT-SCOPE"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "enabled",
+    "disableReasons": [],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-CNS-CONTEXT",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "basics.sexForCalculation",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "gte",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "any",
+          "items": [
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "no"
+            },
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            },
+            {
+              "op": "is_status",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "no"
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "none",
+    "formulaOrParameters": {
+      "operation": "reference_lookup",
+      "parameters": {
+        "tableFile": "reference-tables/cns-adult-core-2023.json",
+        "dimensions": [
+          "sex",
+          "age"
+        ],
+        "cannotSatisfyTrainingProteinTarget": true,
+        "cannotEstimateIndividualEnergy": true
+      },
+      "outputRole": "context_only",
+      "nutrient": "reference",
+      "unit": "source_defined"
+    },
+    "evidenceIds": [
+      "EV-C23-REFERENCE-TYPES"
+    ],
+    "policyIds": [
+      "POL-ADULT-SCOPE"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "enabled",
+    "disableReasons": [],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-PROTEIN-GENERAL",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "basics.weightDate",
+      "basics.weightKg",
+      "derived.referenceWeightApplicable",
+      "derived.referenceWeightKg",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation",
+      "goal.kind",
+      "training.kind"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "all",
+          "items": [
+            {
+              "op": "all",
+              "items": [
+                {
+                  "op": "gte",
+                  "field": "basics.ageYears",
+                  "value": 18
+                },
+                {
+                  "op": "any",
+                  "items": [
+                    {
+                      "op": "eq",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "no"
+                    },
+                    {
+                      "op": "eq",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "not_applicable"
+                    },
+                    {
+                      "op": "is_status",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "not_applicable"
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "field": "eligibility.medicallyPrescribedDiet",
+                  "value": "no"
+                }
+              ]
+            },
+            {
+              "op": "eq",
+              "field": "training.kind",
+              "value": "none"
+            },
+            {
+              "op": "eq",
+              "field": "goal.kind",
+              "value": "lose"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "derived.referenceWeightApplicable",
+          "value": true
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "actual",
+    "formulaOrParameters": {
+      "operation": "weight_times_selected_factor",
+      "parameters": {
+        "allowedFactorRange": [
+          1.2,
+          1.6
+        ],
+        "selectedFactor": null,
+        "factorUnit": "g/kg_actual/day",
+        "referenceWeightEligibility": "must_be_established_before_enabling"
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "protein",
+      "unit": "g/day"
+    },
+    "evidenceIds": [
+      "EV-P26-GENERAL"
+    ],
+    "policyIds": [
+      "POL-POINT-SELECTION",
+      "POL-WEIGHT-BASIS"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "缺少已批准起点或适用条件，不能自动制定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-PROTEIN-RESISTANCE",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "basics.weightDate",
+      "basics.weightKg",
+      "derived.referenceWeightApplicable",
+      "derived.referenceWeightKg",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation",
+      "training.kind"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "all",
+          "items": [
+            {
+              "op": "all",
+              "items": [
+                {
+                  "op": "gte",
+                  "field": "basics.ageYears",
+                  "value": 18
+                },
+                {
+                  "op": "any",
+                  "items": [
+                    {
+                      "op": "eq",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "no"
+                    },
+                    {
+                      "op": "eq",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "not_applicable"
+                    },
+                    {
+                      "op": "is_status",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "not_applicable"
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "field": "eligibility.medicallyPrescribedDiet",
+                  "value": "no"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "field": "training.kind",
+              "value": [
+                "resistance",
+                "mixed"
+              ]
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "derived.referenceWeightApplicable",
+          "value": true
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "actual",
+    "formulaOrParameters": {
+      "operation": "weight_times_selected_factor",
+      "parameters": {
+        "allowedFactorRange": [
+          1.6,
+          2.2
+        ],
+        "selectedFactor": null,
+        "factorUnit": "g/kg_actual/day",
+        "referenceWeightEligibility": "must_be_established_before_enabling"
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "protein",
+      "unit": "g/day"
+    },
+    "evidenceIds": [
+      "EV-P26-RESISTANCE"
+    ],
+    "policyIds": [
+      "POL-POINT-SELECTION",
+      "POL-WEIGHT-BASIS"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "缺少已批准起点或适用条件，不能自动制定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-PROTEIN-LEAN-BW",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "basics.weightDate",
+      "basics.weightKg",
+      "derived.bodyCompositionClass",
+      "derived.energyContext",
+      "derived.referenceWeightApplicable",
+      "derived.referenceWeightKg",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation",
+      "goal.kind",
+      "training.kind"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "all",
+          "items": [
+            {
+              "op": "all",
+              "items": [
+                {
+                  "op": "all",
+                  "items": [
+                    {
+                      "op": "all",
+                      "items": [
+                        {
+                          "op": "gte",
+                          "field": "basics.ageYears",
+                          "value": 18
+                        },
+                        {
+                          "op": "any",
+                          "items": [
+                            {
+                              "op": "eq",
+                              "field": "eligibility.pregnancyLactation",
+                              "value": "no"
+                            },
+                            {
+                              "op": "eq",
+                              "field": "eligibility.pregnancyLactation",
+                              "value": "not_applicable"
+                            },
+                            {
+                              "op": "is_status",
+                              "field": "eligibility.pregnancyLactation",
+                              "value": "not_applicable"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "eq",
+                          "field": "eligibility.medicallyPrescribedDiet",
+                          "value": "no"
+                        }
+                      ]
+                    },
+                    {
+                      "op": "in",
+                      "field": "training.kind",
+                      "value": [
+                        "resistance",
+                        "mixed"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "field": "goal.kind",
+                  "value": "lose"
+                }
+              ]
+            },
+            {
+              "op": "eq",
+              "field": "derived.referenceWeightApplicable",
+              "value": true
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "derived.bodyCompositionClass",
+          "value": "lean_non_obese"
+        },
+        {
+          "op": "eq",
+          "field": "derived.energyContext",
+          "value": "hypocaloric"
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "actual",
+    "formulaOrParameters": {
+      "operation": "weight_times_selected_factor",
+      "parameters": {
+        "allowedFactorRange": [
+          1.9,
+          3.2
+        ],
+        "selectedFactor": null,
+        "factorUnit": "g/kg_actual/day",
+        "referenceWeightEligibility": "must_be_established_before_enabling"
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "protein",
+      "unit": "g/day"
+    },
+    "evidenceIds": [
+      "EV-P26-LEAN-CUT-BW"
+    ],
+    "policyIds": [
+      "POL-WEIGHT-BASIS",
+      "POL-POINT-SELECTION"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "缺少已批准起点或适用条件，不能自动制定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-PROTEIN-LEAN-FFM",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "basics.weightDate",
+      "basics.weightKg",
+      "derived.bodyCompositionClass",
+      "derived.energyContext",
+      "derived.fatFreeMassReliable",
+      "derived.referenceWeightApplicable",
+      "derived.referenceWeightKg",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation",
+      "goal.kind",
+      "training.kind"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "all",
+          "items": [
+            {
+              "op": "all",
+              "items": [
+                {
+                  "op": "all",
+                  "items": [
+                    {
+                      "op": "all",
+                      "items": [
+                        {
+                          "op": "all",
+                          "items": [
+                            {
+                              "op": "gte",
+                              "field": "basics.ageYears",
+                              "value": 18
+                            },
+                            {
+                              "op": "any",
+                              "items": [
+                                {
+                                  "op": "eq",
+                                  "field": "eligibility.pregnancyLactation",
+                                  "value": "no"
+                                },
+                                {
+                                  "op": "eq",
+                                  "field": "eligibility.pregnancyLactation",
+                                  "value": "not_applicable"
+                                },
+                                {
+                                  "op": "is_status",
+                                  "field": "eligibility.pregnancyLactation",
+                                  "value": "not_applicable"
+                                }
+                              ]
+                            },
+                            {
+                              "op": "eq",
+                              "field": "eligibility.medicallyPrescribedDiet",
+                              "value": "no"
+                            }
+                          ]
+                        },
+                        {
+                          "op": "in",
+                          "field": "training.kind",
+                          "value": [
+                            "resistance",
+                            "mixed"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "op": "eq",
+                      "field": "goal.kind",
+                      "value": "lose"
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "field": "derived.referenceWeightApplicable",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "op": "eq",
+              "field": "derived.bodyCompositionClass",
+              "value": "lean_non_obese"
+            },
+            {
+              "op": "eq",
+              "field": "derived.energyContext",
+              "value": "hypocaloric"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "derived.fatFreeMassReliable",
+          "value": true
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "fat_free",
+    "formulaOrParameters": {
+      "operation": "weight_times_selected_factor",
+      "parameters": {
+        "allowedFactorRange": [
+          2.5,
+          4.2
+        ],
+        "selectedFactor": null,
+        "factorUnit": "g/kg_fat_free/day",
+        "referenceWeightEligibility": "must_be_established_before_enabling"
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "protein",
+      "unit": "g/day"
+    },
+    "evidenceIds": [
+      "EV-P26-LEAN-CUT-FFM"
+    ],
+    "policyIds": [
+      "POL-WEIGHT-BASIS",
+      "POL-POINT-SELECTION"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "缺少已批准起点或适用条件，不能自动制定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-PROTEIN-FEMALE-ATHLETE",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "basics.sexForCalculation",
+      "basics.weightDate",
+      "basics.weightKg",
+      "derived.referenceWeightApplicable",
+      "derived.referenceWeightKg",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation",
+      "training.kind"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "all",
+          "items": [
+            {
+              "op": "all",
+              "items": [
+                {
+                  "op": "all",
+                  "items": [
+                    {
+                      "op": "gte",
+                      "field": "basics.ageYears",
+                      "value": 18
+                    },
+                    {
+                      "op": "any",
+                      "items": [
+                        {
+                          "op": "eq",
+                          "field": "eligibility.pregnancyLactation",
+                          "value": "no"
+                        },
+                        {
+                          "op": "eq",
+                          "field": "eligibility.pregnancyLactation",
+                          "value": "not_applicable"
+                        },
+                        {
+                          "op": "is_status",
+                          "field": "eligibility.pregnancyLactation",
+                          "value": "not_applicable"
+                        }
+                      ]
+                    },
+                    {
+                      "op": "eq",
+                      "field": "eligibility.medicallyPrescribedDiet",
+                      "value": "no"
+                    }
+                  ]
+                },
+                {
+                  "op": "in",
+                  "field": "training.kind",
+                  "value": [
+                    "resistance",
+                    "mixed"
+                  ]
+                }
+              ]
+            },
+            {
+              "op": "eq",
+              "field": "basics.sexForCalculation",
+              "value": "female"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "derived.referenceWeightApplicable",
+          "value": true
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "actual",
+    "formulaOrParameters": {
+      "operation": "weight_times_selected_factor",
+      "parameters": {
+        "allowedFactorRange": [
+          1.8,
+          2.2
+        ],
+        "selectedFactor": null,
+        "factorUnit": "g/kg_actual/day",
+        "referenceWeightEligibility": "must_be_established_before_enabling"
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "protein",
+      "unit": "g/day"
+    },
+    "evidenceIds": [
+      "EV-F23-ATHLETE-PROTEIN"
+    ],
+    "policyIds": [
+      "POL-POINT-SELECTION",
+      "POL-WEIGHT-BASIS"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "缺少已批准起点或适用条件，不能自动制定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-ENERGY-MAINTENANCE",
+    "version": "2",
+    "requiredInputs": [
+      "activity.totalCategory",
+      "basics.ageYears",
+      "basics.heightCm",
+      "basics.sexForCalculation",
+      "basics.weightDate",
+      "basics.weightKg",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "all",
+          "items": [
+            {
+              "op": "gte",
+              "field": "basics.ageYears",
+              "value": 18
+            },
+            {
+              "op": "any",
+              "items": [
+                {
+                  "op": "eq",
+                  "field": "eligibility.pregnancyLactation",
+                  "value": "no"
+                },
+                {
+                  "op": "eq",
+                  "field": "eligibility.pregnancyLactation",
+                  "value": "not_applicable"
+                },
+                {
+                  "op": "is_status",
+                  "field": "eligibility.pregnancyLactation",
+                  "value": "not_applicable"
+                }
+              ]
+            },
+            {
+              "op": "eq",
+              "field": "eligibility.medicallyPrescribedDiet",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "op": "gte",
+          "field": "basics.ageYears",
+          "value": 19
+        },
+        {
+          "op": "in",
+          "field": "basics.sexForCalculation",
+          "value": [
+            "male",
+            "female"
+          ]
+        },
+        {
+          "op": "in",
+          "field": "activity.totalCategory",
+          "value": [
+            "inactive",
+            "low_active",
+            "active",
+            "very_active"
+          ]
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "none",
+    "formulaOrParameters": {
+      "operation": "linear_energy_equation",
+      "parameters": {
+        "methodId": "NASEM-2023-ADULT-EER",
+        "formulaFile": "formulas/nasem-adult-energy.json",
+        "minimumAgeYears": 19,
+        "totalActivityCategoryRequired": true,
+        "exerciseKcalAddback": false
+      },
+      "outputRole": "partial_metric_only",
+      "nutrient": "energy",
+      "unit": "kcal/day"
+    },
+    "evidenceIds": [
+      "EV-HC-ADULT-EER",
+      "EV-HC-PA-DEFINITIONS"
+    ],
+    "policyIds": [
+      "POL-ADULT-SCOPE",
+      "POL-ACTIVITY-A",
+      "POL-ENERGY-METHOD",
+      "POL-TOTAL-ACTIVITY-CONFIRM"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "enabled",
+    "disableReasons": [],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-GAIN-SURPLUS",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "derived.bodybuildingOffseason",
+      "derived.trainingExperienceClass",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation",
+      "goal.kind",
+      "training.kind"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "all",
+          "items": [
+            {
+              "op": "all",
+              "items": [
+                {
+                  "op": "gte",
+                  "field": "basics.ageYears",
+                  "value": 18
+                },
+                {
+                  "op": "any",
+                  "items": [
+                    {
+                      "op": "eq",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "no"
+                    },
+                    {
+                      "op": "eq",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "not_applicable"
+                    },
+                    {
+                      "op": "is_status",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "not_applicable"
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "field": "eligibility.medicallyPrescribedDiet",
+                  "value": "no"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "field": "training.kind",
+              "value": [
+                "resistance",
+                "mixed"
+              ]
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "goal.kind",
+          "value": "gain"
+        },
+        {
+          "op": "eq",
+          "field": "derived.bodybuildingOffseason",
+          "value": true
+        },
+        {
+          "op": "in",
+          "field": "derived.trainingExperienceClass",
+          "value": [
+            "novice",
+            "intermediate"
+          ]
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "none",
+    "formulaOrParameters": {
+      "operation": "energy_adjustment",
+      "parameters": {
+        "sourceRange": [
+          10,
+          20
+        ],
+        "selectedPercent": null,
+        "population": "natural_bodybuilders_off_season"
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "energy",
+      "unit": "pct_maintenance_energy"
+    },
+    "evidenceIds": [
+      "EV-I19-SURPLUS"
+    ],
+    "policyIds": [
+      "POL-ENERGY-START",
+      "POL-TRAINING-CLASS"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "不得将竞技健美盈余推广为普通成人默认",
+      "个人维持消耗和经验分类尚未核定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-LOSE-DEFICIT",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "gte",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "any",
+          "items": [
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "no"
+            },
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            },
+            {
+              "op": "is_status",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "no"
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "none",
+    "formulaOrParameters": {
+      "operation": "energy_adjustment",
+      "parameters": {
+        "selectedPercent": null
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "energy",
+      "unit": "pct_maintenance_energy"
+    },
+    "evidenceIds": [
+      "EV-B17-DEFICIT"
+    ],
+    "policyIds": [
+      "POL-ENERGY-START"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "方向有依据；产品统一缺口百分比未审定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-RECOMPOSE-ENERGY",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "gte",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "any",
+          "items": [
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "no"
+            },
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            },
+            {
+              "op": "is_status",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "no"
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "none",
+    "formulaOrParameters": {
+      "operation": "unavailable",
+      "parameters": {
+        "selectedAdjustment": null
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "energy",
+      "unit": "kcal/day"
+    },
+    "evidenceIds": [],
+    "policyIds": [
+      "POL-ENERGY-START"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "三种优先级的适用能量策略和数值起点未审定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-FAT-GENERAL-CN",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "gte",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "any",
+          "items": [
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "no"
+            },
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            },
+            {
+              "op": "is_status",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "no"
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "none",
+    "formulaOrParameters": {
+      "operation": "energy_fraction",
+      "parameters": {
+        "allowedPercentRange": [
+          20,
+          30
+        ],
+        "selectedPercent": null,
+        "fatKcalPerG": 9
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "fat",
+      "unit": "g/day"
+    },
+    "evidenceIds": [
+      "EV-C23-FAT-AMDR"
+    ],
+    "policyIds": [
+      "POL-POINT-SELECTION"
+    ],
+    "conflictIds": [
+      "CF-FAT-POPULATIONS"
+    ],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "缺少已批准起点或适用条件，不能自动制定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-FAT-BODYBUILDING",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "derived.bodybuildingOffseason",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation",
+      "training.kind"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "all",
+          "items": [
+            {
+              "op": "all",
+              "items": [
+                {
+                  "op": "gte",
+                  "field": "basics.ageYears",
+                  "value": 18
+                },
+                {
+                  "op": "any",
+                  "items": [
+                    {
+                      "op": "eq",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "no"
+                    },
+                    {
+                      "op": "eq",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "not_applicable"
+                    },
+                    {
+                      "op": "is_status",
+                      "field": "eligibility.pregnancyLactation",
+                      "value": "not_applicable"
+                    }
+                  ]
+                },
+                {
+                  "op": "eq",
+                  "field": "eligibility.medicallyPrescribedDiet",
+                  "value": "no"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "field": "training.kind",
+              "value": [
+                "resistance",
+                "mixed"
+              ]
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "derived.bodybuildingOffseason",
+          "value": true
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "none",
+    "formulaOrParameters": {
+      "operation": "energy_fraction",
+      "parameters": {
+        "allowedPercentRange": [
+          20,
+          35
+        ],
+        "selectedPercent": null,
+        "fatKcalPerG": 9
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "fat",
+      "unit": "g/day"
+    },
+    "evidenceIds": [
+      "EV-I19-FAT"
+    ],
+    "policyIds": [
+      "POL-POINT-SELECTION"
+    ],
+    "conflictIds": [
+      "CF-FAT-POPULATIONS"
+    ],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "缺少已批准起点或适用条件，不能自动制定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-CARB-REMAINDER",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "gte",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "any",
+          "items": [
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "no"
+            },
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            },
+            {
+              "op": "is_status",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "no"
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "none",
+    "formulaOrParameters": {
+      "operation": "remaining_energy",
+      "parameters": {
+        "proteinKcalPerG": 4,
+        "carbKcalPerG": 4,
+        "fatKcalPerG": 9,
+        "negativeResult": "infeasible",
+        "highTrainingDemand": "requires_matching_evidence"
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "carbohydrate",
+      "unit": "g/day"
+    },
+    "evidenceIds": [
+      "EV-I19-CARB-LOAD"
+    ],
+    "policyIds": [
+      "POL-POINT-SELECTION",
+      "POL-ENERGY-START"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "disabled",
+    "disableReasons": [
+      "缺少有效热量、蛋白和脂肪起点",
+      "高负荷碳水约束未审定；不得负数截0"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-REVIEW-GATE",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "gte",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "any",
+          "items": [
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "no"
+            },
+            {
+              "op": "eq",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            },
+            {
+              "op": "is_status",
+              "field": "eligibility.pregnancyLactation",
+              "value": "not_applicable"
+            }
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "no"
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "none",
+    "formulaOrParameters": {
+      "operation": "data_quality_gate",
+      "parameters": {
+        "singleWeightTriggersAdjustment": false,
+        "incompleteDiaryMeansZeroIntake": false,
+        "automaticEnergyChange": false
+      },
+      "outputRole": "safety_gate",
+      "nutrient": "adjustment",
+      "unit": "not_applicable"
+    },
+    "evidenceIds": [
+      "EV-I19-TREND"
+    ],
+    "policyIds": [
+      "POL-NO-SILENT-DEFAULT"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "先匹配人群/能量/参照，条件不足或有未解冲突则停用，不拼接范围",
+    "status": "enabled",
+    "disableReasons": [],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "RULE-INITIAL-ROUTINE-RESISTANCE",
+    "version": "1",
+    "requiredInputs": [
+      "basics.ageYears",
+      "basics.heightCm",
+      "basics.weightKg",
+      "basics.weightDate",
+      "basics.sexForCalculation",
+      "activity.totalCategory",
+      "goal.kind",
+      "training.kind",
+      "training.calculationContext",
+      "training.experienceMonths",
+      "training.resistanceExperienceMonths",
+      "training.sessionsPerWeek",
+      "training.typicalMinutesPerSession",
+      "training.intensity",
+      "eligibility.medicallyPrescribedDiet",
+      "eligibility.pregnancyLactation",
+      "derived.referenceWeightApplicable",
+      "derived.referenceWeightKg"
+    ],
+    "eligibility": {
+      "op": "all",
+      "items": [
+        {
+          "op": "all",
+          "items": [
+            {
+              "op": "gte",
+              "field": "basics.ageYears",
+              "value": 18
+            },
+            {
+              "op": "any",
+              "items": [
+                {
+                  "op": "eq",
+                  "field": "eligibility.pregnancyLactation",
+                  "value": "no"
+                },
+                {
+                  "op": "eq",
+                  "field": "eligibility.pregnancyLactation",
+                  "value": "not_applicable"
+                },
+                {
+                  "op": "is_status",
+                  "field": "eligibility.pregnancyLactation",
+                  "value": "not_applicable"
+                }
+              ]
+            },
+            {
+              "op": "eq",
+              "field": "eligibility.medicallyPrescribedDiet",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "op": "gte",
+          "field": "basics.ageYears",
+          "value": 19
+        },
+        {
+          "op": "eq",
+          "field": "training.kind",
+          "value": "resistance"
+        },
+        {
+          "op": "eq",
+          "field": "training.calculationContext",
+          "value": "routine_resistance"
+        },
+        {
+          "op": "eq",
+          "field": "derived.referenceWeightApplicable",
+          "value": true
+        }
+      ]
+    },
+    "exclusions": {
+      "op": "any",
+      "items": [
+        {
+          "op": "lt",
+          "field": "basics.ageYears",
+          "value": 18
+        },
+        {
+          "op": "in",
+          "field": "eligibility.pregnancyLactation",
+          "value": [
+            "pregnant",
+            "lactating",
+            "both"
+          ]
+        },
+        {
+          "op": "eq",
+          "field": "eligibility.medicallyPrescribedDiet",
+          "value": "yes"
+        }
+      ]
+    },
+    "weightBasis": "actual",
+    "formulaOrParameters": {
+      "operation": "initial_target_allocation",
+      "parameters": {
+        "energyMethodId": "NASEM-2023-ADULT-EER",
+        "scopePolicyId": "POL-INITIAL-SCOPE",
+        "energyPolicyId": "POL-ENERGY-START",
+        "pointPolicyId": "POL-POINT-SELECTION",
+        "numericPolicyId": "POL-AUTO-NUMERIC-VALIDATION",
+        "proteinFactorRange": [
+          1.6,
+          2.2
+        ],
+        "fatFractionRange": [
+          0.2,
+          0.3
+        ],
+        "carbohydrateDemand": "routine_resistance_only_no_unverified_sports_minimum"
+      },
+      "outputRole": "candidate_component",
+      "nutrient": "complete_initial_target",
+      "unit": "source_defined"
+    },
+    "evidenceIds": [
+      "EV-HC-ADULT-EER",
+      "EV-HC-PA-DEFINITIONS",
+      "EV-P26-RESISTANCE",
+      "EV-C23-FAT-AMDR",
+      "EV-W23-FIBER-MIN",
+      "EV-W23-CARB-QUALITY",
+      "EV-NHC-BMI-CONTEXT"
+    ],
+    "policyIds": [
+      "POL-ADULT-SCOPE",
+      "POL-ACTIVITY-A",
+      "POL-INITIAL-PRESENTATION",
+      "POL-INITIAL-SCOPE",
+      "POL-ENERGY-START",
+      "POL-POINT-SELECTION",
+      "POL-AUTO-NUMERIC-VALIDATION"
+    ],
+    "conflictIds": [],
+    "conflictPolicy": "首批严格范围单独匹配；特殊人群规则、体脂/无脂体重与高负荷范围保持停用，不回退或拼接范围",
+    "status": "enabled",
+    "disableReasons": [],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对引用、适用条件与用户明确批准的产品策略；不等于临床专业审阅",
+    "professionalReviewPerformed": false
+  }
+]

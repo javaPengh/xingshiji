@@ -1,0 +1,2906 @@
+[
+  {
+    "id": "EV-P17-EXERCISE",
+    "sourceId": "ISSN-PROTEIN-2017",
+    "sourceVersion": "2017",
+    "locator": {
+      "artifactPath": "raw/ISSN-PROTEIN-2017/pmc-full-text-20261029T051441Z-d76adf494aeb.html",
+      "artifactSha256": "60bd1781974090b9d4e62ed97b4d3c3bd64377250021e182cafa159eab79e9d7",
+      "kind": "paragraph",
+      "blockIndex": 10,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "f02ac3bfe8c60b201008c586c65366a64682b487f61005e6398b08a3d67d4135",
+      "verificationTokens": [
+        "1.4–2.0 g protein/kg body weight/day"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "健康运动者",
+    "energyContext": "未限定",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 1.4,
+      "upper": 2.0,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "g/kg_actual/day",
+    "weightBasis": "actual",
+    "claimType": "recommendation",
+    "summaryZh": "多数健康运动者的全天蛋白参考范围；不是补充剂额外剂量。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-P26-GENERAL",
+    "sourceId": "ISSN-WEIGHTLOSS-2026",
+    "sourceVersion": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+    "locator": {
+      "artifactPath": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "artifactSha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "kind": "paragraph",
+      "blockIndex": 19,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "17d844288ddb9abc974b880f7fab66a94d6ae8de4070961c21ac42650158bd8e",
+      "verificationTokens": [
+        "For the general population, a daily protein intake of 1.2–1.6"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "lose"
+    ],
+    "trainingContext": "来源所述一般人群",
+    "energyContext": "减重主题中的一般人群建议",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 1.2,
+      "upper": 1.6,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "g/kg_actual/day",
+    "weightBasis": "actual",
+    "claimType": "recommendation",
+    "summaryZh": "减重立场给一般人群的全天蛋白参考；不能替代抗阻增肌或精瘦减脂情境。",
+    "limitations": [
+      "不据此给抗阻身体重组用户降低蛋白",
+      "较高体脂的参考体重策略仍需核查"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "一般人群减重蛋白参考1.2～1.6g/kg；不能替代抗阻或精瘦减脂情境。体重参照局限见专卡，不把范围上端当必须值。"
+  },
+  {
+    "id": "EV-P26-RESISTANCE",
+    "sourceId": "ISSN-WEIGHTLOSS-2026",
+    "sourceVersion": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+    "locator": {
+      "artifactPath": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "artifactSha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "kind": "paragraph",
+      "blockIndex": 21,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "7062ab2bbdc3b924e3df5bf4dc219965178f6440c05a2c074b54639e6a289f00",
+      "verificationTokens": [
+        "Daily protein intakes ranging 1.6–2.2"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "有抗阻训练；包含混合训练中的抗阻部分",
+    "energyContext": "缺口情境需另审，不将普通范围覆盖全部精瘦减脂",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 1.6,
+      "upper": 2.2,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "g/kg_actual/day",
+    "weightBasis": "actual",
+    "claimType": "recommendation",
+    "summaryZh": "结合抗阻训练的全天蛋白范围；精瘦且能量不足者另分规则。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "结合抗阻训练的蛋白参考1.6～2.2g/kg；精瘦减脂有另行讨论。此范围不是所有体型的统一剂量，体重参照局限见专卡。"
+  },
+  {
+    "id": "EV-P26-LEAN-CUT-BW",
+    "sourceId": "ISSN-WEIGHTLOSS-2026",
+    "sourceVersion": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+    "locator": {
+      "artifactPath": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "artifactSha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "kind": "paragraph",
+      "blockIndex": 103,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "2aefc2907efa2a3d30b37942a6248784c265712d2d841e53792223a1eaba3179",
+      "verificationTokens": [
+        "A daily protein intake of 1.9–3.2 g/kg BW"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "lose"
+    ],
+    "trainingContext": "精瘦、有抗阻训练",
+    "energyContext": "能量限制",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 1.9,
+      "upper": 3.2,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "g/kg_actual/day",
+    "weightBasis": "actual",
+    "claimType": "recommendation",
+    "summaryZh": "精瘦、非肥胖且有抗阻训练、处于能量限制者，较高实际体重蛋白范围与保留无脂体重相关。",
+    "limitations": [
+      "不能推广到较高体脂或无训练人群",
+      "需可靠地判断适用身体情境；尚无本产品获批分类阈值",
+      "关联范围不等于每个人都需要上限"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-P26-LEAN-CUT-FFM",
+    "sourceId": "ISSN-WEIGHTLOSS-2026",
+    "sourceVersion": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+    "locator": {
+      "artifactPath": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "artifactSha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "kind": "paragraph",
+      "blockIndex": 103,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "2aefc2907efa2a3d30b37942a6248784c265712d2d841e53792223a1eaba3179",
+      "verificationTokens": [
+        "A daily protein intake of 1.9–3.2 g/kg BW"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "lose"
+    ],
+    "trainingContext": "精瘦、非肥胖且有抗阻训练",
+    "energyContext": "能量限制",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 2.5,
+      "upper": 4.2,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "g/kg_fat_free/day",
+    "weightBasis": "fat_free",
+    "claimType": "recommendation",
+    "summaryZh": "同段落另报告按无脂体重计的范围；与按实际体重计的范围不得互换或相加。",
+    "limitations": [
+      "需要可靠无脂体重输入",
+      "消费级单次BIA不自动满足可靠性要求",
+      "不能与旧文最低/最高值拼范围"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-P26-HISTORICAL-FFM",
+    "sourceId": "ISSN-WEIGHTLOSS-2026",
+    "sourceVersion": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+    "locator": {
+      "artifactPath": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "artifactSha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "kind": "paragraph",
+      "blockIndex": 103,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "2aefc2907efa2a3d30b37942a6248784c265712d2d841e53792223a1eaba3179",
+      "verificationTokens": [
+        "a daily protein intake of 2.3–3.1 g/kg FFM"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "lose"
+    ],
+    "trainingContext": "精瘦且有抗阻训练",
+    "energyContext": "能量限制",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 2.3,
+      "upper": 3.1,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "g/kg_fat_free/day",
+    "weightBasis": "fat_free",
+    "claimType": "reference",
+    "summaryZh": "该段回顾较早综述的无脂体重参照范围；保留历史条件，不把它改成实际体重剂量。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-P17-ABSTRACT-AMBIGUITY",
+    "sourceId": "ISSN-PROTEIN-2017",
+    "sourceVersion": "2017",
+    "locator": {
+      "artifactPath": "raw/ISSN-PROTEIN-2017/pmc-full-text-20261029T051441Z-d76adf494aeb.html",
+      "artifactSha256": "60bd1781974090b9d4e62ed97b4d3c3bd64377250021e182cafa159eab79e9d7",
+      "kind": "paragraph",
+      "blockIndex": 12,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "4099e32aea24c8ee9f8443036f7489cfe455c2a9e97bdb4f31ed7fba2e48fe9b",
+      "verificationTokens": [
+        "Higher protein intakes (2.3–3.1 g/kg/d)"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "lose"
+    ],
+    "trainingContext": "抗阻训练者",
+    "energyContext": "低热量期",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 2.3,
+      "upper": 3.1,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "g/kg_unspecified/day",
+    "weightBasis": "unspecified",
+    "claimType": "reference",
+    "summaryZh": "摘要中的高蛋白数字未在该句明确实际/无脂体重参照，单凭该句不能写成可执行剂量。",
+    "limitations": [
+      "参照未明确；不得据此启用任何倍乘规则"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-M18-BREAKPOINT",
+    "sourceId": "MORTON-PROTEIN-2018",
+    "sourceVersion": "2018 journal publication; online 2017-07-11; 2020 correction acquired",
+    "locator": {
+      "artifactPath": "raw/MORTON-PROTEIN-2018/pmc-full-text-20261029T051441Z-e5348fde4793.html",
+      "artifactSha256": "8caa2abddf8a3ae4e1444a9b359ab39d34dcb2adc11f74876e11319565095825",
+      "kind": "paragraph",
+      "blockIndex": 53,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "3772085e189eb36d0ac53fc8d767e96dea0934e7457b1e4fd9661c882c97cf8d",
+      "verificationTokens": [
+        "break point=1.62 (1.03, 2.20)"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "原研究至少6周、每周至少2次抗阻训练",
+    "energyContext": "纳入人群非能量限制",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "statistical_estimate",
+      "value": 1.62,
+      "lower": 1.03,
+      "upper": 2.2,
+      "intervalType": "confidence_interval",
+      "statistic": "断点估计；原文p=0.079"
+    },
+    "unit": "g/kg_actual/day",
+    "weightBasis": "actual",
+    "claimType": "statistical_finding",
+    "summaryZh": "蛋白总摄入与训练增肌的统计分段回归估计，不能将置信区间当个人推荐区间或硬上限。",
+    "limitations": [
+      "估计不是个人上限",
+      "不能代替减脂保肌规则",
+      "2020更正为利益冲突披露，已保留"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-M18-NONRESTRICTED",
+    "sourceId": "MORTON-PROTEIN-2018",
+    "sourceVersion": "2018 journal publication; online 2017-07-11; 2020 correction acquired",
+    "locator": {
+      "artifactPath": "raw/MORTON-PROTEIN-2018/pmc-full-text-20261029T051441Z-e5348fde4793.html",
+      "artifactSha256": "8caa2abddf8a3ae4e1444a9b359ab39d34dcb2adc11f74876e11319565095825",
+      "kind": "paragraph",
+      "blockIndex": 18,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "358fa6f80862214e415acad439b21210ad06c4893bcc34f6876b9089d1794777",
+      "verificationTokens": [
+        "healthy and not energy-restricted"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "至少6周、每周至少2次抗阻训练",
+    "energyContext": "非能量限制",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "该Meta分析只纳入健康且非能量限制的训练研究，不能直接当作减脂剂量依据。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-M18-CORRECTION",
+    "sourceId": "MORTON-PROTEIN-2018",
+    "sourceVersion": "2018 journal publication; online 2017-07-11; 2020 correction acquired",
+    "locator": {
+      "artifactPath": "raw/MORTON-PROTEIN-2018/2020-correction-20261029T051730Z-a8a4afcb68c1.html",
+      "artifactSha256": "cd7aeabbd2a960f2648f2564db4ccddb4def8f2f89e6936b38acccecb28e8aa8",
+      "kind": "paragraph",
+      "blockIndex": 7,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "83c6e81bb8112017b5f48bddc183b3b1a97d5a1bd249ff379599eb628c8984d7",
+      "verificationTokens": [
+        "Brad Schoenfeld declares"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "来源所述一般人群",
+    "energyContext": "未限定",
+    "nutrient": "source_integrity",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "2020更正补充作者的补剂企业顾问利益关系披露；没有在该更正中改动剂量数字。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-F23-ATHLETE-PROTEIN",
+    "sourceId": "ISSN-FEMALE-2023",
+    "sourceVersion": "2023",
+    "locator": {
+      "artifactPath": "raw/ISSN-FEMALE-2023/pmc-full-text-20261029T051442Z-39def834e456.html",
+      "artifactSha256": "3136b46d32e490eb070ffd9cbe0c403a5e87a2348f7f2c150124700f7a315e34",
+      "kind": "paragraph",
+      "blockIndex": 97,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "a29d3f246b574a0456d67b0cdfbe9102642259573a9f925a3ce5925b50f1e58a",
+      "verificationTokens": [
+        "daily protein intake should fall within the mid-to upper ranges"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "女性运动员，原文区分月经及绝经阶段",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "女性运动员，需核查训练和生命阶段",
+    "energyContext": "未限定",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 1.8,
+      "upper": 2.2,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "g/kg_actual/day",
+    "weightBasis": "actual",
+    "claimType": "recommendation",
+    "summaryZh": "女性运动员立场给出较高蛋白范围，并区分月经/围绝经/绝经情境；不能按女性身份统一扣减。",
+    "limitations": [
+      "不能不分情境叠加月经期百分比调整",
+      "未采集必要生命阶段时不自动执行专项调整",
+      "不将运动员范围无条件用于全部普通女性"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-I19-SURPLUS",
+    "sourceId": "IRAKI-OFFSEASON-2019",
+    "sourceVersion": "2019",
+    "locator": {
+      "artifactPath": "raw/IRAKI-OFFSEASON-2019/pmc-full-text-20261029T051443Z-219382c5e959.html",
+      "artifactSha256": "d58d4dce8408e38dc8b308225129a94a9f7b7cb29ec31a38335b64090fed1195",
+      "kind": "paragraph",
+      "blockIndex": 8,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "c872157d50fdfa8c5fba3b5820cb9ba439d038ff6ae66bb1a58da4b2c1f204d5",
+      "verificationTokens": [
+        "hyper-energetic diet (~10–20%)"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "自然健美非赛季训练者",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "gain"
+    ],
+    "trainingContext": "自然健美非赛季，新手/中等经验者",
+    "energyContext": "能量盈余",
+    "nutrient": "energy",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 10,
+      "upper": 20,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "pct_maintenance_energy",
+    "weightBasis": "none",
+    "claimType": "recommendation",
+    "summaryZh": "自然健美非赛季综述给出约10%–20%盈余；训练经验更高者应保守，不能推广为所有成人增肌默认。",
+    "limitations": [
+      "不是普通健身用户统一起点",
+      "进阶训练者更保守",
+      "产品旧+8%候选不由本来源直接规定"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "自然健美非赛季新手/中等经验者讨论10%～20%盈余；进阶者更保守，不可推广为全部成人的统一起点或上下限。"
+  },
+  {
+    "id": "EV-I19-GAIN-RATE",
+    "sourceId": "IRAKI-OFFSEASON-2019",
+    "sourceVersion": "2019",
+    "locator": {
+      "artifactPath": "raw/IRAKI-OFFSEASON-2019/pmc-full-text-20261029T051443Z-219382c5e959.html",
+      "artifactSha256": "d58d4dce8408e38dc8b308225129a94a9f7b7cb29ec31a38335b64090fed1195",
+      "kind": "paragraph",
+      "blockIndex": 8,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "c872157d50fdfa8c5fba3b5820cb9ba439d038ff6ae66bb1a58da4b2c1f204d5",
+      "verificationTokens": [
+        "0.25–0.5% of bodyweight/week"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "自然健美非赛季训练者",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "gain"
+    ],
+    "trainingContext": "自然健美新手/中等经验者",
+    "energyContext": "能量盈余",
+    "nutrient": "weight_trend",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 0.25,
+      "upper": 0.5,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "pct_body_weight/week",
+    "weightBasis": "actual",
+    "claimType": "recommendation",
+    "summaryZh": "非赛季健美新手/中等经验者的周增重参考，不能改成kg/周或套给所有增肌者。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "自然健美非赛季新手/中等经验者周增重约0.25%～0.5%体重参考；不是kg/周，不能照搬给所有增肌者。"
+  },
+  {
+    "id": "EV-I19-PROTEIN",
+    "sourceId": "IRAKI-OFFSEASON-2019",
+    "sourceVersion": "2019",
+    "locator": {
+      "artifactPath": "raw/IRAKI-OFFSEASON-2019/pmc-full-text-20261029T051443Z-219382c5e959.html",
+      "artifactSha256": "d58d4dce8408e38dc8b308225129a94a9f7b7cb29ec31a38335b64090fed1195",
+      "kind": "paragraph",
+      "blockIndex": 8,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "c872157d50fdfa8c5fba3b5820cb9ba439d038ff6ae66bb1a58da4b2c1f204d5",
+      "verificationTokens": [
+        "Sufficient protein (1.6–2.2 g/kg/day)"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "自然健美非赛季训练者",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "gain"
+    ],
+    "trainingContext": "自然健美非赛季",
+    "energyContext": "能量盈余",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 1.6,
+      "upper": 2.2,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "g/kg_actual/day",
+    "weightBasis": "actual",
+    "claimType": "recommendation",
+    "summaryZh": "自然健美非赛季全天蛋白参考，与每餐剂量及补充剂剂量分开。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-I19-FAT",
+    "sourceId": "IRAKI-OFFSEASON-2019",
+    "sourceVersion": "2019",
+    "locator": {
+      "artifactPath": "raw/IRAKI-OFFSEASON-2019/pmc-full-text-20261029T051443Z-219382c5e959.html",
+      "artifactSha256": "d58d4dce8408e38dc8b308225129a94a9f7b7cb29ec31a38335b64090fed1195",
+      "kind": "paragraph",
+      "blockIndex": 31,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "1dd50e87ef46bc6a3a860b77c9f468f465f3859d34918fab3a888ef74b4b0e27",
+      "verificationTokens": [
+        "dietary fats should account for 20–35%"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "自然健美非赛季训练者",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "gain"
+    ],
+    "trainingContext": "健美非赛季",
+    "energyContext": "能量盈余",
+    "nutrient": "fat",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 35,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "claimType": "recommendation",
+    "summaryZh": "该健美综述讨论脂肪占能量20%–35%；与中国普通成人20%–30%参考按人群区分。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "自然健美非赛季综述讨论脂肪供能20%～35%；这与中国一般成人AMDR人群不同，不证明所有人都应采用35%。"
+  },
+  {
+    "id": "EV-I19-CARB-LOAD",
+    "sourceId": "IRAKI-OFFSEASON-2019",
+    "sourceVersion": "2019",
+    "locator": {
+      "artifactPath": "raw/IRAKI-OFFSEASON-2019/pmc-full-text-20261029T051443Z-219382c5e959.html",
+      "artifactSha256": "d58d4dce8408e38dc8b308225129a94a9f7b7cb29ec31a38335b64090fed1195",
+      "kind": "paragraph",
+      "blockIndex": 37,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "1ba2bc4515d0e42a102fcbc17c049a28ed7374da0368308e9a38235b9996d285",
+      "verificationTokens": [
+        "optimal amounts of carbohydrates have not been established"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "自然健美非赛季训练者",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "gain"
+    ],
+    "trainingContext": "健美抗阻训练",
+    "energyContext": "非赛季",
+    "nutrient": "carbohydrate",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "先分配蛋白和脂肪，再用剩余能量分配碳水；约≥3–5g/kg的叙述须结合训练，不把5当统一上限。",
+    "limitations": [
+      "原文明确最优碳水量未确立",
+      "不自动转换成所有训练者的硬下限",
+      "高负荷/混合耐力训练需对应证据"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-I19-TREND",
+    "sourceId": "IRAKI-OFFSEASON-2019",
+    "sourceVersion": "2019",
+    "locator": {
+      "artifactPath": "raw/IRAKI-OFFSEASON-2019/pmc-full-text-20261029T051443Z-219382c5e959.html",
+      "artifactSha256": "d58d4dce8408e38dc8b308225129a94a9f7b7cb29ec31a38335b64090fed1195",
+      "kind": "paragraph",
+      "blockIndex": 17,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "cecb5c46bb0d1a1a7346ae6b46ec86b1ffaf7ac7be2fc7ee6f2033b25cff6546",
+      "verificationTokens": [
+        "average weekly weight changes based on daily"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "gain"
+    ],
+    "trainingContext": "自然健美非赛季",
+    "energyContext": "能量盈余",
+    "nutrient": "adjustment",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "参考多日称重的周变化以减少日波动影响；未规定所有人统一的两周窗口或固定调整步幅。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-W23-FIBER-MIN",
+    "sourceId": "WHO-CARB-2023",
+    "sourceVersion": "2023 WHO guideline, ISBN 9789240073593",
+    "locator": {
+      "artifactPath": "raw/WHO-CARB-2023/official-current-download-20261029T051959Z-23615a4a0a06.pdf",
+      "artifactSha256": "81548c804ebf031aa06a71f762c4ed72f680d4cb2caba44b011459fe5c841cd0",
+      "kind": "pdf_page",
+      "blockIndex": null,
+      "page": 36,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "cca127d4298032644bbb69f8d8673b1cd89a9b7a1bb5e0a2ee7f7665917452f3",
+      "verificationTokens": [
+        "at least 25 g per day of naturally occurring dietary fibre"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "来源所述一般人群",
+    "energyContext": "未限定",
+    "nutrient": "fiber",
+    "valueOrRange": {
+      "kind": "minimum",
+      "value": 25,
+      "lower": null,
+      "upper": null,
+      "intervalType": "recommendation",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "claimType": "recommendation",
+    "summaryZh": "一般成人每天至少25g天然存在于食物中的膳食纤维；属于最低值，不是建议吃满的点值或上限。",
+    "limitations": [
+      "一般膳食质量建议，不是疾病专用方案",
+      "不能把未知食物纤维补0",
+      "不把该建议说成补剂剂量或所有人的精确最优值"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false,
+    "quality": {
+      "design": "who_evidence_based_guideline",
+      "certainty": "按WHO指南报告；本项目未另行GRADE评级",
+      "fundingAndConflicts": "见WHO原文声明",
+      "interpretation": "一般成人最低建议，不是点目标或上限"
+    },
+    "planningBriefZh": "WHO一般成人每天至少25g天然食物膳食纤维；是最低建议，不是上限、精确最优值或补剂剂量，疾病专用饮食另议。"
+  },
+  {
+    "id": "EV-W23-CARB-QUALITY",
+    "sourceId": "WHO-CARB-2023",
+    "sourceVersion": "2023 WHO guideline, ISBN 9789240073593",
+    "locator": {
+      "artifactPath": "raw/WHO-CARB-2023/official-current-download-20261029T051959Z-23615a4a0a06.pdf",
+      "artifactSha256": "81548c804ebf031aa06a71f762c4ed72f680d4cb2caba44b011459fe5c841cd0",
+      "kind": "pdf_page",
+      "blockIndex": null,
+      "page": 36,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "cca127d4298032644bbb69f8d8673b1cd89a9b7a1bb5e0a2ee7f7665917452f3",
+      "verificationTokens": [
+        "carbohydrate intake should come primarily from whole grains"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "来源所述一般人群",
+    "energyContext": "未限定",
+    "nutrient": "carbohydrate",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "碳水优先来自全谷、蔬菜、水果和豆类；该指南不直接制定运动训练的克数。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "WHO碳水质量建议优先全谷、蔬菜、水果和豆类；不直接规定运动者的碳水克数或个人供能比例。"
+  },
+  {
+    "id": "EV-W23-NO-CARB-PCT",
+    "sourceId": "WHO-CARB-2023",
+    "sourceVersion": "2023 WHO guideline, ISBN 9789240073593",
+    "locator": {
+      "artifactPath": "raw/WHO-CARB-2023/official-current-download-20261029T051959Z-23615a4a0a06.pdf",
+      "artifactSha256": "81548c804ebf031aa06a71f762c4ed72f680d4cb2caba44b011459fe5c841cd0",
+      "kind": "pdf_page",
+      "blockIndex": null,
+      "page": 16,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "ecc80f056ca1606098087e647d9c2da9acb3a63d200135eba736ab2428944817",
+      "verificationTokens": [
+        "Setting a recommended level of carbohydrate intake"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "来源所述一般人群",
+    "energyContext": "未限定",
+    "nutrient": "carbohydrate",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "此版更新重点为质量，没有在更新范围内设定总碳水占总能量的个人比例。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-C23-FIBER-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "additionalLocators": [
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+        "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 10,
+        "row": "膳食纤维",
+        "column": "RNI (AI标记)",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+        "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 11,
+        "row": "膳食纤维",
+        "column": "RNI (AI标记)",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+        "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 12,
+        "row": "膳食纤维",
+        "column": "RNI (AI标记)",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+        "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 13,
+        "row": "膳食纤维",
+        "column": "RNI (AI标记)",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+        "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 14,
+        "row": "膳食纤维",
+        "column": "RNI (AI标记)",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+        "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 20,
+        "row": "膳食纤维",
+        "column": "RNI (AI标记)",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+        "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 21,
+        "row": "膳食纤维",
+        "column": "RNI (AI标记)",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+        "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 22,
+        "row": "膳食纤维",
+        "column": "RNI (AI标记)",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+        "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 23,
+        "row": "膳食纤维",
+        "column": "RNI (AI标记)",
+        "textSha256": null,
+        "verificationTokens": []
+      }
+    ],
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "中国普通成年男女，公开表9–14及20–23各自分年龄组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "来源所述一般人群",
+    "energyContext": "未限定",
+    "nutrient": "fiber",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "claimType": "reference",
+    "summaryZh": "中国成年男女各年龄组公开参考表中的纤维AI为25–30g/日；保留AI参考范围，与WHO最低25g的语义分开。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-C23-REFERENCE-TYPES",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "表下注释",
+      "column": "EAR/RNI/AI/AMDR/UL定义",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "来源所述一般人群",
+    "energyContext": "未限定",
+    "nutrient": "reference_semantics",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "EAR、RNI、AI、AMDR、UL含义不同；表格分组数字不是个体消耗测量，也不是抗阻训练专用剂量。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-C23-FAT-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "additionalLocators": [
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+        "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 10,
+        "row": "总脂肪",
+        "column": "AMDR",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+        "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 11,
+        "row": "总脂肪",
+        "column": "AMDR",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+        "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 12,
+        "row": "总脂肪",
+        "column": "AMDR",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+        "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 13,
+        "row": "总脂肪",
+        "column": "AMDR",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+        "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 14,
+        "row": "总脂肪",
+        "column": "AMDR",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+        "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 20,
+        "row": "总脂肪",
+        "column": "AMDR",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+        "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 21,
+        "row": "总脂肪",
+        "column": "AMDR",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+        "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 22,
+        "row": "总脂肪",
+        "column": "AMDR",
+        "textSha256": null,
+        "verificationTokens": []
+      },
+      {
+        "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+        "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 1,
+        "tableNumber": 23,
+        "row": "总脂肪",
+        "column": "AMDR",
+        "textSha256": null,
+        "verificationTokens": []
+      }
+    ],
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "中国普通成年男女，公开表9–14及20–23各自分年龄组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "来源所述一般人群",
+    "energyContext": "未限定",
+    "nutrient": "fat",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "claimType": "reference",
+    "summaryZh": "中国成人公开表的脂肪AMDR20%–30%为一般参考，不能与竞技健美范围拼成更宽推荐。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "中国普通成人脂肪AMDR20%～30%能量，是群体分布参考，不是毒性UL或全部运动/减脂人群的唯一配比。"
+  },
+  {
+    "id": "EV-B17-DEFICIT",
+    "sourceId": "ISSN-BODYCOMP-2017",
+    "sourceVersion": "2017",
+    "locator": {
+      "artifactPath": "raw/ISSN-BODYCOMP-2017/pmc-full-text-20261029T051441Z-ce71c61b558f.html",
+      "artifactSha256": "33b79a0b55fa2a3527af7be681c31591138ce4e3457077bfcc3698ee79dccc0e",
+      "kind": "paragraph",
+      "blockIndex": 84,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "375797bd3456bab05e75d9521a539c60fe96ef0e3868fe81c8d75bbc95d5f9b6",
+      "verificationTokens": [
+        "sustained caloric deficit"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "一般健康成年人；具体来源未以数值定义全部年龄界限",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "goal": [
+      "lose"
+    ],
+    "trainingContext": "来源所述一般人群",
+    "energyContext": "能量限制",
+    "nutrient": "energy",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "减脂依赖持续能量缺口；该方向性依据不直接规定本产品默认−15%。",
+    "limitations": [
+      "原文条件必须同时匹配；本卡不确定产品起始值或完整个人目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-HC-ADULT-EER",
+    "locator": {
+      "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "kind": "paragraph",
+      "blockIndex": 59,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "292b55c5914753c28e78b39e80a1718befb2023ab2d38b64774740bfa2e1ff22",
+      "verificationTokens": [
+        "EER = 753.07 – (10.83 × age [y]) + (6.50 × height [cm]) + (14.10 × weight [kg])"
+      ]
+    },
+    "additionalLocators": [
+      {
+        "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+        "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+        "kind": "paragraph",
+        "blockIndex": 60,
+        "page": null,
+        "tableNumber": null,
+        "row": null,
+        "column": null,
+        "textSha256": "8ea3896947be703918a90a599376362890adcaae484379454d6496e657f5f9ac",
+        "verificationTokens": [
+          "EER = 581.47 – (10.83 × age [y]) + (8.30 × height [cm]) + (14.94 × weight [kg])"
+        ]
+      },
+      {
+        "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+        "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+        "kind": "paragraph",
+        "blockIndex": 61,
+        "page": null,
+        "tableNumber": null,
+        "row": null,
+        "column": null,
+        "textSha256": "ffe1c512d9a32b3fe86a1a25c329364bf8a33af6b324879c5b7c4906b0ab0027",
+        "verificationTokens": [
+          "EER = 1,004.82 – (10.83 × age [y]) + (6.52 × height [cm]) + (15.91 × weight [kg])"
+        ]
+      },
+      {
+        "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+        "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+        "kind": "paragraph",
+        "blockIndex": 62,
+        "page": null,
+        "tableNumber": null,
+        "row": null,
+        "column": null,
+        "textSha256": "e208051c319351f3c11c5591e921555fab76d46e63fd3336741579cb38c66d7e",
+        "verificationTokens": [
+          "EER = –517.88 – (10.83 × age [y]) + (15.61 × height [cm]) + (19.11 × weight [kg])"
+        ]
+      },
+      {
+        "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+        "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+        "kind": "paragraph",
+        "blockIndex": 63,
+        "page": null,
+        "tableNumber": null,
+        "row": null,
+        "column": null,
+        "textSha256": "aaff6cbbd79a52c114452b949598714fad2a1fca4a34df1d0f205c1f8cb342f5",
+        "verificationTokens": [
+          "EER = 584.90 – (7.01 × age [y]) + (5.72 × height [cm]) + (11.71 × weight [kg])"
+        ]
+      },
+      {
+        "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+        "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+        "kind": "paragraph",
+        "blockIndex": 64,
+        "page": null,
+        "tableNumber": null,
+        "row": null,
+        "column": null,
+        "textSha256": "68ae3f6b4c75c59d6dd6b0ac72cbef95153279d95a196dd47155a7141b6ac423",
+        "verificationTokens": [
+          "EER = 575.77 – (7.01 × age [y]) + (6.60 × height [cm]) + (12.14 × weight [kg])"
+        ]
+      },
+      {
+        "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+        "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+        "kind": "paragraph",
+        "blockIndex": 65,
+        "page": null,
+        "tableNumber": null,
+        "row": null,
+        "column": null,
+        "textSha256": "5be4cf1451519a00f305b0274db84676248234fda4fa40efc03f2b4b4ea7c226",
+        "verificationTokens": [
+          "EER = 710.25 – (7.01 × age [y]) + (6.54 × height [cm]) + (12.34 × weight [kg])"
+        ]
+      },
+      {
+        "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+        "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+        "kind": "paragraph",
+        "blockIndex": 66,
+        "page": null,
+        "tableNumber": null,
+        "row": null,
+        "column": null,
+        "textSha256": "e96eca09b65d4a9f1f4992544bbd240ef9915f95e2cf81896cc09f136f8b38c4",
+        "verificationTokens": [
+          "EER = 511.83 – (7.01 × age [y]) + (9.07 × height [cm]) + (12.56 × weight [kg])"
+        ]
+      }
+    ],
+    "summaryZh": "官方成人方程按性别和四档总活动分别估计每日能量需要；年龄以岁、身高以cm、实际体重以kg输入。",
+    "sourceId": "HC-EER-2025",
+    "sourceVersion": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+    "population": {
+      "ageMin": 19,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "Health Canada官方成人19岁及以上、非孕哺方程；本产品仅用于普通健康成人的起始估算",
+      "exclusions": [
+        "未满19岁不套成人方程",
+        "孕哺或医生要求特殊饮食不进入本产品自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "包含日常活动和训练的总活动；档位须由用户确认",
+    "energyContext": "估计维持需要量；不是增肌盈余或减脂缺口",
+    "nutrient": "energy",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "kcal/day",
+    "weightBasis": "actual",
+    "claimType": "reference",
+    "limitations": [
+      "美加DRI估算参考，不宣称已在本产品中国用户中验证误差",
+      "不是实测消耗，后续需要用实际体重趋势校准",
+      "不能从职业标签、步数或每周训练频率自动推断档位",
+      "不提供减脂、增肌或重组的调整百分比"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "加拿大卫生部实施NASEM2023的19岁以上普通成人能量方程；美加参考，非实测消耗，须用后续体重变化校准。活动已含训练。"
+  },
+  {
+    "id": "EV-HC-PA-DEFINITIONS",
+    "locator": {
+      "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "kind": "paragraph",
+      "blockIndex": 14,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "6a2793d9840d5b04c37610b05cfcd7f73a411053c44d89f42b9e825b148f1ebe",
+      "verificationTokens": [
+        "Age group Physical activity level category (PA CAT) Inactive Low active Active Very active 3 to <9 years 1.00 ≤ PAL <1.31 1.31 ≤ PAL < 1.44 1.44 ≤ PAL < 1.59 1.59 ≤ PAL < 2.50 9 to <14 years 1.00 ≤ PAL < 1.44 1.44 ≤ PAL < 1.59 1.59 ≤ PAL < 1.77 1.77 ≤ PAL < 2.50 14 to <19 years 1.00 ≤ PAL < 1.56 1.56 ≤ PAL < 1.73 1.73 ≤ PAL < 1.92 1.92 ≤ PAL < 2.50 19 years and older 1.00 ≤ PAL < 1.53 1.53 ≤ PAL < 1.68 1.68 ≤ PAL < 1.85 1.85 ≤ PAL < 2.50 Example of daily activities associated with physical activity level categories in adults. Activities of daily living, for example: 30 minutes walking plus 90 minutes light to moderate activity (household tasks, vacuuming, raking the lawn, etc.) Activities of daily living plus 60 to 80 minutes of walking at 5 to 7 km/h Activities of daily living plus 30 to 50 minutes of walking at 5 to 7 km/h, plus 45 minutes of moderate cycling, plus 40 minutes of doubles tennis Activities of daily living plus 45 minutes of moderate cycling, plus 25 minutes of jogging at 10 km/h, plus 60 minutes of doubles tennis"
+      ]
+    },
+    "additionalLocators": [],
+    "summaryZh": "成人总活动分四档。表中的日常活动实例用于理解档位，不是把训练分钟数机械换算成热量的算法。",
+    "sourceId": "HC-EER-2025",
+    "sourceVersion": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+    "population": {
+      "ageMin": 19,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "Health Canada官方成人19岁及以上、非孕哺方程；本产品仅用于普通健康成人的起始估算",
+      "exclusions": [
+        "未满19岁不套成人方程",
+        "孕哺或医生要求特殊饮食不进入本产品自动规则"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "包含日常活动和训练的总活动；档位须由用户确认",
+    "energyContext": "估计维持需要量；不是增肌盈余或减脂缺口",
+    "nutrient": "energy",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "kcal/day",
+    "weightBasis": "actual",
+    "claimType": "reference",
+    "limitations": [
+      "美加DRI估算参考，不宣称已在本产品中国用户中验证误差",
+      "不是实测消耗，后续需要用实际体重趋势校准",
+      "不能从职业标签、步数或每周训练频率自动推断档位",
+      "不提供减脂、增肌或重组的调整百分比"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "官方总活动分4档；结合工作、步数和训练估算。缺项需说明，不把未填写训练当无训练，也不另加运动热量。"
+  },
+  {
+    "id": "EV-NHC-BMI-CONTEXT",
+    "sourceId": "NHC-BMI-2013",
+    "sourceVersion": "WS/T 428—2013; published 2013-04-18, effective 2013-10-01",
+    "locator": {
+      "artifactPath": "raw/NHC-BMI-2013/wst428-2013-20261029.pdf",
+      "artifactSha256": "7bbd7f431aab5ba6d5938885c51e83fdb489a05534219ad3fe3eb2cfadcb9b61",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 4,
+      "tableNumber": 1,
+      "row": "体重正常",
+      "column": "BMI值 kg/m²",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "additionalLocators": [
+      {
+        "artifactPath": "raw/NHC-BMI-2013/wst428-2013-20261029.pdf",
+        "artifactSha256": "7bbd7f431aab5ba6d5938885c51e83fdb489a05534219ad3fe3eb2cfadcb9b61",
+        "kind": "image_table",
+        "blockIndex": null,
+        "page": 3,
+        "tableNumber": null,
+        "row": "范围",
+        "column": "适用与排除",
+        "textSha256": null,
+        "verificationTokens": []
+      }
+    ],
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "中国一般成人体重分类；原标准明确不适用于运动员、孕产妇等特殊人群",
+      "exclusions": [
+        "运动员",
+        "孕产妇等特殊人群"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "体重分类背景；不由BMI判定训练经验或体脂率",
+    "energyContext": "非能量处方",
+    "nutrient": "scope",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 18.5,
+      "upper": 24.0,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "kg/m²",
+    "weightBasis": "actual",
+    "claimType": "reference",
+    "summaryZh": "中国一般成人体重分类参考：BMI<18.5为体重过低，18.5≤BMI<24.0为体重正常，24.0≤BMI<28.0为超重，BMI≥28.0为肥胖。此表用于体重分类，不是营养计算的资格阈值，也不是蛋白剂量规则。",
+    "limitations": [
+      "BMI不等于体脂率，也不能独自证明健康",
+      "不把该标准用于运动员或孕产妇的体重诊断",
+      "体重分类参考不替用户选择增肌、减脂等目标"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对引用、适用条件与用户明确批准的产品策略；不等于临床专业审阅",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EV-PLAN-ENERGY-NO-UL",
+    "sourceId": "NASEM-ENERGY-2023",
+    "sourceVersion": "2023 report, DOI 10.17226/26818; partial online chapters",
+    "locator": {
+      "artifactPath": "raw/NASEM-ENERGY-2023/official-chapter-02-20261029T052124Z-3f3cf5dede1d.html",
+      "artifactSha256": "d97670917e7ffc68581fc9e934e9d3d557bcb7d255a62f190aa4e56e0e80c62d",
+      "kind": "paragraph",
+      "blockIndex": 49,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "2b22d31ca0f49733105d6ac0cee58a486637aa6528dbe293f6253567ae4a9fef",
+      "verificationTokens": [
+        "energy has neither a Recommended Dietary Allowance"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "一般成人；不据此推定竞技或疾病处方",
+    "energyContext": "按来源所述情境",
+    "nutrient": "energy",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "能量没有通用RDA或UL；摄入相对个人消耗的长期盈亏影响体重，不能把2500或5000kcal当作所有人的肥胖分界。",
+    "limitations": [
+      "EER是按年龄、性别、体重、身高和活动预测的参考，不是实测消耗",
+      "没有通用UL不等于任意高低摄入均适宜",
+      "不得把程序存储上界冒充医学上限"
+    ],
+    "quality": {
+      "design": "national_academy_committee_report",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "能量没有通用RDA或UL；长期摄入相对个人消耗的盈亏影响体重。2500/5000等单值不是所有人的肥胖分界；没有UL也不等于可任意高低摄入。"
+  },
+  {
+    "id": "EV-PLAN-AMDR-MEANING",
+    "sourceId": "NASEM-ENERGY-2023",
+    "sourceVersion": "2023 report, DOI 10.17226/26818; partial online chapters",
+    "locator": {
+      "artifactPath": "raw/NASEM-ENERGY-2023/official-chapter-03-20261029T052123Z-5f6373a9364f.html",
+      "artifactSha256": "8a40f6af2761d0ddf60cd1fdd20ea698f2ae659958476e910c9a7e7d4337a7d5",
+      "kind": "paragraph",
+      "blockIndex": 18,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "459e2efbfab3ea8d8e7d951320d543b1e533fc242bfdf4d34185681c99f40a46",
+      "verificationTokens": [
+        "Acceptable Macronutrient Distribution Range"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "一般成人；不据此推定竞技或疾病处方",
+    "energyContext": "按来源所述情境",
+    "nutrient": "reference_semantics",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "AMDR是兼顾慢性病风险与必需营养需要的宏量营养素分布参考；它与UL、AI、RDA含义不同，不能把参考区间端点一律解释为毒性阈值。",
+    "limitations": [
+      "仅在原文人群和条件下参考；不是统一个人处方或安全上限"
+    ],
+    "quality": {
+      "design": "national_academy_committee_report",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "AMDR是兼顾慢性病风险与必需营养需要的分布参考；UL、AI和RDA含义不同，参考区间端点不能一律当成毒性阈值。"
+  },
+  {
+    "id": "EV-PLAN-EER-UNCERTAINTY",
+    "sourceId": "NASEM-ENERGY-2023",
+    "sourceVersion": "2023 report, DOI 10.17226/26818; partial online chapters",
+    "locator": {
+      "artifactPath": "raw/NASEM-ENERGY-2023/official-chapter-02-20261029T052124Z-3f3cf5dede1d.html",
+      "artifactSha256": "d97670917e7ffc68581fc9e934e9d3d557bcb7d255a62f190aa4e56e0e80c62d",
+      "kind": "paragraph",
+      "blockIndex": 19,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "67c0651013663ecd2de1a83c5eeba1c29ffb1a4dd6b35b7e0ef1a54c62b778b9",
+      "verificationTokens": [
+        "RMSE = 339"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "一般成人；不据此推定竞技或疾病处方",
+    "energyContext": "按来源所述情境",
+    "nutrient": "energy",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "成人能量方程有预测误差；原文报告男性RMSE约339、女性约246kcal/日。模型应说明活动估算不确定性，并结合后续实际体重变化核对。",
+    "limitations": [
+      "群体预测误差不是个人置信区间",
+      "不能保证按期达到期望体重",
+      "不据此自动增加固定热量补偿"
+    ],
+    "quality": {
+      "design": "national_academy_committee_report",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "成人能量方程有预测误差；原文男性RMSE约339、女性约246kcal/日。这不是个人置信区间或应加减的热量，需以实际体重趋势核对。"
+  },
+  {
+    "id": "EV-PLAN-ENERGY-ACCOUNTING",
+    "sourceId": "NASEM-ENERGY-2023",
+    "sourceVersion": "2023 report, DOI 10.17226/26818; partial online chapters",
+    "locator": {
+      "artifactPath": "raw/NASEM-ENERGY-2023/official-chapter-03-20261029T052123Z-5f6373a9364f.html",
+      "artifactSha256": "8a40f6af2761d0ddf60cd1fdd20ea698f2ae659958476e910c9a7e7d4337a7d5",
+      "kind": "paragraph",
+      "blockIndex": 9,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "a699ab91f5227764e5db57715fd6a8914b8862c565d537f85a5147c1d3a0d151",
+      "verificationTokens": [
+        "Atwater general factor"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "一般成人；不据此推定竞技或疾病处方",
+    "energyContext": "按来源所述情境",
+    "nutrient": "energy_accounting",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "4/4/9是计划中蛋白、碳水和脂肪的常用能量核算口径；食物实际能量还受其他成分与换算方法影响，不能把计划核算等同于精确代谢测量。",
+    "limitations": [
+      "仅在原文人群和条件下参考；不是统一个人处方或安全上限"
+    ],
+    "quality": {
+      "design": "national_academy_committee_report",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "4/4/9为蛋白、碳水、脂肪的常用能量核算口径；实际食物能量也受其他成分和换算方法影响，不等于精确代谢测量。"
+  },
+  {
+    "id": "EV-PLAN-DEFICIT-INDIVIDUAL",
+    "sourceId": "ISSN-WEIGHTLOSS-2026",
+    "sourceVersion": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+    "locator": {
+      "artifactPath": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "artifactSha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "kind": "paragraph",
+      "blockIndex": 9,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "a02b37d16e7ef4b78f4469ed5b19451a02b565c33f86ca157c26a57898f5ee64",
+      "verificationTokens": [
+        "These factors need to be tailored"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "一般成人；不据此推定竞技或疾病处方",
+    "energyContext": "减重；能量限制",
+    "nutrient": "energy",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "减脂的缺口幅度、安排与宏量组成需结合个人目标、耐受和偏好；该立场不规定所有人只能减15%，也不将其他单个百分比设成通用处方。",
+    "limitations": [
+      "仅在原文人群和条件下参考；不是统一个人处方或安全上限"
+    ],
+    "quality": {
+      "design": "position_stand",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "缺口幅度、安排与营养组成需结合个人目标、耐受和偏好；没有全员固定-15%的规定，不用期望日期强行追赶缺口。"
+  },
+  {
+    "id": "EV-PLAN-DEFICIT-RATE",
+    "sourceId": "ISSN-WEIGHTLOSS-2026",
+    "sourceVersion": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+    "locator": {
+      "artifactPath": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "artifactSha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "kind": "paragraph",
+      "blockIndex": 72,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "5f1dfaf0211d675319991a7215921640e0ba9b6fcfb894044959ceb01cf0e04b",
+      "verificationTokens": [
+        "limiting weekly rates of weight loss"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "lose"
+    ],
+    "trainingContext": "能量不足的运动人群，含精英运动员研究",
+    "energyContext": "按来源所述情境",
+    "nutrient": "weight_trend",
+    "valueOrRange": {
+      "kind": "range",
+      "value": null,
+      "lower": 0.5,
+      "upper": 1,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_body_weight/week",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "运动人群减重文献讨论每周约0.5%～1%体重变化与瘦体重保留；这是情境参考，不能转成统一缺口百分比或保证完成日期。",
+    "limitations": [
+      "不是所有普通成人的减重速度目标或安全分界",
+      "文中同时讨论较快初期减重的长期维持结果，不能断言慢速永远最好",
+      "不能用固定7700kcal/kg倒推必需缺口"
+    ],
+    "quality": {
+      "design": "position_stand",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "运动减重文献讨论每周约0.5%～1%体重以保瘦体重；非所有成人的统一目标或安全阈值，不能用固定能量换算率保证日期。"
+  },
+  {
+    "id": "EV-MK22-DEFICIT-LEAN-MASS",
+    "sourceId": "MURPHY-ENERGY-2022",
+    "sourceVersion": "original_author_abstract_only",
+    "locator": {
+      "artifactPath": "raw/MURPHY-ENERGY-2022/plan-reference-7fd1b297ea8b.xml",
+      "artifactSha256": "7fd1b297ea8b5e2a82f2e00ab6a09f99aa286e0371010b47bbd2def511093d90",
+      "kind": "paragraph",
+      "blockIndex": 0,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "94fcce123255240572530b447d83aaf13bc264dd6c51458e1c5f7ac9009e4436",
+      "verificationTokens": [
+        "an energy deficit of ~500 kcal"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "纳入至少3周抗阻训练研究",
+    "energyContext": "按来源所述情境",
+    "nutrient": "energy",
+    "valueOrRange": {
+      "kind": "point",
+      "value": 500,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "kcal/day",
+    "weightBasis": "none",
+    "claimType": "reference",
+    "summaryZh": "抗阻训练研究的Meta回归观察到约500kcal/日缺口与平均增瘦体重效应消失相关；作者建议减重保肌避免更大缺口。它不是人人适用的有害阈值或精确上限。",
+    "limitations": [
+      "本地仅取得作者原始摘要，未取得全文以全面审查纳入研究及偏倚",
+      "Meta回归的组间关系不能保证个人因果或结局",
+      "不将500kcal写成统一硬门槛；增肌与保肌结局不同"
+    ],
+    "quality": {
+      "design": "systematic_review_and_meta_regression",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "≥3周抗阻训练研究的Meta回归：约500kcal/日缺口对应平均增瘦体重效应消失；作者提出保肌建议，非个人因果或通用有害阈值。本地仅原始摘要，不作硬门槛。"
+  },
+  {
+    "id": "EV-PLAN-LOW-ENERGY-CONTEXT",
+    "sourceId": "ISSN-WEIGHTLOSS-2026",
+    "sourceVersion": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+    "locator": {
+      "artifactPath": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "artifactSha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "kind": "paragraph",
+      "blockIndex": 11,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "8397bcf0ec8da5fbc8492ec7f655900842d8cc67d294524b754f203d0afa1b97",
+      "verificationTokens": [
+        "Very-low-energy diets (<800 kcal/day)"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "一般成人；不据此推定竞技或疾病处方",
+    "energyContext": "按来源所述情境",
+    "nutrient": "energy",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "极低能量和低能量饮食有独立研究及应用场景，也伴随瘦体重与营养不足风险；不能把特定临床方案直接当作普通健身计划。",
+    "limitations": [
+      "文中描述<800kcal及800～1200kcal两类研究，并非一条适用所有人的安全阈值",
+      "不由AI在本产品中制定需临床管理的减重方案"
+    ],
+    "quality": {
+      "design": "position_stand",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "极低能量与低能量饮食有专门研究和临床情境，并有瘦体重及营养不足风险；不能照搬为普通健身计划，也不能把研究分组当人人安全阈值。"
+  },
+  {
+    "id": "EV-NIDDK-EXISTING-TOOL-FLOOR",
+    "sourceId": "NIDDK-BWP-2026",
+    "sourceVersion": "official_tool_not_clinical_guideline",
+    "locator": {
+      "artifactPath": "raw/NIDDK-BWP-2026/plan-reference-956d1321dc96.html",
+      "artifactSha256": "956d1321dc9662548db5bc08dff8224344f98736a34cc98e881fdc5a68fe2302",
+      "kind": "paragraph",
+      "blockIndex": 64,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "3de3ade43119958340b9b610d8b59349d306dc462a73b9edd14f307786d02c25",
+      "verificationTokens": [
+        "Food group targets and nutrient recommendations will not be met below 1000"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "一般成人；不据此推定竞技或疾病处方",
+    "energyContext": "按来源所述情境",
+    "nutrient": "tool_boundary",
+    "valueOrRange": {
+      "kind": "point",
+      "value": 1000,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "kcal/day",
+    "weightBasis": "none",
+    "claimType": "reference",
+    "summaryZh": "NIDDK成人体重规划工具将1000kcal/日作为其工具下界，并说明更低时食物组和营养建议难以满足。这里只支持说明既有自动工具边界，不宣称为人人精确最低需要量。",
+    "limitations": [
+      "这是其他官方工具的使用约束，不能冒充经过个体医学评估的最低热量",
+      "本项目沿用的1000下界和10000存储上界均需按程序边界标识",
+      "原工具限18岁以上，非孕哺；本项目当前EER方法另限19岁以上"
+    ],
+    "quality": {
+      "design": "official_public_planning_tool",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "NIDDK成人工具以1000kcal/日为工具下界，提示更低时食物组和营养建议难满足。这不是个人医学最低量；本产品另有10000kcal存储上界，也不是医学UL。"
+  },
+  {
+    "id": "EV-PLAN-FAT-INDIVIDUAL",
+    "sourceId": "ISSN-WEIGHTLOSS-2026",
+    "sourceVersion": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+    "locator": {
+      "artifactPath": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "artifactSha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "kind": "paragraph",
+      "blockIndex": 23,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "49afef49eaa97b1d0c1670e07dc8e18181213a0f6102d8909870b226d1a9d4cf",
+      "verificationTokens": [
+        "The dietary carbohydrate‒fat proportion can be individualized"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "一般成人；不据此推定竞技或疾病处方",
+    "energyContext": "按来源所述情境",
+    "nutrient": "fat",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "减重饮食中的碳水与脂肪比例可结合偏好个体化；从低碳到低脂的研究均可减重，不能仅因脂肪超过30%就认定计划计算错误。",
+    "limitations": [
+      "不是鼓励忽略脂肪酸质量、纤维或营养充足性",
+      "需与总能量、训练和执行情况一起解释"
+    ],
+    "quality": {
+      "design": "position_stand",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "减重研究中碳水与脂肪比例可结合偏好个体化；低碳到低脂均可减重。仍需兼顾脂肪酸质量、纤维、营养充足与训练。"
+  },
+  {
+    "id": "EV-WF23-CONDITIONAL",
+    "sourceId": "WHO-FAT-2023",
+    "sourceVersion": "official_full_guideline",
+    "locator": {
+      "artifactPath": "raw/WHO-FAT-2023/plan-reference-a9f12218be0b.pdf",
+      "artifactSha256": "a9f12218be0b1720c9be4f0dee79c2dbdcbd13fb44cd3e0d751bf04b5fa63381",
+      "kind": "pdf_page",
+      "blockIndex": null,
+      "page": 30,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "aad67e28e74c4b50437ee853da8c273696a0e97a6f5fe97c655966941e2b15f8",
+      "verificationTokens": [
+        "conditional recommendation"
+      ]
+    },
+    "additionalLocators": [
+      {
+        "artifactPath": "raw/WHO-FAT-2023/plan-reference-a9f12218be0b.pdf",
+        "artifactSha256": "a9f12218be0b1720c9be4f0dee79c2dbdcbd13fb44cd3e0d751bf04b5fa63381",
+        "kind": "pdf_page",
+        "blockIndex": null,
+        "page": 11,
+        "tableNumber": null,
+        "row": null,
+        "column": null,
+        "textSha256": "9aa0ab71323706938f4fe9d47d5853e1bf418199f7a2ff798e9db19e55571b30",
+        "verificationTokens": [
+          "may therefore not apply"
+        ]
+      }
+    ],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "一般成人；不据此推定竞技或疾病处方",
+    "energyContext": "预防不健康增重，不是主动减重干预",
+    "nutrient": "fat",
+    "valueOrRange": {
+      "kind": "maximum",
+      "value": 30,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "claimType": "recommendation",
+    "summaryZh": "WHO为预防一般成人不健康增重，条件性建议总脂肪不超过总能量30%；这不是毒性UL，也不是全部减重或运动情境的统一硬上限。",
+    "limitations": [
+      "主动减重研究未纳入该推荐所依据的系统综述",
+      "WHO注明建议可能不适用于正在主动减重者",
+      "高脂本身不是肥胖的唯一原因；需连同其他健康膳食建议考虑"
+    ],
+    "quality": {
+      "design": "who_evidence_based_guideline",
+      "certainty": "原文：依据高确定性证据形成条件性建议",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "WHO预防一般成人不健康增重的≤30%脂肪供能为条件性建议；主动减重研究未纳入，可能不适用于主动减重者，不能写成统一硬上限。"
+  },
+  {
+    "id": "EV-HS23-SURPLUS-TRIAL",
+    "sourceId": "HELMS-SURPLUS-2023",
+    "sourceVersion": "publisher_full_text",
+    "locator": {
+      "artifactPath": "raw/HELMS-SURPLUS-2023/plan-reference-b16e8a07d675.pdf",
+      "artifactSha256": "b16e8a07d6757dfad70f1b544ae6b950b962ea24eb9a2064dce88c476f2eb06a",
+      "kind": "pdf_page",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "b5635d0e917e144663abed466edda0901d9db837b8f7ffac338efabccde89f66",
+      "verificationTokens": [
+        "17 completers"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "gain",
+      "recompose"
+    ],
+    "trainingContext": "有训练经验的抗阻训练者，每周3次，8周",
+    "energyContext": "维持或盈余",
+    "nutrient": "energy",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "reference",
+    "summaryZh": "一项8周抗阻训练研究比较维持、5%和15%盈余，21人随机分组、17人完成；较快增重更明确地伴随皮褶增加，肌肉及力量结果不完全一致。盈余应结合经验和训练刺激，不能固定为所有人+8%。",
+    "limitations": [
+      "样本少、退出与疫情影响，且饮食实际执行与目标有偏差",
+      "部分卧推结果有差异，不能概括为大盈余毫无收益",
+      "试验设置的5%及15%是研究条件，不是通用上下限"
+    ],
+    "quality": {
+      "design": "small_randomized_parallel_groups_trial",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "原文报告Legion Athletics及Renaissance Periodization资助；不能视为独立无利益关系证据",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "8周抗阻试验比较维持、5%和15%盈余，21人分组17人完成；较快增重更明显增加皮褶，肌肉/力量结果混合。样本小且有产业资助，研究组别不是通用边界。"
+  },
+  {
+    "id": "EV-PLAN-PROTEIN-WEIGHT-CONTEXT",
+    "sourceId": "ISSN-WEIGHTLOSS-2026",
+    "sourceVersion": "Online publication 2026-10-13; PubMed journal collection label 2026 Dec 30 is not the first-online date",
+    "locator": {
+      "artifactPath": "raw/ISSN-WEIGHTLOSS-2026/pmc-full-text-20261029T051441Z-6d26dca1c5fa.html",
+      "artifactSha256": "ba012e95681527c3b25aee42b613b27688d82f694d756b24447f54efec3c8028",
+      "kind": "paragraph",
+      "blockIndex": 49,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "4440c0895c334f4a89ac830cea47c409ccb777e11f04085dfb0b35b0b32d1547",
+      "verificationTokens": [
+        "in reference to “ideal” or normal body weight"
+      ]
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "一般成人；不据此推定竞技或疾病处方",
+    "energyContext": "按来源所述情境",
+    "nutrient": "protein",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "not_applicable",
+    "weightBasis": "none",
+    "claimType": "qualitative_context",
+    "summaryZh": "ISSN原文补充：按体重计的蛋白建议多源于正常或理想体重情境；肥胖者按当前体重可能高估。用户选择按当前体重及最低系数计算是产品约定，不能抹去该外推局限。",
+    "limitations": [
+      "BMI不能精确判断体脂或替代临床评估",
+      "不因BMI数值直接禁止本产品计划，但必须说明当前体重口径的局限",
+      "不把产品约定说成文献支持所有体型的统一处方"
+    ],
+    "quality": {
+      "design": "position_stand",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "planningBriefZh": "原文按体重给的建议多来自正常/理想体重情境；肥胖者按实际体重可能高估。本产品按用户要求采用当前体重×适用最低系数，不能冒充原文对所有体型的处方。"
+  },
+  {
+    "id": "EV-A16-CARB-TRAINING",
+    "sourceId": "ATHLETE-NUTRITION-2016",
+    "sourceVersion": "2016 joint position; JAND parallel publication acquired; MSSE erratum content unavailable",
+    "locator": {
+      "artifactPath": "raw/ATHLETE-NUTRITION-2016/academy-joint-position-20261029T051731Z-a0354a401809.pdf",
+      "artifactSha256": "9869bf11071d53efccfcc3a3c0c4f233029b3c85edbabcc51941b331b083451e",
+      "kind": "pdf_page",
+      "blockIndex": null,
+      "page": 8,
+      "tableNumber": null,
+      "row": "Light / Moderate / High / Very high",
+      "column": "Carbohydrate targets",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "additionalLocators": [],
+    "population": {
+      "ageMin": null,
+      "ageMaxInclusive": null,
+      "sex": "all",
+      "description": "普通健康成年人；专用场景另审",
+      "exclusions": [
+        "未成年人、孕哺和疾病专用营养方案不由本卡自动覆盖"
+      ]
+    },
+    "goal": [
+      "maintain",
+      "gain",
+      "lose",
+      "recompose"
+    ],
+    "trainingContext": "运动员；从低强度技能训练到长时间耐力运动",
+    "energyContext": "按来源所述情境",
+    "nutrient": "carbohydrate",
+    "valueOrRange": {
+      "kind": "qualitative",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/kg_actual/day",
+    "weightBasis": "actual",
+    "claimType": "reference",
+    "summaryZh": "运动营养联合立场按负荷给出碳水参考，应结合总能量、训练及反馈，不能按健身次数机械套用。",
+    "limitations": [
+      "PDF第8页表格已目视复核，文字字体映射异常，不假称自动提取可靠",
+      "这些目标用于支持较高碳水可用性，不是所有普通健身者的最低值",
+      "原文要求按总能量、具体训练和表现反馈个体化；本卡不自动开放高负荷计划"
+    ],
+    "quality": {
+      "design": "joint_professional_position_stand",
+      "certainty": "本卡未进行独立GRADE评级",
+      "fundingAndConflicts": "详见原文声明；本卡不宣称无利益冲突",
+      "interpretation": "区分推荐、研究观察与程序约定；不把存在引用当作逐句科学验证"
+    },
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-12T16:05:37.769936Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "核对取得的原文段落或页码及校验值；表格另外目视复核；不是模型自评",
+    "professionalReviewPerformed": false,
+    "conditionalValues": [
+      {
+        "context": "低强度或技能型活动",
+        "valueOrRange": {
+          "kind": "range",
+          "value": null,
+          "lower": 3,
+          "upper": 5,
+          "intervalType": "reference",
+          "statistic": null
+        },
+        "unit": "g/kg_actual/day",
+        "weightBasis": "actual"
+      },
+      {
+        "context": "约1h/日中等强度训练",
+        "valueOrRange": {
+          "kind": "range",
+          "value": null,
+          "lower": 5,
+          "upper": 7,
+          "intervalType": "reference",
+          "statistic": null
+        },
+        "unit": "g/kg_actual/day",
+        "weightBasis": "actual"
+      },
+      {
+        "context": "约1～3h/日中高强度耐力",
+        "valueOrRange": {
+          "kind": "range",
+          "value": null,
+          "lower": 6,
+          "upper": 10,
+          "intervalType": "reference",
+          "statistic": null
+        },
+        "unit": "g/kg_actual/day",
+        "weightBasis": "actual"
+      },
+      {
+        "context": "约超过4～5h/日中高强度极高负荷",
+        "valueOrRange": {
+          "kind": "range",
+          "value": null,
+          "lower": 8,
+          "upper": 12,
+          "intervalType": "reference",
+          "statistic": null
+        },
+        "unit": "g/kg_actual/day",
+        "weightBasis": "actual"
+      }
+    ],
+    "planningBriefZh": "运动员碳水参考按负荷分档，见条件数值；用于较高碳水可用性，需结合总能量、训练和表现。不是所有普通健身者最低值，也不按次数机械套用。"
+  }
+]

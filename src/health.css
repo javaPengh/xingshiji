@@ -52,7 +52,7 @@ select:focus{outline:2px solid #c3b6ee}
 .daily-metrics svg{color:#a5c4df}.daily-metrics>button:nth-child(2) svg{color:#dac490}.daily-metrics>button:nth-child(3) svg{color:#b09ccc}
 .daily-metrics span{font-size:12px;color:#9b86ac}.daily-metrics strong{font-size:21px;font-weight:550;overflow-wrap:anywhere;max-width:100%}.daily-metrics small{font-size:9px;color:#b6a6c2;margin-left:3px}.daily-metrics p{font-size:9px;color:#b8a8c4;line-height:1.7}
 .dimension-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;margin:19px 0 10px}
-.dimension-grid>button{min-width:0;background:#f9f7fd;border-radius:13px;padding:15px 2px;display:flex;flex-direction:column;gap:20px;text-align:center}
+.dimension-grid>button,.dimension-grid>div{min-width:0;background:#f9f7fd;border-radius:13px;padding:15px 2px;display:flex;flex-direction:column;gap:20px;text-align:center}
 .dimension-grid span{font-size:10px;color:#aa97b9;white-space:nowrap}.dimension-grid strong{font-size:15px;font-weight:550;color:#8f79a2;overflow-wrap:anywhere}
 .body-dimensions>.hint{font-size:10px}.health-sheet .editor-body>.hint{line-height:1.9}
 @media(max-width:759px){select{font-size:16px}.calendar-toolbar select{font-size:16px}.body-weight-card,.body-dimensions{padding:17px}.profile-summary-values{gap:5px}.profile-summary-values>span{font-size:17px}.profile-summary-values>span:last-child{font-size:13px}}
@@ -84,3 +84,7 @@ select:focus{outline:2px solid #c3b6ee}
 .macro-composition-caption{font-size:10px;color:#baaac5;margin:8px 0 0;text-align:right}
 .compact-nutrition .goal-nutrient-details{margin-top:20px;padding-top:14px;border-top:1px solid #f0eaf6}
 @media(max-width:360px){.compact-nutrition .energy-info>strong{font-size:21px}.compact-macro-row strong{font-size:20px}.compact-macro-row small{font-size:12px}}
+
+.step-energy-copy{display:grid;gap:18px;line-height:1.9}.step-energy-copy p{margin:0}
+
+.exercise-details{display:grid;gap:14px}.exercise-item{display:grid;gap:8px;padding:16px 0;border-bottom:1px solid var(--border);line-height:1.7}.exercise-item:last-child{border-bottom:0}.exercise-item strong{white-space:nowrap;font-size:13px}

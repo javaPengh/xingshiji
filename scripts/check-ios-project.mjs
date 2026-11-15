@@ -22,6 +22,8 @@ assert.ok(!plist.includes('NSAllowsArbitraryLoads'),'Trusted HTTPS must remain e
 assert.ok(project.includes('MARKETING_VERSION = '+APP_VERSION+';'),'Native and client versions differ');
 const native=JSON.parse(read('ios/App/App/capacitor.config.json'));
 assert.equal(native.appId,'local.xiaoka.diary');
+assert.equal(native.appName,'行食记');
+assert.match(plist,/<key>CFBundleDisplayName<\/key>\s*<string>行食记<\/string>/);
 assert.equal(native.server?.url,undefined,'The IPA must bundle its client, not load a remote webpage');
 const spm=read('ios/App/CapApp-SPM/Package.swift');
 for(const name of ['camera','filesystem','share']){

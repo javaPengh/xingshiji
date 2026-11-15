@@ -98,7 +98,7 @@ public class PedometerPlugin: CAPPlugin, CAPBridgedPlugin {
         DispatchQueue.main.async {
             let status = self.state()
             guard status != "unsupported" else { call.reject("当前设备不支持自动计步", "UNSUPPORTED"); return }
-            guard status != "denied" && status != "restricted" else { call.reject("请在 iPhone 设置的运动与健身中允许小卡日记访问", "MOTION_DENIED"); return }
+            guard status != "denied" && status != "restricted" else { call.reject("请在 iPhone 设置的运动与健身中允许行食记访问", "MOTION_DENIED"); return }
             var calendar = Calendar(identifier: .gregorian)
             calendar.timeZone = .autoupdatingCurrent
             let end = Date(), start = calendar.startOfDay(for: end)

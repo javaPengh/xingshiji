@@ -1,0 +1,59 @@
+{
+  "id": "ATHLETE-NUTRITION-2016",
+  "title": "American College of Sports Medicine Joint Position Statement. Nutrition and Athletic Performance",
+  "authors": [
+    "D. Travis Thomas",
+    "Kelly Anne Erdman",
+    "Louise M. Burke"
+  ],
+  "year": 2016,
+  "doi": "10.1249/MSS.0000000000000852",
+  "version": "2016 joint position; JAND parallel publication acquired; MSSE erratum content unavailable",
+  "acquisitionStatus": "downloaded",
+  "fullTextAcquired": false,
+  "usableParallelFullText": true,
+  "originalUrls": [
+    "https://doi.org/10.1249/MSS.0000000000000852"
+  ],
+  "licence": {
+    "id": "copyright_reserved",
+    "evidence": "Parallel PDF page 1: ©2016 Academy of Nutrition and Dietetics, ACSM, Dietitians of Canada"
+  },
+  "missingParts": [
+    {
+      "part": "Nutrition and Athletic Performance: Erratum (2017), DOI 10.1249/MSS.0000000000001162, correction body",
+      "url": "https://doi.org/10.1249/MSS.0000000000001162",
+      "reason": "Publisher landing displays bibliographic erratum notice only, no correction body; original MSSE full text is access restricted",
+      "availableAlternative": "28-page parallel joint-position PDF from Academy official Evidence Analysis Library; page 1 confirms concurrent equivalence",
+      "impact": "Numeric recommendations affected by the unknown erratum require checking before rule activation; parallel version cannot silently be called a corrected MSSE copy",
+      "legalFileNeeded": "Yes, the erratum body or a verified corrected joint-position version"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "raw/ATHLETE-NUTRITION-2016/doi-publisher-20261029T051729Z-70b407d87291.html",
+      "sha256": "5e3cf049ef485eea9d372aad2a24a0bc832e4efbd8b1cc0e9b9a40ff9f6ec55d",
+      "format": "html",
+      "pages": null,
+      "role": "publisher_landing",
+      "actualUrl": "https://www.ovid.com/jnls/acsm-msse/abstract/10.1249/mss.0000000000000852~nutrition-and-athletic-performance?redirectionsource=fulltextview"
+    },
+    {
+      "path": "raw/ATHLETE-NUTRITION-2016/academy-joint-position-20261029T051731Z-a0354a401809.pdf",
+      "sha256": "9869bf11071d53efccfcc3a3c0c4f233029b3c85edbabcc51941b331b083451e",
+      "format": "pdf",
+      "pages": 28,
+      "role": "parallel_publication_full_text",
+      "actualUrl": "https://www.andeal.org/files/files/Collaborations/Position_Athletic-Performance_2016March.pdf"
+    },
+    {
+      "path": "raw/ATHLETE-NUTRITION-2016/publisher-2017-erratum-20261029T052645Z-dcc1f50c7c10.html",
+      "sha256": "5d74ebe84e3329acfffa6dc8473bc99b56f9e93a5ea0ba776e8109f8e433593e",
+      "format": "html",
+      "pages": null,
+      "role": "correction_notice_only",
+      "actualUrl": "https://www.ovid.com/jnls/acsm-msse/abstract/10.1249/mss.0000000000001162~nutrition-and-athletic-performance-erratum?redirectionsource=fulltextview"
+    }
+  ],
+  "originalContentIncluded": false
+}

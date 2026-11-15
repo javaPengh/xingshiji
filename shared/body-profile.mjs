@@ -5,7 +5,7 @@ export const bodyProfileSections=[
  {key:'goal',title:'计划目标',paths:['goal.kind','goal.recompositionPriority','goal.targetWeightKg','goal.desiredByDate']},
  {key:'activity',title:'日常活动',paths:['activity.dailyPattern','activity.stepsAveragePerDay']},
  {key:'training',title:'训练背景（选填）',optional:true,paths:['training.kind','training.sessionsPerWeek','training.typicalMinutesPerSession','training.calculationContext']},
- {key:'composition',title:'身体构成（选填）',optional:true,paths:['composition.waistCm','composition.bodyFatPct','composition.bodyFatMethod','composition.bodyFatMeasuredOn']},
+ {key:'composition',title:'身体构成（选填）',optional:true,paths:['composition.chestCm','composition.waistCm','composition.armCm','composition.hipCm','composition.thighCm','composition.calfCm','composition.bodyFatPct','composition.bodyFatMethod','composition.bodyFatMeasuredOn']},
 ];
 export const bodyProfilePaths=bodyProfileSections.flatMap(s=>s.paths);
 export function dateInTimezone(at,timezone){
@@ -44,3 +44,8 @@ export function prepareBodyProfile(draft,{id,date,timezone,stamp,createdAt=stamp
  return assessmentSchema.parse(value);
 }
 export function bodyPlanMissing(a){return ['basics.ageYears','basics.heightCm','basics.weightKg','basics.sexForCalculation','goal.kind','activity.dailyPattern'].filter(path=>getPath(a,path)?.status!=='known'||getPath(a,path).value==='undisclosed').map(path=>assessmentFields.find(f=>f.path===path).label);}
+
+// The diary displays the latest long-term profile, independent of its selected day.
+export function latestSavedBodyProfile(rows){
+ return rows.filter(r=>!r.deleted).map(r=>r.record||r.data||r).filter(r=>r?.composition).sort((a,b)=>b.contextDate.localeCompare(a.contextDate)||b.updatedAt.localeCompare(a.updatedAt)||b.id.localeCompare(a.id))[0]||null;
+}

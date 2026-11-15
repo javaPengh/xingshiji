@@ -32,7 +32,7 @@ export function MotionProvider({children}:{children:ReactNode}){
   return()=>{active=false;stream?.stop();controller.current=null;clearInterval(timer);document.removeEventListener('visibilitychange',wake);window.removeEventListener('focus',wake);};
  },[enabled]);
  const settings=()=>{void native.openSettings().catch(e=>setError(e.message||'无法打开系统设置'));};
- return <context.Provider value={{enabled,permission,reading,error,busy,change,settings}}>{children}{prompt&&<div className="modal-backdrop"><section className="editor-sheet health-sheet" role="dialog" aria-modal="true" aria-labelledby="motion-title"><div className="sheet-heading"><h2 id="motion-title">开启自动计步？</h2></div><div className="editor-body"><p>允许小卡日记读取 iPhone 的运动与健身数据，自动记录当天步数。</p><p>你可以随时在 App 设置中关闭自动计步，或管理系统权限。</p></div><div className="sheet-footer"><button className="secondary-button" onClick={()=>change(false)}>暂不开启</button><button className="primary-button" onClick={()=>change(true)}>开启自动计步</button></div></section></div>}</context.Provider>;
+ return <context.Provider value={{enabled,permission,reading,error,busy,change,settings}}>{children}{prompt&&<div className="modal-backdrop"><section className="editor-sheet health-sheet" role="dialog" aria-modal="true" aria-labelledby="motion-title"><div className="sheet-heading"><h2 id="motion-title">开启自动计步？</h2></div><div className="editor-body"><p>允许行食记读取 iPhone 的运动与健身数据，自动记录当天步数。</p><p>你可以随时在 App 设置中关闭自动计步，或管理系统权限。</p></div><div className="sheet-footer"><button className="secondary-button" onClick={()=>change(false)}>暂不开启</button><button className="primary-button" onClick={()=>change(true)}>开启自动计步</button></div></section></div>}</context.Provider>;
 }
 export function MotionSettings(){
  const motion=useMotion();if(!supported)return null;

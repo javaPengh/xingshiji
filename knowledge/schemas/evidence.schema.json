@@ -1,0 +1,546 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourceVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "locator": {
+      "type": "object",
+      "properties": {
+        "artifactPath": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifactSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "paragraph",
+            "pdf_page",
+            "image_table"
+          ]
+        },
+        "blockIndex": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "page": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "tableNumber": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "row": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "column": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "textSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "verificationTokens": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "artifactPath",
+        "artifactSha256",
+        "kind",
+        "blockIndex",
+        "page",
+        "tableNumber",
+        "row",
+        "column",
+        "textSha256",
+        "verificationTokens"
+      ],
+      "additionalProperties": false
+    },
+    "additionalLocators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "artifactPath": {
+            "type": "string",
+            "minLength": 1
+          },
+          "artifactSha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "paragraph",
+              "pdf_page",
+              "image_table"
+            ]
+          },
+          "blockIndex": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "page": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tableNumber": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "row": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "column": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "textSha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "verificationTokens": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "artifactPath",
+          "artifactSha256",
+          "kind",
+          "blockIndex",
+          "page",
+          "tableNumber",
+          "row",
+          "column",
+          "textSha256",
+          "verificationTokens"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "population": {
+      "type": "object",
+      "properties": {
+        "ageMin": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ageMaxInclusive": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "sex": {
+          "type": "string",
+          "enum": [
+            "male",
+            "female",
+            "all",
+            "unspecified"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exclusions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "ageMin",
+        "ageMaxInclusive",
+        "sex",
+        "description",
+        "exclusions"
+      ],
+      "additionalProperties": false
+    },
+    "goal": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "trainingContext": {
+      "type": "string",
+      "minLength": 1
+    },
+    "energyContext": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nutrient": {
+      "type": "string",
+      "minLength": 1
+    },
+    "valueOrRange": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "point",
+            "range",
+            "minimum",
+            "maximum",
+            "statistical_estimate",
+            "qualitative",
+            "unknown"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "lower": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "upper": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "intervalType": {
+          "type": "string",
+          "enum": [
+            "recommendation",
+            "reference",
+            "confidence_interval",
+            "not_applicable"
+          ]
+        },
+        "statistic": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "value",
+        "lower",
+        "upper",
+        "intervalType",
+        "statistic"
+      ],
+      "additionalProperties": false
+    },
+    "unit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "weightBasis": {
+      "type": "string",
+      "enum": [
+        "actual",
+        "fat_free",
+        "none",
+        "unspecified"
+      ]
+    },
+    "claimType": {
+      "type": "string",
+      "enum": [
+        "recommendation",
+        "reference",
+        "statistical_finding",
+        "qualitative_context"
+      ]
+    },
+    "summaryZh": {
+      "type": "string",
+      "minLength": 1
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "planningBriefZh": {
+      "type": "string",
+      "minLength": 1
+    },
+    "conditionalValues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "context": {
+            "type": "string",
+            "minLength": 1
+          },
+          "valueOrRange": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "point",
+                  "range",
+                  "minimum",
+                  "maximum",
+                  "statistical_estimate",
+                  "qualitative",
+                  "unknown"
+                ]
+              },
+              "value": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "lower": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "upper": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "intervalType": {
+                "type": "string",
+                "enum": [
+                  "recommendation",
+                  "reference",
+                  "confidence_interval",
+                  "not_applicable"
+                ]
+              },
+              "statistic": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "kind",
+              "value",
+              "lower",
+              "upper",
+              "intervalType",
+              "statistic"
+            ],
+            "additionalProperties": false
+          },
+          "unit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "weightBasis": {
+            "type": "string",
+            "enum": [
+              "actual",
+              "fat_free",
+              "none",
+              "unspecified"
+            ]
+          }
+        },
+        "required": [
+          "context",
+          "valueOrRange",
+          "unit",
+          "weightBasis"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "design": {
+          "type": "string",
+          "minLength": 1
+        },
+        "certainty": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fundingAndConflicts": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interpretation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "design",
+        "certainty",
+        "fundingAndConflicts",
+        "interpretation"
+      ],
+      "additionalProperties": false
+    },
+    "reviewStatus": {
+      "type": "string",
+      "enum": [
+        "verified_against_original",
+        "pending",
+        "blocked"
+      ]
+    },
+    "reviewedAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+    },
+    "reviewedBy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewMethod": {
+      "type": "string",
+      "minLength": 1
+    },
+    "professionalReviewPerformed": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "sourceId",
+    "sourceVersion",
+    "locator",
+    "additionalLocators",
+    "population",
+    "goal",
+    "trainingContext",
+    "energyContext",
+    "nutrient",
+    "valueOrRange",
+    "unit",
+    "weightBasis",
+    "claimType",
+    "summaryZh",
+    "limitations",
+    "reviewStatus",
+    "reviewedAt",
+    "reviewedBy",
+    "reviewMethod",
+    "professionalReviewPerformed"
+  ],
+  "additionalProperties": false,
+  "$comment": "Also run scripts/validate-nutrition-knowledge.mjs for source hashes, units, conditions and activation constraints; JSON Schema alone cannot verify scientific applicability."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "WHO-FAT-2023",
+  "title": "Total fat intake for the prevention of unhealthy weight gain in adults and children: WHO guideline",
+  "authors": [
+    "World Health Organization"
+  ],
+  "year": 2023,
+  "doi": null,
+  "version": "official_full_guideline",
+  "acquisitionStatus": "primary_artifact_acquired",
+  "fullTextAcquired": true,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://www.who.int/publications/i/item/9789240073654"
+  ],
+  "licence": {
+    "id": "local_research_archive_only",
+    "evidence": "Originals are not bundled or redistributed; see the original publisher licence."
+  },
+  "missingParts": [],
+  "artifacts": [
+    {
+      "path": "raw/WHO-FAT-2023/plan-reference-a9f12218be0b.pdf",
+      "sha256": "a9f12218be0b1720c9be4f0dee79c2dbdcbd13fb44cd3e0d751bf04b5fa63381",
+      "format": "pdf",
+      "pages": 66,
+      "role": "full_text",
+      "actualUrl": "https://iris.who.int/server/api/core/bitstreams/fe09e661-09a6-4f53-ae8a-420cbd0c6a6e/content"
+    }
+  ],
+  "originalContentIncluded": false
+}

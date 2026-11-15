@@ -1,0 +1,115 @@
+[
+  {
+    "id": "CF-WEIGHT-BASES",
+    "evidenceIds": [
+      "EV-P17-ABSTRACT-AMBIGUITY",
+      "EV-P26-HISTORICAL-FFM",
+      "EV-P26-LEAN-CUT-BW",
+      "EV-P26-LEAN-CUT-FFM"
+    ],
+    "referenceIds": [],
+    "sourceIds": [
+      "ISSN-PROTEIN-2017",
+      "ISSN-WEIGHTLOSS-2026"
+    ],
+    "pairAssessment": "conditional_difference",
+    "resolutionStatus": "resolved_by_distinct_conditions",
+    "scholarConfirmation": "pending",
+    "descriptionZh": "相似数字含实际体重、无脂体重和未明确参照三种口径。",
+    "resolutionZh": "分别保留单位/参照/人群；旧摘要参照未明的数字不成为执行规则。",
+    "blocksRuleIds": []
+  },
+  {
+    "id": "CF-PROTEIN-POPULATIONS",
+    "evidenceIds": [
+      "EV-P26-GENERAL",
+      "EV-P26-RESISTANCE",
+      "EV-F23-ATHLETE-PROTEIN"
+    ],
+    "referenceIds": [],
+    "sourceIds": [
+      "ISSN-WEIGHTLOSS-2026",
+      "ISSN-FEMALE-2023"
+    ],
+    "pairAssessment": "conditional_difference",
+    "resolutionStatus": "unresolved",
+    "scholarConfirmation": "pending",
+    "descriptionZh": "一般人群、抗阻训练及女性运动员专项范围不等同。",
+    "resolutionZh": "人群分别记录；尚未审定女性运动员、较高体脂等选择优先级，不启用统一默认。",
+    "blocksRuleIds": [
+      "RULE-PROTEIN-RESISTANCE",
+      "RULE-PROTEIN-FEMALE-ATHLETE"
+    ]
+  },
+  {
+    "id": "CF-FAT-POPULATIONS",
+    "evidenceIds": [
+      "EV-C23-FAT-AMDR",
+      "EV-I19-FAT"
+    ],
+    "referenceIds": [],
+    "sourceIds": [
+      "CNS-DRI-2023",
+      "IRAKI-OFFSEASON-2019"
+    ],
+    "pairAssessment": "conditional_difference",
+    "resolutionStatus": "resolved_by_distinct_conditions",
+    "scholarConfirmation": "pending",
+    "descriptionZh": "普通中国成人AMDR20%–30%与非赛季健美20%–35%人群不同。",
+    "resolutionZh": "保留各自原范围，禁止拼成适合所有人的大范围；产品选点另审批。",
+    "blocksRuleIds": []
+  },
+  {
+    "id": "CF-FIBER-SEMANTICS",
+    "evidenceIds": [
+      "EV-C23-FIBER-AI",
+      "EV-W23-FIBER-MIN"
+    ],
+    "referenceIds": [],
+    "sourceIds": [
+      "CNS-DRI-2023",
+      "WHO-CARB-2023"
+    ],
+    "pairAssessment": "conditional_difference",
+    "resolutionStatus": "resolved_by_distinct_conditions",
+    "scholarConfirmation": "pending",
+    "descriptionZh": "AI25–30g与天然食物纤维最低25g不是同一种目标类型。",
+    "resolutionZh": "分别保存reference区间与minimum；不虚构统一30g点目标。",
+    "blocksRuleIds": []
+  },
+  {
+    "id": "CF-PAL-FOOTNOTES",
+    "evidenceIds": [],
+    "referenceIds": [
+      "CNS2023-T9-energy-EER-I",
+      "CNS2023-T14-energy-EER-I",
+      "CNS2023-T20-energy-EER-I"
+    ],
+    "sourceIds": [
+      "CNS-DRI-2023"
+    ],
+    "pairAssessment": "conditional_difference",
+    "resolutionStatus": "unresolved",
+    "scholarConfirmation": "pending",
+    "descriptionZh": "不同人群公开表脚注存在差别：表9为1.5/1.75/2.0，表14与20为1.4/1.7/2.0；尚未取得完整解释，不断言其中哪张有误。",
+    "resolutionZh": "原样保留表内数值，不归并或选择默认PAL；个人能量计算保持停用。；选定的NASEM方程直接采用Health Canada四档定义，不使用这些中国分组表脚注换算活动。",
+    "blocksRuleIds": []
+  },
+  {
+    "id": "CF-CARB-EAR-CELLS",
+    "evidenceIds": [],
+    "referenceIds": [
+      "CNS2023-T13-carbohydrate-EAR",
+      "CNS2023-T14-carbohydrate-EAR"
+    ],
+    "sourceIds": [
+      "CNS-DRI-2023"
+    ],
+    "pairAssessment": "insufficient_overlap",
+    "resolutionStatus": "not_applicable",
+    "scholarConfirmation": "pending",
+    "descriptionZh": "表13打印120g/日，表14同列打印未制定符号。",
+    "resolutionZh": "保留原样并标注完整解释缺件；不复制填充女性或老年组。",
+    "blocksRuleIds": []
+  }
+]

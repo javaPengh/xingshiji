@@ -1,28 +1,118 @@
-# 小卡日记 iPhone个人安装
+# 行食记 · xingshiji
 
-此目录是手机端构建源码，不是已签名安装包。目标设备为用户的iPhone 13、iOS 26.3.1。后端仍是原固定电脑，地址为 https://desktop-7nla9nf.taila5d3f3.ts.net 。网页与安装版使用原账号登录后同步同一份日记。
+当前版本 **0.5.0**。饮食日记、拍照识别、身体资料、营养计划、AI 运动记录及 iOS 自动计步。
 
-## 云端编译
+统一开发根目录：`D:\ProgramData\PythonProject\chatgpt_workspace\xiaokajiankang\xingshiji`。
 
-1. 将此目录的**内容**放到用户已确认的GitHub仓库 https://github.com/javaPengh/xiaoka-ios 根目录，包括`.github`目录。用户选择保留公开；此包仅含手机端源码及已确认的服务器地址。ZIP不能原样作为一个文件上传；也不要上传完整开发项目或服务器目录。
-2. 当前公开仓库使用标准GitHub Mac构建机，适用GitHub公开仓库免费规则；上传代码不会自动执行本流程，不启用付费大型构建机。
-3. 仓库页面选择Actions → Build iPhone IPA (unsigned) → Run workflow。流程只读取源码，使用标准macOS构建机，不使用Apple账号或签名证书。
-4. 构建完成后，从该次运行的Artifacts下载`xiaoka-diary-unsigned-编号`，解压取得`xiaoka-diary-unsigned.ipa`。失败时查看同一产物中的`xcodebuild-release.log`。
+## 目录与维护方式
 
-工作流用锁定依赖构建网页、同步Capacitor、检查原生入口，再用Xcode 26以上编译arm64手机程序。仅手动触发，单次最长45分钟，云端产物保留7天。未签名IPA还不能直接安装；`build-info.json`记录实际编译版本及签名状态。
+```text
+xingshiji/
+├─ src/          共用 React / TypeScript 前端和离线同步
+├─ PWA/          网页静态资源、安装清单、离线缓存和图标
+├─ ios/          Capacitor iOS 工程，含计步、SQLite 和 Keychain 桥
+├─ android/      安卓工程预留目录，目前尚未实现
+├─ server/       Node.js 后端，按账号保存与同步数据、调用 Ollama
+├─ shared/       前后端共享协议、校验、默认食物和计算逻辑
+├─ knowledge/    结构化营养知识及受清单校验的只读索引
+├─ scripts/      构建、运行包校验、升级及诊断工具
+├─ docs/         安装与专项升级说明
+├─ .github/      iOS 和 Windows 手动构建工作流
+├─ .gitignore
+└─ README.md
+```
 
-## Windows签名与安装
+所有平台复用 `src`。`PWA` 是 Vite 的 `publicDir`，构建后内容进入 `dist`，不是另一套前端。iOS 工程内部的 `ios/App/App/public` 是 Capacitor 自动生成目录，保留其标准名称，不直接维护。
 
-使用个人安装工具（如Sideloadly官方 https://sideloadly.io/ ）给本项目自建IPA签名并安装。Apple账号密码及验证码由用户在安装工具中输入，不放进代码、GitHub Secrets或聊天。
+按要求不设 `test` 目录。`scripts/fixtures` 仅保存运行包自检和食物库整理需要的合成样例或公开参考数据。
 
-首次通过USB连接iPhone，解锁并信任电脑。工具所需的Apple驱动、开发者模式和设备信任按实际安装提示设置。普通Apple账号的个人签名有效期通常为7天，需要续签。自动续签是否稳定，要以这台Windows电脑与手机实际配对、同网连接和连续使用结果为准。
+显示名称已改为“行食记”。为读取已有离线资料、账号和备份，Bundle ID `local.xiaoka.diary`、持久化键和协议中的 `xiaoka` 标识保留兼容，不能只做全局替换。
 
-安装后用原小卡账号登录。验证：原有日记同步；断网新增记录并重开仍在，恢复网络后只同步一次；拍照/相册选择；后台返回及重新启动后的登录保持。全部在真机通过后才算完成iPhone交付。
+## 环境与本地开发
 
-## 构建输入
+需要 Node.js **24.22.1 或以上**、npm；Windows 打包另需可从命令行运行的 Python 3。iOS 原生编译需要 macOS 和 Xcode 26 或以上，可使用仓库内的 GitHub Actions 工作流。
 
-上传包仅含客户端、共享数据结构、iOS工程、所需构建脚本及锁文件。没有服务器源码、个人日记、照片、数据库、模型、`.env`、证书或Apple凭据。手机端构建变量只有服务器地址和账号模式。
+在根目录执行：
 
-开发电脑可先执行`npm ci`、`npm run build`、`npx cap sync ios`、`npm run ios:prepare`及`node scripts/check-ios-project.mjs`，但Windows上的结构检查不等于Xcode编译或真机验证。
+```powershell
+npm ci --no-audit --no-fund
+Copy-Item .env.example .env
+npm run check
+npm run build
+npm run server
+```
 
-参考：[GitHub Actions计费](https://docs.github.com/en/billing/concepts/product-billing/github-actions)、[Capacitor 8](https://capacitorjs.com/docs/updating/8-0)、[Apple个人设备测试](https://developer.apple.com/help/account/basics/about-your-developer-account)。
+`.env.example` 使用本项目内独立的开发数据目录 `.cache/development-data`，不连接正式数据。打开 `http://127.0.0.1:4318`，账号模式下先注册开发账号。需要调试前端时，在另一终端运行 `npm run dev`，访问 `http://127.0.0.1:5173`。
+
+模型名称在各环境 `.env` 中配置；示例值不是对正式服务器实际配置的确认。文字对话、运动估算和计划使用 `OLLAMA_CHAT_MODEL`，拍照使用 `OLLAMA_VISION_MODEL`，后者需要具备图片理解能力。修改服务器配置后重启服务。
+
+`npm run check` 校验 TypeScript、模块语法、目录及冻结知识库；`npm run knowledge:check` 单独校验运行知识库。正常构建直接使用已冻结知识库，不需要原研究资料。研究级原文验证或重建需另行设置 `XINGSHIJI_RESEARCH_DIR` 指向原 `analysis/knowledge` 资料，原始资料不随应用分发。
+
+## Windows 后端打包
+
+在 Windows 的本项目根目录执行：
+
+```powershell
+npm run check
+npm run windows:package
+```
+
+输出到忽略的 `build/windows/xingshiji-server-0.5.0-时间戳/`，同时生成同名 `.zip` 和 `.zip.sha256`。包内包含 Node、后端、共享协议、编译后的网页、知识库、升级脚本和运行清单；不含真实 `.env`、账号、日记、照片或模型。
+
+Windows 打包脚本会强制生成访问同域后端的网页，并隔离 iOS 构建变量。`dist` 是 PWA 产物，`build/web-ios` 是 iOS 网页产物；两者共用源码，输出互不覆盖。
+
+也可在统一仓库 Actions 手动运行 **Build Xingshiji Windows server**，下载 Windows ZIP 及校验文件。上传源码本身不触发构建或部署。
+
+## 正式服务器升级
+
+开发电脑与正式服务器是两台电脑。正式数据固定在 **`D:\software_back\data`**，配置在实际运行目录的 `.env`。现有地址为 `https://desktop-7nla9nf.taila5d3f3.ts.net`；改名不自动更换服务器地址或 Tailscale 配置。
+
+1. 在手机导出本机备份并确认同步状态；核对正式服务器实际运行目录、`.env` 和 `DATA_DIR`，停止旧服务。
+2. 传输 ZIP 和校验文件，核对 SHA-256，解压到新的程序目录。不要在旧目录中使用“跳过同名文件”。
+3. 在新程序目录执行以下命令。`旧服务绝对路径` 必须替换为刚核实的实际目录：
+
+```powershell
+.\node.exe scripts/check-nutrition-runtime.mjs --verify-only
+.\node.exe scripts/upgrade-from.mjs "旧服务绝对路径" --data-dir "D:\software_back\data"
+```
+
+升级工具检查已有配置和数据库、保存升级前快照，并为新程序生成沿用原配置的 `.env`；固定数据目录已经存在时直接复用。升级已有服务时不要先把示例配置覆盖成 `.env`。首次全新安装才从包内 `.env.example` 创建配置。
+
+4. 双击 `START-SERVER.cmd`。确认 Ollama 和原 HTTPS 转发仍运行，检查原账号、日记、照片及新功能。核对成功后以新目录启动服务，保留回退资料。
+
+专项检查和回退方式见 [营养与运行包升级说明](docs/NUTRITION_UPGRADE.md)。不要在开发电脑上对服务器数据执行试验。
+
+## iOS 构建与安装
+
+统一仓库 Actions 手动运行 **Build Xingshiji iOS (unsigned)**。它安装锁定依赖、构建共用前端、同步原生资源、检查计步与存储桥，再用 Xcode 编译未签名 IPA。
+
+下载 `xingshiji-unsigned-编号`，其中的 `xingshiji-unsigned.ipa` 由用户在 Windows 上通过 Sideloadly 签名安装或续签。构建工作流不需要 Apple 账号或签名证书。云构建可用额度取决于仓库与账号计划。
+
+本地准备工程：
+
+```powershell
+$env:VITE_API_BASE_URL='https://desktop-7nla9nf.taila5d3f3.ts.net'
+$env:VITE_AUTH_MODE='accounts'
+npm run ios:sync
+npm run ios:check
+```
+
+`ios:sync` 默认使用现有 HTTPS 服务地址，将网页构建到 `build/web-ios` 后同步进 iOS 工程，不覆盖 PWA 的 `dist`。在 Mac 上完成准备后运行 `bash scripts/package-ios.sh`，输出在 `build/ios/`。Windows 上的前端构建和结构检查不代表 Xcode 编译或真机验证。
+
+详见 [iOS 个人安装说明](docs/IOS_PERSONAL_INSTALL.md)。
+
+## PWA 部署
+
+执行 `npm run build`，由后端托管生成的 `dist`；Windows 运行包已经包含该产物，不需要另外部署一套 PWA 服务器。通过可信 HTTPS 地址访问，在 iPhone Safari 中选择“添加到主屏幕”使用。网页更新后重新打开应用获取更新，清单与离线缓存由构建流程生成。
+
+PWA 与安装版使用同一服务器账号；浏览器离线数据和原生离线数据各自保存，通过服务器同步。现有 Core Motion 计步插件属于原生 iOS 功能，PWA 不能直接调用；安卓计步和原生存储桥尚需实现。
+
+## Git 与迁移来源
+
+本目录保留原 iOS 仓库提交历史，并整合迁移时尚未提交的最新客户端改动；后端和知识库来自原开发源码，已核对后端与最新固定 Windows 运行包一致。原 `../app`、旧运行包及远端仓库均保留。
+
+本地 `legacy-ios` 远端仅用于查看旧 iOS 仓库，推送地址已禁用。当前尚未设置新统一仓库的 `origin`，不会将后端自动上传到原公开仓库。建立新的统一仓库后，可在本目录设置新远端；如果不准备公开后端，选择私有仓库。
+
+源码纳入 Git；`node_modules`、`dist`、`build`、真实配置、正式数据、日志和签名文件由 `.gitignore` 排除。`knowledge` 内清单引用的只读 SQLite 索引是运行输入，需要保留。不要把整个开发数据目录或旧运行包导入仓库。
+
+`.gitattributes` 保留冻结知识库的原始字节，防止 Windows / macOS 换行转换破坏 SHA-256 校验；调整知识库内容后必须按完整研究与重建流程更新清单，不能只格式化文件。

@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topics": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "energyGoalTopics": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "fatGoalTopics": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "referenceUse": {
+      "type": "string",
+      "minLength": 1
+    },
+    "uniformEnergyUpper": {
+      "type": "null"
+    },
+    "uniformAdjustmentRange": {
+      "type": "null"
+    },
+    "fatReferenceIsHardLimit": {
+      "type": "boolean",
+      "const": false
+    },
+    "proteinSelection": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fiberSelection": {
+      "type": "string",
+      "minLength": 1
+    },
+    "existingAutomaticEnergyMinimumKcal": {
+      "type": "number"
+    },
+    "existingStorageEnergyMaximumKcal": {
+      "type": "number"
+    },
+    "technicalLimitsMeaning": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scopeStatement": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "version",
+    "topics",
+    "energyGoalTopics",
+    "fatGoalTopics",
+    "referenceUse",
+    "uniformEnergyUpper",
+    "uniformAdjustmentRange",
+    "fatReferenceIsHardLimit",
+    "proteinSelection",
+    "fiberSelection",
+    "existingAutomaticEnergyMinimumKcal",
+    "existingStorageEnergyMaximumKcal",
+    "technicalLimitsMeaning",
+    "scopeStatement"
+  ],
+  "additionalProperties": false,
+  "$comment": "Also run scripts/validate-nutrition-knowledge.mjs for source hashes, units, conditions and activation constraints; JSON Schema alone cannot verify scientific applicability."
+}

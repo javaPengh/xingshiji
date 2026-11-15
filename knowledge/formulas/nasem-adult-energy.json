@@ -1,0 +1,402 @@
+[
+  {
+    "id": "EER-NASEM2023-MALE-INACTIVE",
+    "methodId": "NASEM-2023-ADULT-EER",
+    "version": "1",
+    "sourceId": "HC-EER-2025",
+    "sourceVersion": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+    "locator": {
+      "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "kind": "paragraph",
+      "blockIndex": 59,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "292b55c5914753c28e78b39e80a1718befb2023ab2d38b64774740bfa2e1ff22",
+      "verificationTokens": [
+        "EER = 753.07 – (10.83 × age [y]) + (6.50 × height [cm]) + (14.10 × weight [kg])"
+      ]
+    },
+    "minimumAgeYears": 19,
+    "maximumAgeYearsInclusive": null,
+    "sex": "male",
+    "activityCategory": "inactive",
+    "coefficients": {
+      "intercept": 753.07,
+      "ageYears": -10.83,
+      "heightCm": 6.5,
+      "weightKg": 14.1
+    },
+    "inputUnits": {
+      "ageYears": "year",
+      "heightCm": "cm",
+      "weightKg": "kg"
+    },
+    "weightBasis": "actual",
+    "unit": "kcal/day",
+    "evidenceIds": [
+      "EV-HC-ADULT-EER"
+    ],
+    "policyIds": [
+      "POL-ENERGY-METHOD",
+      "POL-TOTAL-ACTIVITY-CONFIRM"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EER-NASEM2023-MALE-LOW_ACTIVE",
+    "methodId": "NASEM-2023-ADULT-EER",
+    "version": "1",
+    "sourceId": "HC-EER-2025",
+    "sourceVersion": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+    "locator": {
+      "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "kind": "paragraph",
+      "blockIndex": 60,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "8ea3896947be703918a90a599376362890adcaae484379454d6496e657f5f9ac",
+      "verificationTokens": [
+        "EER = 581.47 – (10.83 × age [y]) + (8.30 × height [cm]) + (14.94 × weight [kg])"
+      ]
+    },
+    "minimumAgeYears": 19,
+    "maximumAgeYearsInclusive": null,
+    "sex": "male",
+    "activityCategory": "low_active",
+    "coefficients": {
+      "intercept": 581.47,
+      "ageYears": -10.83,
+      "heightCm": 8.3,
+      "weightKg": 14.94
+    },
+    "inputUnits": {
+      "ageYears": "year",
+      "heightCm": "cm",
+      "weightKg": "kg"
+    },
+    "weightBasis": "actual",
+    "unit": "kcal/day",
+    "evidenceIds": [
+      "EV-HC-ADULT-EER"
+    ],
+    "policyIds": [
+      "POL-ENERGY-METHOD",
+      "POL-TOTAL-ACTIVITY-CONFIRM"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EER-NASEM2023-MALE-ACTIVE",
+    "methodId": "NASEM-2023-ADULT-EER",
+    "version": "1",
+    "sourceId": "HC-EER-2025",
+    "sourceVersion": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+    "locator": {
+      "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "kind": "paragraph",
+      "blockIndex": 61,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "ffe1c512d9a32b3fe86a1a25c329364bf8a33af6b324879c5b7c4906b0ab0027",
+      "verificationTokens": [
+        "EER = 1,004.82 – (10.83 × age [y]) + (6.52 × height [cm]) + (15.91 × weight [kg])"
+      ]
+    },
+    "minimumAgeYears": 19,
+    "maximumAgeYearsInclusive": null,
+    "sex": "male",
+    "activityCategory": "active",
+    "coefficients": {
+      "intercept": 1004.82,
+      "ageYears": -10.83,
+      "heightCm": 6.52,
+      "weightKg": 15.91
+    },
+    "inputUnits": {
+      "ageYears": "year",
+      "heightCm": "cm",
+      "weightKg": "kg"
+    },
+    "weightBasis": "actual",
+    "unit": "kcal/day",
+    "evidenceIds": [
+      "EV-HC-ADULT-EER"
+    ],
+    "policyIds": [
+      "POL-ENERGY-METHOD",
+      "POL-TOTAL-ACTIVITY-CONFIRM"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EER-NASEM2023-MALE-VERY_ACTIVE",
+    "methodId": "NASEM-2023-ADULT-EER",
+    "version": "1",
+    "sourceId": "HC-EER-2025",
+    "sourceVersion": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+    "locator": {
+      "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "kind": "paragraph",
+      "blockIndex": 62,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "e208051c319351f3c11c5591e921555fab76d46e63fd3336741579cb38c66d7e",
+      "verificationTokens": [
+        "EER = –517.88 – (10.83 × age [y]) + (15.61 × height [cm]) + (19.11 × weight [kg])"
+      ]
+    },
+    "minimumAgeYears": 19,
+    "maximumAgeYearsInclusive": null,
+    "sex": "male",
+    "activityCategory": "very_active",
+    "coefficients": {
+      "intercept": -517.88,
+      "ageYears": -10.83,
+      "heightCm": 15.61,
+      "weightKg": 19.11
+    },
+    "inputUnits": {
+      "ageYears": "year",
+      "heightCm": "cm",
+      "weightKg": "kg"
+    },
+    "weightBasis": "actual",
+    "unit": "kcal/day",
+    "evidenceIds": [
+      "EV-HC-ADULT-EER"
+    ],
+    "policyIds": [
+      "POL-ENERGY-METHOD",
+      "POL-TOTAL-ACTIVITY-CONFIRM"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EER-NASEM2023-FEMALE-INACTIVE",
+    "methodId": "NASEM-2023-ADULT-EER",
+    "version": "1",
+    "sourceId": "HC-EER-2025",
+    "sourceVersion": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+    "locator": {
+      "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "kind": "paragraph",
+      "blockIndex": 63,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "aaff6cbbd79a52c114452b949598714fad2a1fca4a34df1d0f205c1f8cb342f5",
+      "verificationTokens": [
+        "EER = 584.90 – (7.01 × age [y]) + (5.72 × height [cm]) + (11.71 × weight [kg])"
+      ]
+    },
+    "minimumAgeYears": 19,
+    "maximumAgeYearsInclusive": null,
+    "sex": "female",
+    "activityCategory": "inactive",
+    "coefficients": {
+      "intercept": 584.9,
+      "ageYears": -7.01,
+      "heightCm": 5.72,
+      "weightKg": 11.71
+    },
+    "inputUnits": {
+      "ageYears": "year",
+      "heightCm": "cm",
+      "weightKg": "kg"
+    },
+    "weightBasis": "actual",
+    "unit": "kcal/day",
+    "evidenceIds": [
+      "EV-HC-ADULT-EER"
+    ],
+    "policyIds": [
+      "POL-ENERGY-METHOD",
+      "POL-TOTAL-ACTIVITY-CONFIRM"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EER-NASEM2023-FEMALE-LOW_ACTIVE",
+    "methodId": "NASEM-2023-ADULT-EER",
+    "version": "1",
+    "sourceId": "HC-EER-2025",
+    "sourceVersion": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+    "locator": {
+      "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "kind": "paragraph",
+      "blockIndex": 64,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "68ae3f6b4c75c59d6dd6b0ac72cbef95153279d95a196dd47155a7141b6ac423",
+      "verificationTokens": [
+        "EER = 575.77 – (7.01 × age [y]) + (6.60 × height [cm]) + (12.14 × weight [kg])"
+      ]
+    },
+    "minimumAgeYears": 19,
+    "maximumAgeYearsInclusive": null,
+    "sex": "female",
+    "activityCategory": "low_active",
+    "coefficients": {
+      "intercept": 575.77,
+      "ageYears": -7.01,
+      "heightCm": 6.6,
+      "weightKg": 12.14
+    },
+    "inputUnits": {
+      "ageYears": "year",
+      "heightCm": "cm",
+      "weightKg": "kg"
+    },
+    "weightBasis": "actual",
+    "unit": "kcal/day",
+    "evidenceIds": [
+      "EV-HC-ADULT-EER"
+    ],
+    "policyIds": [
+      "POL-ENERGY-METHOD",
+      "POL-TOTAL-ACTIVITY-CONFIRM"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EER-NASEM2023-FEMALE-ACTIVE",
+    "methodId": "NASEM-2023-ADULT-EER",
+    "version": "1",
+    "sourceId": "HC-EER-2025",
+    "sourceVersion": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+    "locator": {
+      "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "kind": "paragraph",
+      "blockIndex": 65,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "5be4cf1451519a00f305b0274db84676248234fda4fa40efc03f2b4b4ea7c226",
+      "verificationTokens": [
+        "EER = 710.25 – (7.01 × age [y]) + (6.54 × height [cm]) + (12.34 × weight [kg])"
+      ]
+    },
+    "minimumAgeYears": 19,
+    "maximumAgeYearsInclusive": null,
+    "sex": "female",
+    "activityCategory": "active",
+    "coefficients": {
+      "intercept": 710.25,
+      "ageYears": -7.01,
+      "heightCm": 6.54,
+      "weightKg": 12.34
+    },
+    "inputUnits": {
+      "ageYears": "year",
+      "heightCm": "cm",
+      "weightKg": "kg"
+    },
+    "weightBasis": "actual",
+    "unit": "kcal/day",
+    "evidenceIds": [
+      "EV-HC-ADULT-EER"
+    ],
+    "policyIds": [
+      "POL-ENERGY-METHOD",
+      "POL-TOTAL-ACTIVITY-CONFIRM"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "EER-NASEM2023-FEMALE-VERY_ACTIVE",
+    "methodId": "NASEM-2023-ADULT-EER",
+    "version": "1",
+    "sourceId": "HC-EER-2025",
+    "sourceVersion": "Official Health Canada page issued 2023-12-18, modified 2025-11-19; implementation of NASEM 2023 EER equations",
+    "locator": {
+      "artifactPath": "raw/HC-EER-2025/official-energy-equations-20261029.html",
+      "artifactSha256": "04c8807bfe42c72c9f3b4392d1e14f0a8db994193c81cc0e86586450f4230008",
+      "kind": "paragraph",
+      "blockIndex": 66,
+      "page": null,
+      "tableNumber": null,
+      "row": null,
+      "column": null,
+      "textSha256": "e96eca09b65d4a9f1f4992544bbd240ef9915f95e2cf81896cc09f136f8b38c4",
+      "verificationTokens": [
+        "EER = 511.83 – (7.01 × age [y]) + (9.07 × height [cm]) + (12.56 × weight [kg])"
+      ]
+    },
+    "minimumAgeYears": 19,
+    "maximumAgeYearsInclusive": null,
+    "sex": "female",
+    "activityCategory": "very_active",
+    "coefficients": {
+      "intercept": 511.83,
+      "ageYears": -7.01,
+      "heightCm": 9.07,
+      "weightKg": 12.56
+    },
+    "inputUnits": {
+      "ageYears": "year",
+      "heightCm": "cm",
+      "weightKg": "kg"
+    },
+    "weightBasis": "actual",
+    "unit": "kcal/day",
+    "evidenceIds": [
+      "EV-HC-ADULT-EER"
+    ],
+    "policyIds": [
+      "POL-ENERGY-METHOD",
+      "POL-TOTAL-ACTIVITY-CONFIRM"
+    ],
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项核对官方成人段落的8组截距/系数、正负号、单位与19岁边界；与NASEM官方书目摘要交叉核对，非临床审阅",
+    "professionalReviewPerformed": false
+  }
+]

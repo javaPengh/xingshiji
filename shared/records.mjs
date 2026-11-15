@@ -1,7 +1,9 @@
+import {exerciseRecordSchema} from './exercise.mjs';
 import { z } from 'zod';
 import {itemSchema,dateSchema,mealSchema,foodSchema,batchSchema,profileSchema,measurementSchema,targetSchema} from './schemas.mjs';
 import {assessmentSchema,reviewSchema,inputSchema,diaryCoverageSchema,nutritionError,validateTargetMetadata} from './nutrition.mjs';
 export const recordSchemas={
+    exercise:exerciseRecordSchema,
     entry:itemSchema.extend({id:z.string().uuid(),date:dateSchema,meal:mealSchema,createdAt:z.iso.datetime(),updatedAt:z.iso.datetime()}),
     food:foodSchema.extend({id:z.string().min(1).max(100),favorite:z.boolean().optional()}),
     message:z.object({id:z.string().uuid(),role:z.enum(['user','assistant']),text:z.string().max(100000),createdAt:z.iso.datetime(),entryIds:z.array(z.string().uuid()).max(30),draft:batchSchema.omit({idempotencyKey:true}).nullable().optional(),pinned:z.boolean().optional(),sendState:z.enum(['queued','sent','error']).optional(),date:dateSchema.optional(),meal:mealSchema.optional()}),

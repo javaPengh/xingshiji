@@ -1,0 +1,6392 @@
+[
+  {
+    "id": "CNS2023-T9-energy-EER-I",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "能量PAL(I)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 9.0,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 9.0,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "I",
+    "palValue": 1.5,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T9-energy-EER-II",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "能量PAL(II)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 10.67,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 10.67,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "II",
+    "palValue": 1.75,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T9-energy-EER-III",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "能量PAL(III)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 12.55,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 12.55,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "III",
+    "palValue": 2.0,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T9-protein-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "蛋白质",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 60,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T9-protein-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "蛋白质",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": 65,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 65,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T9-protein-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "蛋白质",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      10,
+      20
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 10,
+      "upper": 20,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T9-carbohydrate-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "总碳水化合物",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 120,
+    "originalUnit": "%E表头；有EAR数值时脚注明确单位为g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 120,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T9-carbohydrate-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "总碳水化合物",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T9-carbohydrate-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "总碳水化合物",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      50,
+      65
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 50,
+      "upper": 65,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T9-fat-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fat",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      20,
+      30
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T9-fiber-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-09-20261029T051952Z-da0643a62cde.jpg",
+      "artifactSha256": "fbf558006fb8780361521706ad20dd948bf02c0f18b64ecf2aedb2bd652d7cf1",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 9,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "male",
+      "description": "中国18–29岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fiber",
+    "referenceType": "AI",
+    "printedColumn": "RNI (AI标记)",
+    "originalValue": [
+      25,
+      30
+    ],
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-energy-EER-I",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "能量PAL(I)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 7.11,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 7.11,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "I",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-energy-EER-II",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "能量PAL(II)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 8.79,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 8.79,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "II",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-energy-EER-III",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "能量PAL(III)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 10.25,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 10.25,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "III",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-protein-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "蛋白质",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 50,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-protein-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "蛋白质",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": 55,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 55,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-protein-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "蛋白质",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      10,
+      20
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 10,
+      "upper": 20,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-carbohydrate-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "总碳水化合物",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 120,
+    "originalUnit": "%E表头；有EAR数值时脚注明确单位为g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 120,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-carbohydrate-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "总碳水化合物",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-carbohydrate-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "总碳水化合物",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      50,
+      65
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 50,
+      "upper": 65,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-fat-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fat",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      20,
+      30
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T10-fiber-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-10-20261029T051952Z-163ab98e664b.jpg",
+      "artifactSha256": "eb73f3145ed9ca09d727c0bae666918c9a56c3535eb03ff9bb8e037ee0eb1cd9",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 10,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 18,
+      "ageMaxInclusive": 29,
+      "sex": "female",
+      "description": "中国18–29岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fiber",
+    "referenceType": "AI",
+    "printedColumn": "RNI (AI标记)",
+    "originalValue": [
+      25,
+      30
+    ],
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-energy-EER-I",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "能量PAL(I)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 8.58,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 8.58,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "I",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-energy-EER-II",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "能量PAL(II)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 10.46,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 10.46,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "II",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-energy-EER-III",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "能量PAL(III)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 12.34,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 12.34,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "III",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-protein-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "蛋白质",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 60,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-protein-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "蛋白质",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": 65,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 65,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-protein-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "蛋白质",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      10,
+      20
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 10,
+      "upper": 20,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-carbohydrate-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "总碳水化合物",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 120,
+    "originalUnit": "%E表头；有EAR数值时脚注明确单位为g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 120,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-carbohydrate-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "总碳水化合物",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-carbohydrate-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "总碳水化合物",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      50,
+      65
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 50,
+      "upper": 65,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-fat-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fat",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      20,
+      30
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T11-fiber-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-11-20261029T051952Z-46f5e270ffc3.jpg",
+      "artifactSha256": "a7818cc53eab4b9cbb6397dfbbc0de3b0aae187b59a62e86348f3daf9c061021",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 11,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "male",
+      "description": "中国30–49岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fiber",
+    "referenceType": "AI",
+    "printedColumn": "RNI (AI标记)",
+    "originalValue": [
+      25,
+      30
+    ],
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-energy-EER-I",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "能量PAL(I)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 7.11,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 7.11,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "I",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-energy-EER-II",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "能量PAL(II)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 8.58,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 8.58,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "II",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-energy-EER-III",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "能量PAL(III)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 10.04,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 10.04,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "III",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-protein-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "蛋白质",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 50,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-protein-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "蛋白质",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": 55,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 55,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-protein-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "蛋白质",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      10,
+      20
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 10,
+      "upper": 20,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-carbohydrate-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "总碳水化合物",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 120,
+    "originalUnit": "%E表头；有EAR数值时脚注明确单位为g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 120,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-carbohydrate-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "总碳水化合物",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-carbohydrate-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "总碳水化合物",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      50,
+      65
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 50,
+      "upper": 65,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-fat-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fat",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      20,
+      30
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T12-fiber-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-12-20261029T051952Z-99a6dac275e4.jpg",
+      "artifactSha256": "427c7c7112184a613c3e86336099735f60436659821851456d4784a3ca674e90",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 12,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 30,
+      "ageMaxInclusive": 49,
+      "sex": "female",
+      "description": "中国30–49岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fiber",
+    "referenceType": "AI",
+    "printedColumn": "RNI (AI标记)",
+    "originalValue": [
+      25,
+      30
+    ],
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-energy-EER-I",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "能量PAL(I)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 8.16,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 8.16,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "I",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-energy-EER-II",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "能量PAL(II)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 10.04,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 10.04,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "II",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-energy-EER-III",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "能量PAL(III)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 11.72,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 11.72,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "III",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-protein-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "蛋白质",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 60,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-protein-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "蛋白质",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": 65,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 65,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-protein-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "蛋白质",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      10,
+      20
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 10,
+      "upper": 20,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-carbohydrate-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "总碳水化合物",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 120,
+    "originalUnit": "%E表头；有EAR数值时脚注明确单位为g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 120,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-carbohydrate-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "总碳水化合物",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-carbohydrate-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "总碳水化合物",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      50,
+      65
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 50,
+      "upper": 65,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-fat-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fat",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      20,
+      30
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T13-fiber-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-13-20261029T051952Z-cc2aec017e6e.jpg",
+      "artifactSha256": "ee774be5e5a2fc60ca0ffda84af19e224298ddc746987c1c3e621a1c405362ed",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 13,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "male",
+      "description": "中国50–64岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fiber",
+    "referenceType": "AI",
+    "printedColumn": "RNI (AI标记)",
+    "originalValue": [
+      25,
+      30
+    ],
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-energy-EER-I",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "能量PAL(I)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 6.69,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 6.69,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "I",
+    "palValue": 1.4,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-energy-EER-II",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "能量PAL(II)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 8.16,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 8.16,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "II",
+    "palValue": 1.7,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-energy-EER-III",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "能量PAL(III)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 9.62,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 9.62,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "III",
+    "palValue": 2.0,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-protein-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "蛋白质",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 50,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-protein-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "蛋白质",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": 55,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 55,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-protein-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "蛋白质",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      10,
+      20
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 10,
+      "upper": 20,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-carbohydrate-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "总碳水化合物",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": "—",
+    "originalUnit": "%E表头；有EAR数值时脚注明确单位为g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-carbohydrate-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "总碳水化合物",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-carbohydrate-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "总碳水化合物",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      50,
+      65
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 50,
+      "upper": 65,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-fat-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fat",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      20,
+      30
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T14-fiber-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-14-20261029T051953Z-e72af9cac8d5.jpg",
+      "artifactSha256": "3254783f6f69d8afe8f098abb93a0896b9ec52214318d2da1d8f68e846aa3cb8",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 14,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 50,
+      "ageMaxInclusive": 64,
+      "sex": "female",
+      "description": "中国50–64岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fiber",
+    "referenceType": "AI",
+    "printedColumn": "RNI (AI标记)",
+    "originalValue": [
+      25,
+      30
+    ],
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-energy-EER-I",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "能量PAL(I)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 7.95,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 7.95,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "I",
+    "palValue": 1.4,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-energy-EER-II",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "能量PAL(II)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 9.62,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 9.62,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "II",
+    "palValue": 1.7,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-energy-EER-III",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "能量PAL(III)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "III",
+    "palValue": 2.0,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-protein-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "蛋白质",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 60,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-protein-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "蛋白质",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": 72,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 72,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-protein-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "蛋白质",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      15,
+      20
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 15,
+      "upper": 20,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-carbohydrate-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "总碳水化合物",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": "—",
+    "originalUnit": "%E表头；有EAR数值时脚注明确单位为g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-carbohydrate-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "总碳水化合物",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-carbohydrate-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "总碳水化合物",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      50,
+      65
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 50,
+      "upper": 65,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-fat-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fat",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      20,
+      30
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T20-fiber-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-20-20261029T051953Z-390710af3463.jpg",
+      "artifactSha256": "5ed5f40b190924d46262ab0816490ba368795e40c35ef4c58c5da837edfe961f",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 20,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "male",
+      "description": "中国65–74岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fiber",
+    "referenceType": "AI",
+    "printedColumn": "RNI (AI标记)",
+    "originalValue": [
+      25,
+      30
+    ],
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-energy-EER-I",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "能量PAL(I)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 6.49,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 6.49,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "I",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-energy-EER-II",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "能量PAL(II)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 7.74,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 7.74,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "II",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-energy-EER-III",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "能量PAL(III)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "III",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-protein-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "蛋白质",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 50,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-protein-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "蛋白质",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": 62,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 62,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-protein-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "蛋白质",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      15,
+      20
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 15,
+      "upper": 20,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-carbohydrate-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "总碳水化合物",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": "—",
+    "originalUnit": "%E表头；有EAR数值时脚注明确单位为g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-carbohydrate-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "总碳水化合物",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-carbohydrate-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "总碳水化合物",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      50,
+      65
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 50,
+      "upper": 65,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-fat-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fat",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      20,
+      30
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T21-fiber-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-21-20261029T051953Z-c666dfb354e6.jpg",
+      "artifactSha256": "c0b8020eef4be7f3336cd9e18452c7980f4d385e7ce44101de5ccbb05f53352b",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 21,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 65,
+      "ageMaxInclusive": 74,
+      "sex": "female",
+      "description": "中国65–74岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fiber",
+    "referenceType": "AI",
+    "printedColumn": "RNI (AI标记)",
+    "originalValue": [
+      25,
+      30
+    ],
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-energy-EER-I",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "能量PAL(I)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 7.53,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 7.53,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "I",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-energy-EER-II",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "能量PAL(II)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 9.2,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 9.2,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "II",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-energy-EER-III",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "能量PAL(III)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "III",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-protein-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "蛋白质",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 60,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 60,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-protein-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "蛋白质",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": 72,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 72,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-protein-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "蛋白质",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      15,
+      20
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 15,
+      "upper": 20,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-carbohydrate-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "总碳水化合物",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": "—",
+    "originalUnit": "%E表头；有EAR数值时脚注明确单位为g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-carbohydrate-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "总碳水化合物",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-carbohydrate-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "总碳水化合物",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      50,
+      65
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 50,
+      "upper": 65,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-fat-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fat",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      20,
+      30
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T22-fiber-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-22-20261029T051953Z-2c457e31a387.jpg",
+      "artifactSha256": "921066d98fac78cf74dd18792a64773d641d41ff163c80ddd5a3a282e5217b99",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 22,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "male",
+      "description": "中国75–以上岁、male、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fiber",
+    "referenceType": "AI",
+    "printedColumn": "RNI (AI标记)",
+    "originalValue": [
+      25,
+      30
+    ],
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-energy-EER-I",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "能量PAL(I)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 6.28,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 6.28,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "I",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-energy-EER-II",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "能量PAL(II)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": 7.32,
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 7.32,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "II",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-energy-EER-III",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "能量PAL(III)",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "energy",
+    "referenceType": "EER",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "MJ/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "MJ/day",
+    "weightBasis": "none",
+    "palLabel": "III",
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-protein-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "蛋白质",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": 50,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 50,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-protein-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "蛋白质",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": 62,
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "point",
+      "value": 62,
+      "lower": null,
+      "upper": null,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-protein-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "蛋白质",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "protein",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      15,
+      20
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 15,
+      "upper": 20,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-carbohydrate-EAR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "总碳水化合物",
+      "column": "EAR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "EAR",
+    "printedColumn": "EAR",
+    "originalValue": "—",
+    "originalUnit": "%E表头；有EAR数值时脚注明确单位为g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-carbohydrate-RNI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "总碳水化合物",
+      "column": "RNI",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "RNI",
+    "printedColumn": "RNI",
+    "originalValue": "—",
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "unknown",
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "intervalType": "not_applicable",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-carbohydrate-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "总碳水化合物",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "carbohydrate",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      50,
+      65
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 50,
+      "upper": 65,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-fat-AMDR",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "总脂肪",
+      "column": "AMDR",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fat",
+    "referenceType": "AMDR",
+    "printedColumn": "AMDR",
+    "originalValue": [
+      20,
+      30
+    ],
+    "originalUnit": "%E",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 20,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "pct_energy",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  },
+  {
+    "id": "CNS2023-T23-fiber-AI",
+    "sourceId": "CNS-DRI-2023",
+    "sourceVersion": "2023版",
+    "locator": {
+      "artifactPath": "raw/CNS-DRI-2023/official-table-23-20261029T051954Z-b2364e86f855.jpg",
+      "artifactSha256": "3b364b1757a4684f53fa6cdcabb6d1a9ca2181c139d264d4fef5fc8a9c70c13e",
+      "kind": "image_table",
+      "blockIndex": null,
+      "page": 1,
+      "tableNumber": 23,
+      "row": "膳食纤维",
+      "column": "RNI (AI标记)",
+      "textSha256": null,
+      "verificationTokens": []
+    },
+    "population": {
+      "ageMin": 75,
+      "ageMaxInclusive": null,
+      "sex": "female",
+      "description": "中国75–以上岁、female、非孕哺参考组",
+      "exclusions": [
+        "未成年人不走本项目普通成人路径",
+        "孕哺及医生要求特殊饮食不适用自动规则"
+      ]
+    },
+    "nutrient": "fiber",
+    "referenceType": "AI",
+    "printedColumn": "RNI (AI标记)",
+    "originalValue": [
+      25,
+      30
+    ],
+    "originalUnit": "g/d",
+    "normalizedValue": {
+      "kind": "range",
+      "value": null,
+      "lower": 25,
+      "upper": 30,
+      "intervalType": "reference",
+      "statistic": null
+    },
+    "unit": "g/day",
+    "weightBasis": "none",
+    "palLabel": null,
+    "palValue": null,
+    "footnotes": [
+      "EAR/RNI/AI/AMDR语义不同，不用于个体缺乏诊断或自动训练剂量",
+      "原表破折号表示未制定参考值，不是0",
+      "%E为占总能量百分比，非克数；碳水EAR有值处按其脚注g/d",
+      "能量为分组参考值；未取得个人预测公式，不按用户体重线性缩放",
+      "PAL脚注存在表间差异且未全部复核；不合并成统一活动映射"
+    ],
+    "usage": "population_reference_only",
+    "reviewStatus": "verified_against_original",
+    "reviewedAt": "2026-11-13T02:22:14Z",
+    "reviewedBy": "Codex执行者；非营养专业人员",
+    "reviewMethod": "逐项对照取得的原文、数值、单位、条件和原文哈希；不是模型自评分",
+    "professionalReviewPerformed": false
+  }
+]

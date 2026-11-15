@@ -1,0 +1,52 @@
+[
+  {
+    "id": "GAP-ENERGY-FORMULA",
+    "reason": "19岁及以上选定的NASEM成人方程已核对；18岁及未覆盖情境不套用该方程，完整NASEM原书缺件仍保留。",
+    "sourceIds": [
+      "HC-EER-2025"
+    ]
+  },
+  {
+    "id": "GAP-ACTIVITY-MAPPING",
+    "reason": "不执行自动活动映射；采用用户确认四档总活动，旧资料未回答时仍缺项",
+    "sourceIds": [
+      "HC-EER-2025"
+    ]
+  },
+  {
+    "id": "GAP-PRODUCT-POINT",
+    "reason": "首批明确日常抗阻健身范围的初始起点已经用户批准；其他人群及复核调整策略仍未批准，保持停用。",
+    "sourceIds": []
+  },
+  {
+    "id": "GAP-WEIGHT-BASIS",
+    "reason": "首批产品边界内已核定实际体重参照；高体脂、精瘦减脂、无脂体重与特殊训练情境未完成核定，继续停用。",
+    "sourceIds": [
+      "ISSN-WEIGHTLOSS-2026"
+    ]
+  },
+  {
+    "id": "GAP-TRAINING-CARB",
+    "reason": "高训练量/混合耐力条件及2016联合立场勘误待补",
+    "sourceIds": [
+      "ATHLETE-NUTRITION-2016"
+    ]
+  },
+  {
+    "id": "GAP-REVIEW-POLICY",
+    "reason": "窗口、数据量、调整步幅尚未核查并确认",
+    "sourceIds": []
+  },
+  {
+    "id": "GAP-REDS",
+    "reason": "IOC修订共识全文/更正缺件；不启用唯一能量可用性安全阈值",
+    "sourceIds": [
+      "IOC-REDS-2023"
+    ]
+  },
+  {
+    "id": "GAP-SCOPE",
+    "reason": "普通成人路径不包含未成年人、孕哺和疾病专用目标",
+    "sourceIds": []
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "referenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "sourceIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "pairAssessment": {
+      "type": "string",
+      "enum": [
+        "conditional_difference",
+        "contradiction",
+        "no_material_conflict",
+        "insufficient_overlap"
+      ]
+    },
+    "resolutionStatus": {
+      "type": "string",
+      "enum": [
+        "resolved_by_distinct_conditions",
+        "unresolved",
+        "not_applicable"
+      ]
+    },
+    "scholarConfirmation": {
+      "type": "string",
+      "const": "pending"
+    },
+    "descriptionZh": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resolutionZh": {
+      "type": "string",
+      "minLength": 1
+    },
+    "blocksRuleIds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "id",
+    "evidenceIds",
+    "referenceIds",
+    "sourceIds",
+    "pairAssessment",
+    "resolutionStatus",
+    "scholarConfirmation",
+    "descriptionZh",
+    "resolutionZh",
+    "blocksRuleIds"
+  ],
+  "additionalProperties": false,
+  "$comment": "Also run scripts/validate-nutrition-knowledge.mjs for source hashes, units, conditions and activation constraints; JSON Schema alone cannot verify scientific applicability."
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ISSN-PROTEIN-2017",
+  "title": "International Society of Sports Nutrition Position Stand: protein and exercise",
+  "authors": [
+    "Ralf Jäger",
+    "Chad M Kerksick",
+    "Bill I Campbell",
+    "Paul J Cribb",
+    "Shawn D Wells",
+    "Tim M Skwiat",
+    "Martin Purpura",
+    "Tim N Ziegenfuss",
+    "Arny A Ferrando",
+    "Shawn M Arent",
+    "Abbie E Smith-Ryan",
+    "Jeffrey R Stout",
+    "Paul J Arciero",
+    "Michael J Ormsbee",
+    "Lem W Taylor",
+    "Colin D Wilborn",
+    "Doug S Kalman",
+    "Richard B Kreider",
+    "Darryn S Willoughby",
+    "Jay R Hoffman",
+    "Jamie L Krzykowski",
+    "Jose Antonio"
+  ],
+  "year": 2017,
+  "doi": "10.1186/s12970-017-0177-8",
+  "version": "2017",
+  "acquisitionStatus": "official_html_saved",
+  "fullTextAcquired": true,
+  "usableParallelFullText": false,
+  "originalUrls": [
+    "https://doi.org/10.1186/s12970-017-0177-8"
+  ],
+  "licence": {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceArtifact": "raw/ISSN-PROTEIN-2017/pmc-full-text-20261029T051441Z-d76adf494aeb.html"
+  },
+  "missingParts": [],
+  "artifacts": [
+    {
+      "path": "raw/ISSN-PROTEIN-2017/pmc-full-text-20261029T051441Z-d76adf494aeb.html",
+      "sha256": "60bd1781974090b9d4e62ed97b4d3c3bd64377250021e182cafa159eab79e9d7",
+      "format": "html",
+      "pages": null,
+      "role": "full_text",
+      "actualUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/"
+    }
+  ],
+  "originalContentIncluded": false
+}
